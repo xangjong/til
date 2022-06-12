@@ -126,7 +126,7 @@ grant all privileges on *.* to '유저명'@'%;
 
 
 
-출처 : https://patiencelee.tistory.com/609
+[출처] : https://patiencelee.tistory.com/609
 
 ​			https://abbo.tistory.com/241
 

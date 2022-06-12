@@ -24,7 +24,7 @@ macOS 용 패키지 관리자입니다. 터미널(Terminal)에서 명령어를 �
 
 2. terminal 앱을 검색하여 실행시킵니다.
 
-3. [링크](https://brew.sh/index_ko) 에 접속하여 맨 첫줄을 터미널에 복사합니다.
+3. https://brew.sh/index_ko 에 접속하여 맨 첫줄을 터미널에 복사합니다.
 
    ![homebrewmain](https://user-images.githubusercontent.com/101630615/172046059-bf14cf9b-6115-4325-ad98-ed77c73dae66.png)
 
@@ -59,9 +59,9 @@ macOS 용 패키지 관리자입니다. 터미널(Terminal)에서 명령어를 �
 아래는 그 이외의 단축키입니다.
 
 ```zsh
-- brew ~ : 커맨드 라인 프로그램 (c, java, python)
+brew ~ : 커맨드 라인 프로그램 (c, java, python)
 
-- brew cask ~ : GUI 프로그램 (Safari, Chrome, Word)
+brew cask ~ : GUI 프로그램 (Safari, Chrome, Word)
 
 brew update : 홈브류 최신버전으로 업데이트
 
