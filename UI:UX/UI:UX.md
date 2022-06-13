@@ -104,7 +104,6 @@ HTML 문서의 구성
 
 ```
 <html> 태그
-
 <html></html>
 문서의 시작과 끝 표시
 크게 두 부분으로 이루어져 있음
@@ -112,28 +111,20 @@ HTML 문서의 구성
 <head></head>
 <body></body>
 
-
-
 <head> 태그
-
 웹 브라우저 화면에는 보이지 않지만
 웹 브라우저가 알아두어야 할 문서 정보 포함
 
 <meta> 태그
-
 문자 인코딩 및 문서 키워드, 문서 정보
 <meta charset = "utf-8">
 
 <link> 태그
-
 외부 리소스 연결
 <link rel="stylesheet" href="StyleSheet.css" >
 <title></title> 태그 : 문서 제목
 
- 
-
 <body> 태그
-
 <body></body>
 문서의 몸통 부분
 실제 화면에 보이는 문서 내용 포함
@@ -142,19 +133,15 @@ HTML 문서의 구성
 
 
 
-
-
- 
-
-줄 바꿈 / 공백 
+#### 줄 바꿈 / 공백 
 
 \-    ``<br>`` : 줄 바꿈 (여러 행일 경우 여러 개 사용 가능)
 
-\-    &nbsp : 공백 (여러 칸 띄울 때는 여러 개 사용>
+\-    ``&nbsp`` : 공백 (여러 칸 띄울 때는 여러 개 사용)
 
  
 
-텍스트 관련 태그
+#### 텍스트 관련 태그
 
 \-    제목 : <h*n*></h*n*> (예:`` <h1></h1>``)
 
@@ -172,7 +159,7 @@ HTML 문서의 구성
 
  
 
-제목 : <h*n*></h*n*>
+#### 제목 : <h*n*></h*n*>
 
 \-    ``<h1>``제목 출력. 크기1``</h1>``
 
@@ -186,7 +173,8 @@ HTML 문서의 구성
 
 
 
-<p> 태그
+#### ``<p>`` 태그
+
 
 \-   `` <p></p>``
 
@@ -196,7 +184,9 @@ HTML 문서의 구성
 
 \-    ``<p>`` 태그 여러 번 연속적으로 사용해도 행 간격 더 벌어지지 않음
 
-``<br>`` 태그
+
+
+#### ``<br>`` 태그
 
 \-    줄 바꿈 태그
 
@@ -208,7 +198,7 @@ HTML 문서의 구성
 
  
 
-주석 처리
+#### 주석 처리
 
 ```
 <!-- -->
@@ -222,13 +212,13 @@ HTML 문서의 구성
 
 ![clip_image010](https://user-images.githubusercontent.com/101630615/173340261-1aa936ec-8312-4e76-8cc3-d32e91bcc49c.jpg)
 
-`` <pr></pre>`` 태그
+#### `` <pre></pre>`` 태그
 
 \-    입력한 형태 그대로 출력
 
  
 
-``&nbsp;``
+#### ``&nbsp;``
 
 \-    공백 처리 특수 문자 (no break space)
 
@@ -240,7 +230,7 @@ HTML 문서의 구성
 
  
 
-하이퍼링크 태그
+#### 하이퍼링크 태그
 
 \-    하이퍼링크로 문서 연결한 <a> 태그 (앵커 태그)
 
@@ -270,23 +260,22 @@ HTML 문서의 구성
 
  
 
-target 
+#### target 
 
 \-    target은 하이퍼링크의 대상인 문서를 어디에서 보여줄지를 지정
 
 \-    _blank : 새 창에서 출력
 
-\-    target=”iFrame” : iFrame 영역에서 출력
+\-    ``target=”iFrame”`` : iFrame 영역에서 출력
 
  
 
 ### 목록 태그
 
-\-    기본 목록 :`` <ul><ol><li>``
-
-\-    정의 목록 : ``<dl><dt><dd>``
-
- 
+```
+기본 목록 : <ul>, <ol>, <li>
+정의 목록 : <dl>, <dt>, <dd>
+```
 
  
 
@@ -314,13 +303,14 @@ target
 
 #### 정의 목록 태그
 
-\-    ``<dl>`` : 정의 목록 (Definition List)
-
-\-    ``<dt>`` : 정의 용어 (Definition Term)
-
-\-    ``<dd>`` : 정의 설명 (Definition Description)
-
-\-    예제 : definitionList.html
+```
+<dl> 
+: 정의 목록 (Definition List)
+<dt>
+: 정의 용어 (Definition Term)
+<dd>
+: 정의 설명 (Definition Description)
+```
 
  
 
@@ -364,7 +354,7 @@ target
 
  
 
-이미지 태그
+#### 이미지 태그
 
 \-  ``  <img>`` 태그
 
@@ -380,11 +370,7 @@ target
 
 \-    New / Folder
 
-  
-
- 
-
- 
+   
 
 #### 이미지 파일 경로
 
@@ -400,15 +386,11 @@ target
 
 \-   `` <img src="images/사진.jpg">``
 
- 
-
 (3) 상위 폴더에 있는 경우
 
 \-    ../폴더명/이미지파일명
 
 \-    ``<img src="../images/사진.jpg">``
-
- 
 
  
 
@@ -442,7 +424,7 @@ target
 
 ![clip_image050](https://user-images.githubusercontent.com/101630615/173340296-c69ac2c4-30dc-4622-a687-5717e246016e.jpg)
 
-오디오 태그 : ``<audio>``
+#### 오디오 태그 : ``<audio>``
 
 \-    오디오 파일 재생
 
@@ -466,7 +448,7 @@ target
 
  
 
-``<source>`` 태그
+#### ``<source>`` 태그
 
 \-    여러 미디어 파일 한꺼번에 지정
 
@@ -488,7 +470,7 @@ target
 
 
 
-비디오 태그 : ``<video>``
+##### 비디오 태그 : ``<video>``
 
 \-    비디오 파일 재생
 
@@ -496,7 +478,7 @@ target
 
  
 
-``<track>`` 태그 
+##### ``<track>`` 태그 
 
 \-    자막 표시
 
@@ -512,17 +494,20 @@ target
 
 \-    입력 폼을 만들 때 사용하는 태그
 
-\-    ``<form>``
+```
+<form>
 
-\-   `` <label>``
+<label>
 
-\-    ``<input>``
+<input>
 
-\-    ``<select><option>``
+<select>
+	<option>
 
-\-    ``<textarea>``
+<textarea>
+```
 
- 
+
 
 ##### ``<form>`` 태그
 
@@ -541,6 +526,8 @@ target
 \-    폼 요소에 캡션(라벨) 붙이기
 
 \-    ``<label></label>``
+
+
 
 ##### ``<input>`` 태그 
 
@@ -622,10 +609,6 @@ target
 
 
 
- 
-
- 
-
 #### 여러 라인 입력 : ``<textarea>`` 태그
 
 ```
@@ -644,17 +627,19 @@ target
 
 #####  HTML5 시멘틱 구조 태그
 
-\-    ``<header>``
+```
+<header> : 헤더 (제목)
 
-\-    ``<nav>``
+<nav> : 내비게이션 (메뉴)
 
-\-   `` <aside>``
+<aside> : 사이드 바
 
-\-   `` <section>``
+<section> : 콘텐츠 (내용)
 
-\-    ``<article>``
+<article> : 콘텐츠 안의 내용 영역 구분
 
-\-   `` <footer>``
+<footer> : 푸터(주소/연락처/저작권/ 기업 정보 등)
+```
 
  
 
@@ -677,8 +662,6 @@ target
 
  
 
- 
-
 ##### HTML5 시멘틱 구조 태그 정의 
 
 \-    시멘틱 (Semantic)
@@ -689,23 +672,13 @@ target
 
 \-    각 요소가 의미가 있는다는 것
 
-\-   ``<header>`` : 헤더 (제목)
-
-\-    ``<nav>`` : 내비게이션 (메뉴)
-
-\-    ``<aside>`` : 사이드 바
-
-\-    ``<section>`` : 콘텐츠 (내용)
-
-\-    ``<article>`` : 콘텐츠 안의 내용 영역 구분
-
-\-    ``<footer> ``: 푸터(주소/연락처/저작권/ 기업 정보 등)
-
  
 
 #### HTML5 웹 표준 문서 구조
 
 ![clip_image074](https://user-images.githubusercontent.com/101630615/173340320-72d1ead6-a6f4-412b-9ba9-d22f2abfd57b.jpg)
+
+
 
 
 
