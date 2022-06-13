@@ -4,7 +4,7 @@
 
 - 웹의 동작 구조
 
-![img](UI:UX.assets/clip_image002.jpg)
+![clip_image002](https://user-images.githubusercontent.com/101630615/173340252-8fc7094d-0d91-4324-bf48-607d075e263b.jpg)
 
 > Front-End 개발
 
@@ -68,7 +68,7 @@
 
  
 
-![img](UI:UX.assets/clip_image004.jpg)
+![clip_image004](https://user-images.githubusercontent.com/101630615/173340259-ceec9e91-d435-4ec1-bfeb-8632ea4d4ebb.jpg)
 
 HTML 문서의 구성
 
@@ -220,7 +220,7 @@ HTML 문서의 구성
 
 ### 텍스트에 장식효과를 주는 태그
 
-![img](UI:UX.assets/clip_image010.jpg)
+![clip_image010](https://user-images.githubusercontent.com/101630615/173340261-1aa936ec-8312-4e76-8cc3-d32e91bcc49c.jpg)
 
 `` <pr></pre>`` 태그
 
@@ -236,7 +236,7 @@ HTML 문서의 구성
 
 \-    여러 칸을 띄우려면 여러 번 사용
 
-![img](UI:UX.assets/clip_image012.jpg)
+![clip_image012](https://user-images.githubusercontent.com/101630615/173340265-fbe12ebe-74dc-4ffc-9de7-f19313e5c522.jpg)
 
  
 
@@ -250,7 +250,7 @@ HTML 문서의 구성
 
 \-    href : hyper reference (이동하는 곳)
 
-![img](UI:UX.assets/clip_image014.jpg)
+![clip_image014](https://user-images.githubusercontent.com/101630615/173340267-79978fc9-4bd3-41e3-b43f-95de25e2847d.jpg)
 
 사이트로 이동
 
@@ -292,23 +292,23 @@ target
 
 ### 기본 목록 태그
 
-![img](UI:UX.assets/clip_image016.jpg)
+![clip_image016](https://user-images.githubusercontent.com/101630615/173340270-84cf136c-8d78-44ef-b9df-84edd5e342d7.jpg)
 
  
 
 #### 순서가 없는 목록 ``<ul>`` 태그 속성
 
-![img](UI:UX.assets/clip_image018.jpg)
+![clip_image018](https://user-images.githubusercontent.com/101630615/173340274-909ec269-d3a3-4945-ade5-a9a3247c91ee.jpg)
 
 #### 순서가 있는 목록 ``<ol>`` 태그 속성
 
-![img](UI:UX.assets/clip_image020.jpg)
+![clip_image020](https://user-images.githubusercontent.com/101630615/173340275-d95c6ecc-0f88-4c56-bb6e-4ffd29f042ee.jpg)
 
  
 
 #### 목록 태그 중첩 사용
 
-![img](UI:UX.assets/clip_image022.jpg)
+![clip_image022](https://user-images.githubusercontent.com/101630615/173340276-3a9a5928-3425-472a-9417-4fb8fa946455.jpg)
 
  
 
@@ -328,7 +328,7 @@ target
 
 \-    테이블 관련 태그
 
-![img](UI:UX.assets/clip_image026.jpg)
+![clip_image026](https://user-images.githubusercontent.com/101630615/173341002-355d0449-6bd4-4df7-a9f2-6b727f045c7a.jpg)
 
  
 
@@ -340,17 +340,17 @@ target
 
 #### ``<table>`` 태그 속성
 
-![img](UI:UX.assets/clip_image028.jpg)
+![clip_image028](https://user-images.githubusercontent.com/101630615/173340282-6114274a-8315-4cc4-a48e-f2bd0affdf27.jpg)
 
 #### ``<tr>`` 태그 속성
 
-![img](UI:UX.assets/clip_image030.jpg)
+![clip_image030](https://user-images.githubusercontent.com/101630615/173340283-3156995b-70b8-499a-8e0f-e51778a93872.jpg)
 
 
 
 #### ``<td>`` 태그 속성 
 
-![img](UI:UX.assets/clip_image032.jpg)
+![clip_image032](https://user-images.githubusercontent.com/101630615/173340284-568eddf2-d453-4ea3-9549-0814250f86a2.jpg)
 
 
 
@@ -362,8 +362,6 @@ target
 
 \-    CSS를 사용하여 테이블의 각 부분에 다른 스타일을 적용할 수 있어 편리함
 
-![img](UI:UX.assets/clip_image036.jpg)
-
  
 
 이미지 태그
@@ -374,7 +372,7 @@ target
 
 \-    여러 개의 ``<img>`` 태그를 사용하면 계속해서 오른쪽에 표시
 
-![img](UI:UX.assets/clip_image038.jpg)
+![clip_image038](https://user-images.githubusercontent.com/101630615/173340290-3970afe8-bc6b-485f-a0e2-04b345e4ad39.jpg)
 
 \-    image 폴더 생성 : 이미지 파일 저장
 
@@ -396,15 +394,11 @@ target
 
 \-    ``<img src="사진.jpg">``
 
-![img](UI:UX.assets/clip_image040.jpg)
-
 (2) 하위 폴더에 있는 경우
 
 \-    폴더명/이미지 파일명
 
 \-   `` <img src="images/사진.jpg">``
-
-![img](UI:UX.assets/clip_image042.jpg)
 
  
 
@@ -413,8 +407,6 @@ target
 \-    ../폴더명/이미지파일명
 
 \-    ``<img src="../images/사진.jpg">``
-
-![img](UI:UX.assets/clip_image044.jpg)
 
  
 
@@ -426,17 +418,17 @@ target
 
 \-    각 영역마다 다른 링크 연결
 
-![img](UI:UX.assets/clip_image048.jpg)
+![clip_image048](https://user-images.githubusercontent.com/101630615/173340293-327c51d8-6579-4037-9497-17d1df5073d0.jpg)
 
-\-    <img> 태그의 usemap 속성 사용
+\-    ``<img>`` 태그의 usemap 속성 사용
 
 \-    이미지 맵 지정
 
 \-    사용 방법
 
-\-    <map> 태그를 이용해 이미지 맵을 만들고
+\-    ``<map>`` 태그를 이용해 이미지 맵을 만들고
 
-\-    <img> 태그의 usemap 속성으로 이미지 맵 지정
+\-    ``<img>`` 태그의 usemap 속성으로 이미지 맵 지정
 
 \-    이미지 좌표 값 필요
 
@@ -448,7 +440,7 @@ target
 
 \-    현재 html 문서 내에 다른 문서 포함 
 
-![img](UI:UX.assets/clip_image050.jpg)
+![clip_image050](https://user-images.githubusercontent.com/101630615/173340296-c69ac2c4-30dc-4622-a687-5717e246016e.jpg)
 
 오디오 태그 : ``<audio>``
 
@@ -512,7 +504,7 @@ target
 
 \-    Web Video Text Tracks 
 
-![img](UI:UX.assets/clip_image052.jpg)
+![clip_image052](https://user-images.githubusercontent.com/101630615/173340298-e7761272-76b4-4046-bdcc-9a219ea09f4a.jpg)
 
  
 
@@ -536,7 +528,7 @@ target
 
 \-    입력 양식을 구성하는 기본 골격 제공
 
-![img](UI:UX.assets/clip_image054.jpg)
+![clip_image054](https://user-images.githubusercontent.com/101630615/173340299-291d8f7c-451a-4127-984e-a4f418c7e677.jpg)
 
 ``` 
  <form method="post" action="join.jsp">
@@ -570,11 +562,11 @@ target
 
 #### ``<input>`` 태그 속성
 
-![img](UI:UX.assets/clip_image056.jpg)
+![clip_image056](https://user-images.githubusercontent.com/101630615/173340301-3050836c-07cc-421c-8a92-a588b1bc2717.jpg)
 
 #### ``<input>`` 태그의 type 속성에서 사용 가능한 유형
 
-![img](UI:UX.assets/clip_image058.jpg)
+![clip_image058](https://user-images.githubusercontent.com/101630615/173340305-6f74b5d7-b433-4609-b2cb-d5950cd9ad8e.jpg)
 
  
 
@@ -590,9 +582,7 @@ target
 
 
 
-\-    ![img](UI:UX.assets/clip_image060.jpg)
-
- 
+![clip_image060](https://user-images.githubusercontent.com/101630615/173340309-53a21e0f-eeb2-49b8-8bce-740ea50a9977.jpg) 
 
  
 
@@ -608,7 +598,7 @@ target
 
 
 
-![img](UI:UX.assets/clip_image062.jpg)
+![clip_image062](https://user-images.githubusercontent.com/101630615/173340311-d2b20f7e-b2ea-437c-adcf-1f7dedf413c5.jpg)
 
  
 
@@ -628,7 +618,7 @@ target
 
 
 
-![img](UI:UX.assets/clip_image064.jpg)
+![clip_image064](https://user-images.githubusercontent.com/101630615/173340312-1dc205a1-f576-4f92-8412-a10c5cd7bfd6.jpg)
 
 
 
@@ -644,7 +634,7 @@ target
 
 
 
-![img](UI:UX.assets/clip_image066.jpg)
+![clip_image066](https://user-images.githubusercontent.com/101630615/173340315-b01678e8-3c14-477e-91de-80bab9d54848.jpg)
 
  
 
@@ -676,13 +666,14 @@ target
 
 \-    inline 형식으로 공간 분할 
 
-![img](UI:UX.assets/clip_image070.jpg)
+![clip_image070](https://user-images.githubusercontent.com/101630615/173340316-4fb16f30-ce30-4475-8a44-05addbf6e4fe.jpg)
 
  
 
-<div> 중첩 사용
+#### ``<div>`` 중첩 사용
 
-![img](UI:UX.assets/clip_image072.jpg)
+
+![clip_image072](https://user-images.githubusercontent.com/101630615/173340319-9f76cc2c-7af0-4f5a-a1fe-da9c923180f1.jpg)
 
  
 
@@ -714,9 +705,11 @@ target
 
 #### HTML5 웹 표준 문서 구조
 
-![img](UI:UX.assets/clip_image074.jpg)
+![clip_image074](https://user-images.githubusercontent.com/101630615/173340320-72d1ead6-a6f4-412b-9ba9-d22f2abfd57b.jpg)
 
-![img](UI:UX.assets/clip_image076.jpg)
+
+
+![clip_image076](https://user-images.githubusercontent.com/101630615/173340323-ff14fded-6d00-4c6f-b690-0e33cc95941c.jpg)
 
  
 
@@ -766,7 +759,7 @@ target
 
  
 
-![img](UI:UX.assets/clip_image078.jpg)
+![clip_image078](https://user-images.githubusercontent.com/101630615/173340324-4849a3bc-ef5b-4a08-a30a-1c7308bad55c.jpg)
 
  
 
