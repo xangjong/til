@@ -3,7 +3,7 @@
 >  ### Bootstrap Framework
 
 - jQuery 기반의 HTML5 Web Framework
-- HTML, CSS, JS 라이브러리
+- HTML, CSS,  JS 라이브러리
 - 프론트엔드(웹 브라우저)에서 작동되는 프레임워크 
 - 트위터에서 사용하던 각종 레이아웃, 버튼, 입력 요소 등의 UI 요소들을 누구나 사용할 수 있도록 만들어진 오픈 소스 프레임워크
 - HTML/CSS 기반의 템플릿 양식, 버튼, 내비게이션 등 다양한 UI 요소 포함
@@ -23,8 +23,6 @@
   - 내비게이션바, 탭, 버튼 등의 기능을 간단하게 수정해서 사용 가능
 - 자바스크립트 기능
   - 사용자의 액션과 상호작용하는 기능 제공
-
-
 
 > #### Bootstrap 장점
 
@@ -51,7 +49,7 @@
   - 링크를 통해 서버에서 제공 받는 방법
 
 - Bootstrap 다운로드 : 4.61 버전으로 다운로드
-- jQuery 다운로드 : https:jquery.com
+- jQuery 다운로드 : https://jquery.com/
 - 프로젝트 생성 : Bootstrap01
 - Bootstrap 압축 해제한 후
   - css와 js 폴더 복사해서 

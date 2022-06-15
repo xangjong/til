@@ -174,8 +174,10 @@ h3 {
 ```
 태그명 [속성 = "값"]
 : 일치하는 값
+
 태그명 [속성 ^= "값"]
 : 시작하는 값
+
 태그명 [속성 $= "값"]
 : 끝나는 값
 ```
@@ -188,13 +190,15 @@ h3 {
 - 선택자 :``checked``   -  체크된 input 태그 선택
 - 선택자 :``focus`` -  포커스를 받은 input 태그 선택
 - 선택자 :``enabled`` -  사용 가능한 input 태그 선택
-- 선택자 :``disabled`` -  사용 불가능한input 태그 선택
+- 선택자 :``disabled`` -  사용 불가능한 input 태그 선택
+
+
 
 
 
 ### CSS 속성
 
-
+<hr>
 
 #### 텍스트 속성
 
@@ -256,7 +260,9 @@ h3 {
 
 ```
 list-style-type : none;
+
 list-style-type : square;
+
 	ul li { display:inline; }
 ```
 
@@ -331,7 +337,7 @@ list-style-type : square;
 }
 ```
 
-<img  alt="image-20220614135345753" src="https://user-images.githubusercontent.com/101630615/173539984-83eb5629-d396-4976-a5e5-6e335d879851.png">
+<img width="200" alt="image-20220614135345753" src="https://user-images.githubusercontent.com/101630615/173539984-83eb5629-d396-4976-a5e5-6e335d879851.png">
 
 
 
@@ -349,7 +355,7 @@ list-style-type : square;
 
 
 
-<img  alt="image-20220614135528047" src="https://user-images.githubusercontent.com/101630615/173539986-03178521-0855-4a7e-a420-c2f587a55dea.png">
+<img width="300" alt="image-20220614135528047" src="https://user-images.githubusercontent.com/101630615/173539986-03178521-0855-4a7e-a420-c2f587a55dea.png">
 
 
 
@@ -369,7 +375,7 @@ list-style-type : square;
 }
 ```
 
-<img  alt="image-20220614135602445" src="https://user-images.githubusercontent.com/101630615/173539989-a0cd8bda-ca46-44fc-b12e-2ce4791a669d.png">
+<img width="200" alt="image-20220614135602445" src="https://user-images.githubusercontent.com/101630615/173539989-a0cd8bda-ca46-44fc-b12e-2ce4791a669d.png">
 
 
 
@@ -399,7 +405,7 @@ list-style-type : square;
 
 
 
-<img  alt="image-20220614135315522" src="https://user-images.githubusercontent.com/101630615/173539976-d4b24063-1672-447e-9554-396998652165.png">
+<img width="600" alt="image-20220614135315522" src="https://user-images.githubusercontent.com/101630615/173539976-d4b24063-1672-447e-9554-396998652165.png">
 
 #### 자식 / 자손 선택자 (상속 선택자)
 
@@ -423,7 +429,7 @@ list-style-type : square;
 #### ``<table>`` 태그에 자식 선택자 사용 시 주의
 
 - ``table > tr > th { color : green; }`` : 적용 안 됨
-- 개발자 도구에서 Elements 확인 시 ``<tbody>``태그 존재
+- 개발자 도구에서 Elements 확인 시 **``<tbody>``**태그 존재
 - ``table > body > tr > th { color : green; }`` : 적용됨
 - 자식 선택자 사용보다는 자손 선택자 사용 추천
 
@@ -431,23 +437,30 @@ list-style-type : square;
 
 #### first-child 선택자
 
-- ``.wrap div:first-child``
-- ``.wrap div:first-child + div``
+```
+.wrap div:first-child
+
+.wrap div:first-child(1)+ div
+```
 
 
 
 #### nth-child(숫자)
 
-- ``.wrap div:nth-child(1)``
-- ``.wrap div:nth-child(2)``
-- ``.wrap div:nth-child(3)``
+```
+.wrap div:nth-child(1)
+
+.wrap div:nth-child(2)
+
+.wrap div:nth-child(3)
+```
 
 
 
 #### 동적(반응) 선택자
 
-- 선택자 :active - 마우스를 클릭한 태그 선택
-- 선택자 :hover - 마우스를 올린 태그 선택
+- 선택자 ``:active`` - 마우스를 클릭한 태그 선택
+- 선택자 ``:hover`` - 마우스를 올린 태그 선택
 
 
 
@@ -498,17 +511,15 @@ list-style-type : square;
 #### Overflow 속성
 
 - 자식 요소가 부모 요소의 범위를 벗어났을 때
-
 - 어떻게 처리할 것인지 지정
-
 - hidden
   - 부모 영역을 벗어나는 부분은 보이지 않게 처리
-
 - scroll
   - 스크롤바 표시 (가로 / 세로)
-
 - auto
   - 자동으로 필요한 부분에만 스크롤바 표시
+
+
 
 #### 투명도(불투명도) / 가시성
 
@@ -537,14 +548,22 @@ list-style-type : square;
 ```
 box-shadow: none | x-position y-position blur spread color | inset | initial | inherit
 
-none : 그림자 효과를 없음
+none : 그림자 효과 없음
+
 x-position : 가로 위치. 양수면 오른쪽, 음수면 왼쪽. (필수)
+
 y-position : 세로 위치. 양수면 아래쪽, 음수면 위쪽. (필수)
+
 blur : 그림자를 흐릿하게 만듦. 값이 클 수록 더욱 흐려짐.
+
 spread : 양수면 그림자를 확장하고, 음수면 축소
+
 color : 그림자 색상 지정
+
 inset : 그림자를 요소의 안쪽에 만듦
+
 initial : 기본값으로 설정
+
 inherit : 부모 요소의 속성값을 상속받음
 ```
 
@@ -655,7 +674,7 @@ background-image : url('/파일명.파일형식');
 - 가변 영역
 - 가변 폰트
 - 가변 마진 / 패딩
-- 멀미디어 요소 가변적 작동
+- 멀티 미디어 요소 가변적 작동
 
 ##### 가변 폰트
 
@@ -706,10 +725,12 @@ background-image : url('/파일명.파일형식');
 
 [미디어 유형] : 생략 가능
 : all, print, screen, tv, projection
-생략 시 allfh 적용
+생략 시 all 적용
 스마트 기기는 screen 사용
+
 (조건문)
 :	조건문이 사실인 경우 뒤에 오는 것을 해석
+
 {실행문}
 :	css 코드로 작성
 
@@ -725,7 +746,7 @@ background-image : url('/파일명.파일형식');
 - max 접두사는 반드시 크기가 큰 순서대로 작성
   - 순서가 중요한 이유
     - min은 최소 또는 그 이상이라는 뜻으로 점차 커지는 것을 의미
-    - max는 최대 또는 그 이하이라는 뜻으로 점차 작아지는 것을 의미
+    - max는 최대 또는 그 이하라는 뜻으로 점차 작아지는 것을 의미
   - 미디어 쿼리를 사용해서 브라우저의 크기를 감지할 때는 HTML 문서 크기를 기준으로 감지
 
 
@@ -818,6 +839,7 @@ no로 설정시, 사용자가 페이지 확대할 수 없음
 ```
 display: flex;  
 : 수직 정렬
+
 display: inline-flex; 
 : 수평 정렬
 ```
