@@ -781,7 +781,7 @@ no로 설정시, 사용자가 페이지 확대할 수 없음
 - 가변적인 박스를 간단하게 만들어줄 뿐 아니라 박스를 쉽게 배치할 수 있다는 장점
 - 플렉서블 박스의 특정 속성값을 설정하여, 여러 박스의 높이/길이/위치/배치 순서 등이 유연하게 작동하는 박스를 간단하게 만들 수 있음
 
-<img alt="image-20220615151855126" src="https://user-images.githubusercontent.com/101630615/173774242-0818d61e-d7c3-4910-8dda-55b3f7546b67.png">
+<img width=80% alt="image-20220615151855126" src="https://user-images.githubusercontent.com/101630615/173774242-0818d61e-d7c3-4910-8dda-55b3f7546b67.png">
 
 #### 구성
 
