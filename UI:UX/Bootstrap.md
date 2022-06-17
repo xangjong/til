@@ -102,7 +102,7 @@
 
 <img alt="image-20220615165125944" src="https://user-images.githubusercontent.com/101630615/173782299-2c3a1f75-5bb1-43ff-8273-c0dbd5696ad2.png">
 
-더 많은 컬러 참고 : https://somgle.tistory.com/123
+더 많은 컬러 참고 : [https://somgle.tistory.com/123](https://somgle.tistory.com/123)
 
 
 

@@ -120,6 +120,4 @@ echo $PATH
 
 
 
-[출처] : https://abit.ly/f6nwdr  
-
-​		https://abit.ly/nx0k98
+[출처] : [https://abit.ly/f6nwdr]( https://abit.ly/f6nwdr  )  , [https://abit.ly/nx0k98](https://abit.ly/nx0k98)
