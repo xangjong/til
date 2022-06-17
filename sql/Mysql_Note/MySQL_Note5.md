@@ -122,22 +122,6 @@ String pwd = “1234”;
 DriverManager.getConnection(url, user, pwd);
 ```
 
-\-   jdbc:mysql : JDBC 드라이버
-
-\-   jdbc : JDBC URL의 프로토콜 이름
-
-\-   mysql: MySQL JDBC 드라이버
-
-\-   localhost : MySQL이 설치된 IP (호스트 이름)
-
-\-   localhost
-
-\-   127.0.0.1
-
-\-   3306 : MySQL 접속 포트
-
-\-   sqldb3 : 사용하는 데이터베이스(스키마) 이름
-
 
 
 3.  Statement 객체 생성
