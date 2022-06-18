@@ -210,3 +210,27 @@ System.arrayCopy(원본배열, 시작인덱스, 대상배열, 시작인덱스, �
 
 <img width="600" alt="image-20220618230403390" src="https://user-images.githubusercontent.com/101630615/174442421-55ddba5b-9732-4ffb-a880-5959908f3700.png">
 
+
+
+# 객체 배열
+
+하나의 배열로 객체 관리
+
+ 객체 배열 : 객체를 가리키기 위한 레퍼런스 배열
+
+-	객체를 가리키는 레퍼런스를 원소로 갖는 배열
+
+-	``Person[] p = new Person[5]; ``   // 레퍼런스(참조 변수) 5개 생성
+
+<img width="350" alt="image-20220619025338437" src="https://user-images.githubusercontent.com/101630615/174450741-5c7e7731-4dd6-4e39-b47a-63476035c513.png">
+
+-	``p[i] = new Person();``  // 객체 생성
+-	객체 생성되고 레퍼런스 배열의 각 원소가 객체를 가리킴
+
+<img width="400" alt="image-20220619025350611" src="https://user-images.githubusercontent.com/101630615/174450742-6ab24ac1-9958-4e15-989b-178dbbfc5364.png">
+
+p : 레퍼런스 배열을 가리키는 참조 변수
+p[i] : 객체를 가리키는 참조 변수
+
+<img width="500" alt="image-20220619030650887" src="https://user-images.githubusercontent.com/101630615/174451165-fd37a911-3a50-4393-a592-11f675b29cb5.png">
+
