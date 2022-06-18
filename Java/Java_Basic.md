@@ -104,16 +104,6 @@
 
 #### 자바 응용프로그램 종류
 
-\-   데스크톱 응용프로그램
-
-\-   애플릿(Applet) 응용프로그램
-
-\-   자바 서블릿(servlet) 응용프로그램
-
-\-   모바일 응용프로그램
-
- 
-
 ##### 데스크톱 응용프로그램
 
 \-   PC 등의 데스크톱 컴퓨터에 설치되어 단독으로 실행
@@ -186,21 +176,24 @@
 
 **JDK (Java Development Kit) 구성 내용**
 
-\- **컴파일러**
+```
+자바 응용프로그램을 개발하는데 필요한 도구
 
-\- **자바 응용프로그램을 개발하는데 필요한 도구**
+컴파일 : 고급언어를 컴퓨터가 이해할 수 있는 기계어로 변환
 
-\- **컴파일 : 고급언어를 컴퓨터가 이해할 수 있는 기계어로 변환**
+컴파일러 : 컴파일을 수행하는 프로그램
 
-\- **컴파일러 : 컴파일을 수행하는 프로그램**
+자바 가상 기계 (Java Virtual Machine – JVM)
 
-\- **자바 가상 기계 (Java Virtual Machine – JVM)**
+자바 응용프로그램이 실행될 때 필요
 
-\- **자바 응용프로그램이 실행될 때 필요**
+JRE (Java Run-time Environment)
+표준 클래스 파일 포함
+```
 
-\-   JRE (Java Run-time Environment)
 
-\- **표준 클래스 파일 포함**
+
+
 
  
 
@@ -250,35 +243,39 @@ jdb : 실행 중 오류를 찾는데 사용하는 디버거
 
 **자바 소스 파일, 리소스(이미지, 동영상 등), 클래스 파일 등 관리**
 
-\-   메뉴 : File / New / Java Project
+```
+메뉴 : File / New / Java Project
 
-\-   Project name : TestProject  (대문자 시작)
+Project name : TestProject  (대문자 시작)
 
-\-   Module : Create module-info java file 체크 해제
+Module : Create module-info java file 체크 해제
 
-\-   Finish
+Finish
+```
 
- 
+
 
 (2)     (패키지 추가 후) 자바 클래스 추가
 
-\-   패키지 생성하지 않을 시 클래스 생성 : default package 사용
+```
+패키지 생성하지 않을 시 클래스 생성 : default package 사용
 
-\-   메뉴 : New / Class
+메뉴 : New / Class
 
-\-   Name : Test (대문자로 시작)
+Name : Test (대문자로 시작)
 
-\-   main() 메소드 포함 
+main() 메소드 포함 
 
-\-  public static void main(String[] args) 체크
+public static void main(String[] args) 체크  
 
-\-   Finish
+Finish
+```
 
  
 
 (3)     코드 입력
 
-System.out.println(“test 입니다”);
+``System.out.println(“test 입니다”);``
 
  
 
@@ -296,31 +293,31 @@ System.out.println(“test 입니다”);
 
 - main() 메소드
 
-​	\-   자바 응용프로그램 실행은 main()부터 시작
+​	\-  자바 응용프로그램 실행은 main()부터 시작
 
 ​	\- 프로그램을 실행할 때 ‘java.exe’에 의해 호출될 수 있도록 미리 약속된 부분
 
-​	\- public static void main(String[] args)
+​	-  ``  public static void main(String[] args)``
 
 ​	\- 항상 동일하게 작성
 
-- public
+- ``public``
 
 ​	\- 다른 클래스에서 main() 메소드에 접근 허용 (실행 시 자바 가상 기계가 호출할 수 있도록 접근 허용)
 
-- static
+- ``static``
 
 ​	\- 객체 생성(인스턴스) 생성하지 않고도 호출 가능
 
 ​	\- main() 메소드가 포함된 클래스의 객체(인스턴스)가 생성되기 전에 자바 가상 기계가 호출해야 하므로 static으로 선언)
 
-- void
+- ``void``
 
 ​	\- 반환(return)값 없음을 의미
 
 ​	\- 작업 수행하고 메소드 종료
 
-- (String[] args)
+- ``(String[] args)``
 
 ​	n main() 호출하면서 전달되는 값을 받는 매개변수로 문자열 배열
 
@@ -329,8 +326,6 @@ System.out.println(“test 입니다”);
 ​	\-   클래스마다 main() 메소드 존재할 수 있지만
 
 ​	\-   .java 파일명과 동일한 public 클래스의 main()에서부터 실행 시작
-
- 
 
 하나의 java 파일에 여러 개의 클래스 존재 가능
 
@@ -346,9 +341,9 @@ public 클래스는 하나만 존재 – 이 public 클래스 이름이 파일�
 
 \-   프로그램 실행에 영향 없음
 
-\-   코드가 1줄인 경우 주석 : //
+\-   코드가 1줄인 경우 주석 : ``//``
 
-\-   여러 행인 경우 주석 : /*  ……. */
+\-   여러 행인 경우 주석 : ``/*  ……. */``
 
 \-   블록 주석 설정 : Ctrl + Shift + /
 
@@ -392,13 +387,15 @@ public 클래스는 하나만 존재 – 이 public 클래스 이름이 파일�
 
 \-   클래스, 메소드, 반복문, 조건문에서 영역 범위 표시
 
-\-   public class Hello {
+```
+public class Hello {
 
 }
 
-\-   public static void main(String[] args) {
+public static void main(String[] args) {
 
 }
+```
 
  
 
