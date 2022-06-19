@@ -1,4 +1,4 @@
-# MySQL Mac jdbc 드라이버 다운로드
+# [MySQL] Mac jdbc 드라이버 다운로드
 
 [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/) 사이트에 접속합니다.
 

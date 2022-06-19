@@ -1,4 +1,6 @@
-# 자바스크립트(JavaScript)
+
+
+# [JavaScript] Basic
 
 - 자바스크립트 기본 구조
 - 데이터 입력 / 출력

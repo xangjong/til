@@ -1,4 +1,6 @@
-# 조인 (JOIN)
+
+
+# [MySQL] 조인 (JOIN)
 
 
 

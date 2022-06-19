@@ -1,4 +1,4 @@
-# Bootstrap (부트스트랩)
+# [Bootstrap]
 
 >  ### Bootstrap Framework
 

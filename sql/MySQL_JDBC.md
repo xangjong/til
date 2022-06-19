@@ -1,4 +1,6 @@
-# JDBC 개요
+
+
+# [MySQL] JDBC 
 
  
 

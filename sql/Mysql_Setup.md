@@ -1,4 +1,4 @@
-# MySQL 설치
+# [MySQL] 설치
 
 > Homebrew 패키지를 다운로드 후 설치 
 
