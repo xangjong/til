@@ -32,7 +32,7 @@
 - Navigator 객체만 제외하고 모든 객체는 window 객체를 통해서 접근하여 사용
 - 그러나 사용시 window는 생략 가능
 
-```
+```js
 window.document.pic.src = “a.jpg”;
 
 document.pic.src = “a.jpg”;
@@ -40,7 +40,7 @@ document.pic.src = “a.jpg”;
 
 문서 내에서 name 속성이 pic인 객체의 src 속성
 
-`````
+`````html
 <img name="pic" src="a.jpg">
 `````
 
@@ -62,7 +62,7 @@ document.pic.src = “a.jpg”;
 
 #### window 객체의 ``open()`` 메소드
 
-```
+```js
 window.open(“URL”, “창이름”, “창 속성”);
 ```
 
@@ -73,7 +73,7 @@ window.open(“URL”, “창이름”, “창 속성”);
 - 창이름 : 새로 만들어지는 창 이름
 - 창 속성 : 창의 모양이나 특징
 
-```
+```js
 window.open(“test.html”, “test”, “width=200, height=200, status=yes, scrollbars=yes, resizable=yes”);  
 
 : test.htm 문서를 새창에서 열기
@@ -83,7 +83,7 @@ window.open(“test.html”, “test”, “width=200, height=200, status=yes, s
 
 #### 타이머 설정  : ``setTimeout()``
 
-```
+```js
 setTimeout(‘호출함수’, 지연시간)
 
 예: setTimeout(‘winClose()’, 1000);
@@ -96,7 +96,7 @@ setTimeout(‘호출함수’, 지연시간)
 
 #### 타이머 해제 : ``clearTimeout(타이머ID)``
 
-```
+```js
 타이머ID = setTime(‘호출함수’, 지연시간);
 
 setTimeout() 메소드가 반환하는 타이머ID를 받아서 타이머ID에 해당되는 타이머 설정 해제
@@ -106,7 +106,7 @@ setTimeout() 메소드가 반환하는 타이머ID를 받아서 타이머ID에 �
 
 #### 타이머 설정 : ``setInterval()``
 
-```
+```js
 setInterval(‘호출함수’, 지연시간)
 : 일정 시간 간격 안에 반복 실행
 
@@ -118,7 +118,7 @@ setInterval(‘호출함수’, 지연시간)
 
 #### 타이머 해제 : ``clearInterval(타이머ID);``
 
-```
+```js
 타이머ID = setInterval(‘호출함수’, 지연시간)
 : 시간 설정한 것 해제
 ```
@@ -133,7 +133,7 @@ setInterval(‘호출함수’, 지연시간)
 
 ### 메소드
 
-```
+```js
 back() : 이전에 열었던 페이지로 이동
 
 forward() : 이전 페이지로 이동 후 다시 앞으로 이동
@@ -222,7 +222,7 @@ go(-2) : 2단계 다음 페이지로 이동
   - id를 통해 문서 내에서 요소(태그)를 참조하는 메소드
   - 지정한 id 속성값을 갖는 개체 중 첫 번째 개체 참조
 
-```
+```js
 var 참조변수 = document.getElementById('abc');
 
 <xxx id = "abc"...>;
@@ -234,7 +234,7 @@ var 참조변수 = document.getElementById('abc');
 - 문서 내의 모든 요소를 배열 컬렉션으로 전달받아서 참조할 수 있게 해주는 메소드
 - 참조 값들은 배열로 만들어져서 전달
 
-```
+```js
 var tdArr = document.getElementsByTagName(‘td’);
 ```
 
@@ -261,7 +261,7 @@ var tdArr = document.getElementsByTagName(‘td’);
 
 ### 이벤트 리스너
 
-```
+```js
 객체.addEventListner(‘이벤트명’, function() {
 });
 
@@ -289,7 +289,7 @@ var tdArr = document.getElementsByTagName(‘td’);
 #### 폼 객체 사용 방법
 (1) 태그의 name 속성을 객체로 사용하는 경우
 
-```
+```html
 <form name=”joinForm”>
 <input type=”text” name=”id”>
 joinForm.id.focus();
@@ -297,7 +297,7 @@ joinForm.id.focus();
 
 (2) 문서 객체 모델(DOM) 방식을 사용하는 경우
 
-```
+```js
 <input type=”text” id=”name”>
 var name = document.getElementById(‘name’);
 name.focus();
@@ -321,7 +321,7 @@ name.focus();
 - checked 속성이 true면 체크된 상태
 - false면 체크되지 않은 상태
 
-```
+```js
 for(var i=0; i<joinForm.emailRcv.length; i++){
 	if(joinForm.emailRcv[i].checked == true)
 }
@@ -329,7 +329,79 @@ for(var i=0; i<joinForm.emailRcv.length; i++){
 
 미리 선택되어 있다면 유효성 검사 필요X : checked
 
-```
+```html
 <input type = "radio" name ="emailRcv" value ="yes">예
 <input type = "radio" name ="emailRcv" value ="no">아니오
 ```
+
+
+
+#### 사용자 정의 객체
+
+- 사용자가 직접 필요한 객체 생성
+- 객체의 멤버 : 속성 / 메소드
+  - 속성 : 데이터
+  - 메소드 : 기능(작업)
+
+
+
+#### 사용자 정의 객체 생성 방법 
+
+1. 리터럴 이용하여 객체 생성
+
+<img width="400" alt="image-20220621193452456" src="https://user-images.githubusercontent.com/101630615/174780410-8c4faffb-ad7b-4d67-a10b-3a64671f06ef.png">
+
+
+
+2. 생성자 함수 (function) 이용
+
+- 함수 선언과 같은 방식으로 ``function`` 키워드 사용하여 선언
+- 함수를 클래스처럼 사용
+  - ``function 함수명() {..}`` : 생성자 기능
+- this.property 사용
+- new 연산자 사용해서 객체 생성
+
+<img width="400" alt="image-20220621194017737" src="https://user-images.githubusercontent.com/101630615/174780931-1e2130f6-a6bb-4900-8fa6-d60cbc727aeb.png">
+
+
+
+3. new Object() 이용 (ES5에 추가)
+
+<img width="400" alt="image-20220621193632671" src="https://user-images.githubusercontent.com/101630615/174780393-5fbac058-ec3a-42f4-a877-93ee191c36b9.png">
+
+4. class 정의하고 객체 생성(ES6에 추가)
+
+- class 키워드 사용
+- 생성자 / Getters / Setters 가능
+- 호이스팅 불가
+
+
+
+### Json 처리 방법
+
+#### JSON (JavaScript Object Notation)
+- 자바스크립트 객체 표기법
+- key와 value  값이 쌍으로 구성된 형태의 객체 표기법
+- 클라이언트와 서버 사이에서 데이터 교환 목적으로 사용
+- 웹 서버에서 수신하는 데이터는 문자열인데, 문자열 데이터를 JSON 파싱 함수를 사용해서 
+- 파싱하면 자바스크립트 객체로 변환 가능
+- 최근의 브라우저들은 전부 내장 객체로 JSON 변환 기능 지원
+
+#### 제이슨 데이터 형식
+
+``{key:value} : {“name”:”홍길동”}``
+
+
+
+#### 메소드
+
+- ``JSON.stringify()``
+
+  - 자바스크립트 객체를 JSON data로 변환
+
+- ``JSON.parse()``
+
+  - JSON  data를 자바스크립트 객체로 변환
+
+    
+
