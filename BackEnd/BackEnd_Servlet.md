@@ -395,3 +395,93 @@
 -	doGet() 또는 doPost() 메소드에서 doHandle() 호출하고 request와 response 객체 전달
 -	doHandle() 메소드에서 처리
 
+
+
+
+
+#### 자바스크립트로 서블릿에 요청 
+
+- DOM 사용
+
+```java
+	<script type="text/javascript">
+		/* 자바 스크립트로 서블릿에 요청 DOM 사용 */
+			window.onload=function(){
+			var frmLogin = document.getElementById("frmLogin");
+			
+			frmLogin.onsubmit = function(){
+				// id : 참조객체변수
+				// user_id : 태그의 id 속성값
+				var id = document.getElementById("user_id");
+				var pw = document.getElementById("user_pw");
+				
+				if(id.value =="" || pw.value == ""){
+					alert("아이디와 비밀번호는 필수입니다.");
+					return false;
+				} else {
+					frmLogin.method ="post";
+					frmLogin.action ="loginJs";
+					frmLogin.submit();
+				}
+			}; // onsubmit 끝 
+			
+		}; // window.onload 끝
+```
+
+
+
+#### name 속성 사용
+
+```java
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>로그인창</title>
+		<script type="text/javascript">
+			/* 자바스크립트로 서블릿에 요청 : name 속성 사용 */
+			function fn_validate() {
+				var frmLogin = document.frmLogin;
+				var id = frmLogin.user_id.value;
+				var pw = frmLogin.user_pw.value;
+				
+				if(id == "" || pw == ""){
+					alert("아이디와 비밀번호는 필수입니다2.");
+					return false;
+				} else {
+					frmLogin.method = "post";
+					frmLogin.action = "loginJs"; 
+					frmLogin.submit();
+				}
+			}
+			
+</script>
+```
+
+
+
+#### jQuery 사용해서 서블릿에 요청
+
+```java
+<script src = "jquery-3.6.0.min.js"></script>
+		<script type="text/javascript">
+		/* jQuery 사용 */
+			$(document).ready(function(){
+				$('#loginBtn').on('click',function(){
+					var id = $('#user_id').val();
+					var pw = $('#user_pw').val();
+					
+					if( id == "" || pw == ""){
+						alert("아이디와 비밀번호는 필수입니다.3");
+						return false;
+					} else {
+						$('#frmLogin').attr({
+							method:"post",
+							action:"loginJs"
+						}).submit();
+						
+						/* $('#frmLogin').attr('method', "post").attr('action', "loginJs").submit(); */
+					}
+			});
+});			
+```
