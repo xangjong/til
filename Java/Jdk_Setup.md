@@ -57,7 +57,7 @@ brew install --cask adoptopenjdk11
 3-1 버전 확인
 
 ```
-java --version 
+java -version 
 ```
 
 <img width="832" alt="java_version" src="https://user-images.githubusercontent.com/101630615/173240699-898a16b8-2c24-4d26-bc30-c2ca27ae3b1e.png">
