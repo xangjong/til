@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* section.css */
+
+#wrapper { background:#f8f9fa;}
+
+section { display:flex; 
+	justify-content:center; 
+	margin-top:3%; 
+}
+
+#loginBox {
+	text-align:center;
+	background:#fff;
+	border:0px solid #aaa;
+	border-radius:10px;
+	padding:3%;
+	width:33%;
+	height:auto;
+	line-height:auto;
+	box-shadow: 1px 1px 1px 4px #eee;
+	
+}
+
+#loginBox h1 { 
+	font-size:2em; 
+	font-weight:bold;
+	line-height:1.4;
+	margin-bottom:5px;
+}
+	
+
+#loginBox h2  { 
+	margin-left:32%;
+}
+
+#input { 
+	display:inline-block;
+	width:100%;
+}
+
+#input li:nth-child(1){
+	margin-top:40px;	
+}
+
+#input li:nth-child(2){
+	margin-top:40px;	
+}
+
+#input li:nth-child(3) {
+	margin-top:30px;
+	margin-bottom:30px;
+	width:100%;
+	
+}
+
+.btn-gradient  {
+	width:80%;
+}
+
+#textInput, #passInput { 
+	border:0px solid #000;
+	border-bottom:1px solid #aaa;
+	width:80%;
+	padding:10px 0;
+}
+
+
+
+#joinPass ul li { display:inline-block;
+	color:#808080;
+	height:auto;
+	line-height:auto;
+	padding:3px 5px;
+}
+
+#joinPass ul li a { 
+	color:#808080;
+	font-size:14px;
+}

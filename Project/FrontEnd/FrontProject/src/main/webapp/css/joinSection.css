@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* joinSection.css */
+
+/* 바디 설정 */
+#wrapper { background:#f8f9fa;}
+
+section { 
+	display:flex; 
+	justify-content:center; 
+	margin-top:3%; 
+}
+
+#loginBox {
+	text-align:center;
+	background:#fff;
+	border:0px solid #aaa;
+	border-radius:10px;
+	padding:3%;
+	width:33%;
+	height:auto;
+	line-height:auto;
+	box-shadow: 1px 1px 1px 4px #eee;
+	
+}
+
+/* 회원가입 글씨  */
+#loginBox h1 { 
+	font-size:2em; 
+	font-weight:bold;
+	line-height:1.4;
+	margin-bottom:5px;
+}
+	
+
+/* 회원가입 로고*/
+#loginBox h2  { 
+	/* width:133%; */
+	 margin-left:34%;
+}	
+
+/* 주의 사항 간격 조정*/
+#loginBox h4 {
+	margin:5% 0;
+}
+
+/* 주의 사항 강조 */
+#loginBox h4 span {
+	color:#4ba0b5;
+	font-weight:bold;
+	
+}
+
+
+/* 전체 틀 */
+#inputBox {
+	width:80%;
+	padding:0 3%;
+}
+
+/* 입력창 정렬 */
+.windowFontBox {
+	display:flex;
+	flex-direction:column;
+	margin-left:10%;
+	width:100%;
+	height:auto;
+	line-height:auto;
+}
+
+/* 창 정렬 설명 */
+.windowFontBox span {
+	margin-bottom:2%;
+	display:flex; 
+	align-items:center;
+	height:auto;
+	line-height:auto;
+}
+/* 전체 창 폭 설정 */
+#input li {
+	margin-top:10%;
+}
+
+/* 가입 버튼 설정 */
+#input li:last-child .btn-gradient {
+	width:100%;
+	margin-left:10%;
+}
+
+/* 이메일 박스 정렬 */
+#emailBox {
+	width:100%;
+	justify-content:space-between;
+	display:flex;
+	align-items:center;
+}
+
+/* 이메일 창 크기 */
+#emailInput {
+	width:100%;
+}
+
+/* 이메일 주소  */
+.emailSelect {
+	margin-left:12%;
+	margin-top:3%;
+	padding:0 22% 0 0;
+	color:#495057;
+}
+
+/* 확인 버튼 */
+#idBtn {
+	margin-top:5%;
+	line-height:70%;
+	height:70%;
+	width:30%;
+	padding:3% 5%;
+} 
+
+
+#pwMent { 
+	margin-top:2%;
+	font-size:12px; 
+	text-align:left;
+	color:#6c757d;
+}
+
+
+
+
+
+
+
+
