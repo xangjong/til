@@ -36,7 +36,7 @@ section {
 /* 회원가입 로고*/
 #loginBox h2  { 
 	/* width:133%; */
-	 margin-left:34%;
+	 margin-left:33%;
 }	
 
 /* 주의 사항 간격 조정*/
@@ -87,10 +87,18 @@ section {
 	margin-left:10%;
 }
 
+
 /* 이메일 박스 정렬 */
 #emailBox {
 	width:100%;
 	justify-content:space-between;
+	display:flex;
+	align-items:center;
+}
+
+
+#emailSelectBox {
+	width:100%;
 	display:flex;
 	align-items:center;
 }
@@ -108,8 +116,8 @@ section {
 	color:#495057;
 }
 
-/* 확인 버튼 */
-#idBtn {
+/* 이메일 확인 버튼 */
+#emailBtn {
 	margin-top:5%;
 	line-height:70%;
 	height:70%;

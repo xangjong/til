@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>회원가입 페이지</title>
-		<script src="jquery-3.6.0.min.js"></script>
-		<script type="text/javascript"></script>
+		<script src="../js/jquery-3.6.0.min.js"></script>
+		<script src="../js/join.js"></script>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../css/common.css">
 		<link rel="stylesheet" type="text/css" href="../css/MenuTab.css">
@@ -26,9 +26,9 @@
 				<a href="#">News</a>
 			</div>
 			<div id="login">
-				<a href="#">로그인</a>
+				<a href="login.html">로그인</a>
 				<a>|</a>
-				<a href="#">회원가입</a>
+				<a href="join.html">회원가입</a>
 			</div>
 		</header>
 		
@@ -37,8 +37,8 @@
 				<h1>회원가입</h1>
 				<h2><a href="#"><img src="../image/logo-w2.png"></a></h2>
 				<h4>
-					계정이 이미 있는 경우에는 <span class="colorFont">로그인</span>해주세요.<br><br>
-					가입을 하면 <span class="colorFont">WITH:US의 대발자 사이트의 이용약관</span>,<br><br>
+					계정이 이미 있는 경우에는 <a href="login.html"><span class="colorFont">로그인</span></a>해주세요.<br><br>
+					가입을 하면 <span class="colorFont">WITH:US의 개발자 사이트의 이용약관</span>,<br><br>
 					<span class="colorFont">개인정보취급방침</span>에 동의하게 됩니다.<br><br>
 					가입 후 아이디는 변경할 수 없습니다.
 				</h4>
@@ -50,8 +50,23 @@
 							<div class="windowFontBox">
 								<span>이름</span>
 								<input type="text" id="nameInput">
-							</div> <!-- "windowFontBox" -->
+							</div> <!-- "windowFontBox" -->	
 						</li> 
+						
+						<li>
+							<div class="windowFontBox">
+								<span>닉네임</span>
+								<input type="text" id="nicknameInput">
+							</div> <!-- "windowFontBox" -->
+						</li>
+						
+						
+						<li>
+							<div class="windowFontBox">
+								<span>아이디</span>
+								<input type="text" id="idInput">
+							</div> <!-- "windowFontBox" -->
+						</li>
 						
 						<li> 
 							<div id="emailBox">
@@ -60,7 +75,7 @@
 								<input type="text" id="emailInput">&nbsp;&nbsp;
 							</div> <!-- windowFontBox -->
 							
-							<div id="emailBox">
+							<div id="emailSelectBox">
 								<select class="emailSelect">
 									<option value="naver" selected>@naver.com</option>
 									<option value="daum">@daum.net</option>
@@ -69,16 +84,16 @@
 									<option value="gmail">@gmail.com</option>
 								</select>
 								&nbsp;&nbsp;
-								<input type="button" id="idBtn" class="btn-gradient cyan" value="확인">
-								</div>
-							</div>	
+								<input type="button" id="emailBtn" class="btn-gradient cyan" value="확인">
+								</div> <!-- emailSelectBox -->
+							</div>	<!-- emailBox  -->
 						</li>
 						
 						<li>
 							<div class ="windowFontBox"> 
 								<span>비밀번호</span>
-								<input type="password" id="passInput">
-								<a id="pwMent">8자~15자 이내, 영문,숫자,특수문자를 혼합하여 입력해주세요.</a> <!-- pwMent -->
+								<input type="password" id="pwInput">
+								<a id="pwMent">8자~20자 이내, 영문,숫자,특수문자를 혼합하여 입력해주세요.</a> <!-- pwMent -->
 							</div> <!-- windowFontBox -->
 							
 						</li>
@@ -86,11 +101,11 @@
 						<li>
 							<div class ="windowFontBox"> 
 								<span>비밀번호확인</span>
-								<input type="password" id="passConfirm">
+								<input type="password" id="pwCfmInput">
 							</div> <!-- windowFontBox -->
 						</li>
 						
-						<li><input type="button" class="btn-gradient cyan" value="가입하기"></li>
+						<li><input type="button" id="joinBtn" class="btn-gradient cyan" value="가입하기"></li>
 					</ul> <!-- input -->
 					</div> <!-- inputBox -->
 				</form>

@@ -58,13 +58,12 @@ section { display:flex;
 	width:80%;
 }
 
-#textInput, #passInput { 
+#emailInput, #pwInput { 
 	border:0px solid #000;
 	border-bottom:1px solid #aaa;
 	width:80%;
 	padding:10px 0;
 }
-
 
 
 #joinPass ul li { display:inline-block;

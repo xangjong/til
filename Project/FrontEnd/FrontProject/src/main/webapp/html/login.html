@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>로그인 페이지</title>
-		<script src="jquery-3.6.0.min.js"></script>
-		<script type="text/javascript"></script>
+		<script src="../js/jquery-3.6.0.min.js"></script>
+		<script src="../js/login.js"></script>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../css/common.css">
 		<link rel="stylesheet" type="text/css" href="../css/MenuTab.css">
@@ -27,9 +27,9 @@
 				<a href="#">News</a>
 			</div>
 			<div id="login">
-				<a href="#">로그인</a>
+				<a href="login.html">로그인</a>
 				<a>|</a>
-				<a href="#">회원가입</a>
+				<a href="join.html">회원가입</a>
 			</div>
 		</header>
 		
@@ -37,11 +37,11 @@
 			<div id="loginBox">
 				<h1>로그인</h1>
 				<h2><a href="#"><img src="../image/logo-w2.png"></a></h2>
-				<form>
+				<form name="loginForm" method="post">
 					<ul id="input">
-						<li><input type="text" id="textInput" placeholder="이메일 주소"></li>
-						<li><input type="password" id="passInput" placeholder="비밀번호"></li>
-						<li><input type="button" class="btn-gradient cyan" value="로그인"></li>
+						<li><input type="email" id="emailInput" placeholder="이메일 주소"></li>
+						<li><input type="password" id="pwInput" placeholder="비밀번호"></li>
+						<li><input type="button" id="loginBtn" class="btn-gradient cyan" value="로그인"></li>
 					</ul> <!-- input -->
 					
 				</form>
@@ -50,7 +50,7 @@
 					<ul>
 						<li><a href="#">아이디 찾기</a></li>
 						<li>|</li>
-						<li><a href="#">회원 가입</a></li>
+						<li><a href="join.html" id="join">회원 가입</a></li>
 					</ul>
 				</div> <!-- joinPass -->
 			</div><!--loginBox  -->
