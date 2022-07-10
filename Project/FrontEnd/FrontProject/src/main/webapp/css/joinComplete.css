@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* joinCompleteSection.css */
+
+/* 바디 설정 */
+#wrapper { /* background:#f8f9fa; */
+	background:#fff;
+}
+
+section { 
+	display:flex; 
+	justify-content:center; 
+	margin-top:3%; 
+}
+
+#loginBox {
+	text-align:center;
+	background:#fff;
+	/* border:0px solid #aaa; */
+	border-radius:10px;
+	padding:3%;
+	width:33%;
+	height:auto;
+	line-height:auto;
+	/* box-shadow: 1px 1px 1px 4px #eee; */
+	
+}
+
+/* 회원가입 완료  */
+#loginBox h1 { 
+	font-size:2em; 
+	font-weight:bold;
+	line-height:1.4;
+	margin-bottom:5px;
+}
+	
+
+/* 회원가입 로고*/
+#loginBox h2  { 
+	margin-top:3%;
+}
+/* 로고 이미지 사이즈 조정 */
+#loginBox h2 img {
+	width:12%;
+}
+
+/* 안내 간격 조정*/
+
+
+#joinMent {
+	margin:5% 0 1% 0;
+}
+
+#loginBox ul li a {
+	font-size:1.50em;
+}
+
+/* 주의 사항 강조 */
+#loginBox ul li a span {
+	color:#4ba0b5;
+	font-weight:bold;
+	
+}
+
+
+
+/* 로그인, 홈 버튼 */
+#loginHomeBtn {
+	display:flex;
+	justify-content:center;
+	
+}
+
+#loginHomeBtn li {
+	display:flex;
+	
+	height:70%;
+	line-height:70%;
+}
+

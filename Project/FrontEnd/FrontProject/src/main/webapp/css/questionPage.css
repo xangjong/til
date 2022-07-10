@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*********************** 섹션 ************************/
+section {
+	position: relative;
+	top:75px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+#bodyWrap {
+	width:60%;
+	height: 100%;
+	display: flex;
+}
+
+/********** 질문 박스 *********/
+#bodyWrap #questionBoxWrap{
+	width: 75%;
+}
+
+#bodyWrap #questionBoxWrap #slideShow{
+	width: 100%;
+	margin-top: 50px;
+	position: relative;
+}
+
+#questionBoxWrap #slideShow #prevNextButtonBox{
+	width: 90%;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5%;
+	margin-top: 150px;
+}
+
+#prevNextButtonBox .prevNextButton{
+	opacity: 0.5;
+	width: 60px;
+	z-index: 10;
+}
+#prevNextButtonBox .prevNextButton:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+#questionBoxWrap #slideShow #slideShowBox{
+	width: 650px;
+	height: 350px;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 20px;
+}
+
+#slideShowBox #slidePanel{
+	position: relative;
+	width: 3250px;
+	height: 350px;
+}
+
+#slideShowBox .animated{
+	transition: 0.5s ease-out;
+}
+
+#slideShowBox #slidePanel .slideImage {
+	width: 650px;
+	height: 350px;
+	float: left;
+}
+
+#questionBoxWrap #slideShow #controlPanel{
+	margin: auto;
+	width: 85px;
+}
+
+/****** 질문 게시글 *****/
+#questionBoxWrap #questionBox{
+	width: 100%;
+}
+
+#questionBox #arrayTitle{
+	margin: 50px 0 0 30px;
+}
+
+#questionBox .question{
+	width: 95%;
+	height: 150px;
+	border: 1px solid rgb(216, 216, 216);
+	border-radius: 20px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+/*********** 사이드박스 ********/
+#bodyWrap #sideBox{
+	width: 25%;
+}
+
+#sideBox #createQuestion button{
+	background-color: rgb(69, 170, 245);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin: 50px 0 0 35px;
+	width:80%;
+	height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#sideBox #createQuestion button:hover{
+	cursor: pointer;
+}
+
+#sideBox #hotQuestion{
+	position: sticky;
+	top: 75px;
+	margin: 50px 0 0 20px;
+}
+
+#sideBox #hotQuestion th{
+	border-bottom: 1px solid rgb(216, 216, 216)
+}

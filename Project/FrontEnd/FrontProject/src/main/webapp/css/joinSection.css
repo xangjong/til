@@ -3,7 +3,9 @@
 /* joinSection.css */
 
 /* 바디 설정 */
-#wrapper { background:#f8f9fa;}
+#wrapper { /* background:#f8f9fa; */
+	background:#fff;
+}
 
 section { 
 	display:flex; 
@@ -14,13 +16,13 @@ section {
 #loginBox {
 	text-align:center;
 	background:#fff;
-	border:0px solid #aaa;
+	/* border:0px solid #aaa; */
 	border-radius:10px;
 	padding:3%;
 	width:33%;
 	height:auto;
 	line-height:auto;
-	box-shadow: 1px 1px 1px 4px #eee;
+	/* box-shadow: 1px 1px 1px 4px #eee; */
 	
 }
 
@@ -35,9 +37,12 @@ section {
 
 /* 회원가입 로고*/
 #loginBox h2  { 
-	/* width:133%; */
-	 margin-left:33%;
-}	
+	margin-top:3%;
+}
+/* 로고 이미지 사이즈 조정 */
+#loginBox h2 img {
+	width:12%;
+}
 
 /* 주의 사항 간격 조정*/
 #loginBox h4 {
@@ -134,9 +139,26 @@ section {
 }
 
 
+/* 선 제거 아래 선만 표현 */
+#nameInput, #nicknameInput, #idInput, #emailInput, #pwInput, #pwCfmInput { 
+	border:0px solid #000;
+	border-bottom:1px solid #aaa;
+	width:100%;
+	padding:10px 0;
+}
 
 
 
+/* select 박스 테두리 제거 */
+.emailSelect{
+     -webkit-appearance: none;
+     border:none;
+     border:0;
+}
 
-
-
+/* 클릭 시 테두리 제거 */
+#nameInput:focus, #nicknameInput:focus, #idInput:focus, 
+#emailInput:focus, #pwInput:focus, #pwCfmInput:focus{ 
+	outline:none;
+	
+}

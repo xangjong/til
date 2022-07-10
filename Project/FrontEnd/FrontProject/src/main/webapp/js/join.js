@@ -139,7 +139,7 @@
 			return false;	
 		} // 회원가입 완료 시 
 		alert("회원가입 완료");
-		window.location.href="../index.html"; 
+		window.location.href="joinComplete.html"; 
 			
 		
 	}); // joinBtn 클릭 시 

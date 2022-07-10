@@ -16,7 +16,7 @@ a {
 /* Gradient buttons */
 .btn-gradient {
   margin: 5px;
-  color: white;	/* 버튼 텍스트 색상 */
+  color: #000;	/* 버튼 텍스트 색상 */
   padding: 5px 20px;
   border: 1px solid rgba(0,0,0,0.21);
   border-bottom: 4px solid rgba(0,0,0,0.21);
@@ -27,6 +27,7 @@ a {
 /* 버튼 색상 */
 .btn-gradient.cyan {
   background: rgba(27,188,194,1);
+  color:#fff;
 }
 
 .btn-gradient.red { 
@@ -54,6 +55,7 @@ a {
 }
 
 /* click 시 반영 */
+.btn-gradient:active {background:lightgray;}
 .btn-gradient.cyan:active   {background: #169499;}
 .btn-gradient.red:active    {background: #E35252;}
 .btn-gradient.orange:active {background: #E8601B;}
@@ -63,6 +65,11 @@ a {
 .btn-gradient.green:active  {background: #72B08E;}
 
 /* 마우스 올렸을 때 투명화 */
+.btn-gradient:hover {
+	opacity:0.7;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.33) inset, 0 0 2px 2px rgba(0, 0, 0, 0.33);
+}
+
 .btn-gradient.cyan:hover {
 	opacity:0.7;
     box-shadow: 0 0 2px 0 rgba(27,188,194,1) inset, 0 0 2px 2px rgba(27,188,194,1);

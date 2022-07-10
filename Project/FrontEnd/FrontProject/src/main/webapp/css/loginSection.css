@@ -2,7 +2,9 @@
 
 /* section.css */
 
-#wrapper { background:#f8f9fa;}
+#wrapper { /* background:#f8f9fa; */
+	background:#fff;
+}
 
 section { display:flex; 
 	justify-content:center; 
@@ -12,13 +14,13 @@ section { display:flex;
 #loginBox {
 	text-align:center;
 	background:#fff;
-	border:0px solid #aaa;
+	/* border:0px solid #aaa; */
 	border-radius:10px;
 	padding:3%;
 	width:33%;
 	height:auto;
 	line-height:auto;
-	box-shadow: 1px 1px 1px 4px #eee;
+	/* box-shadow: 1px 1px 1px 4px #eee; */
 	
 }
 
@@ -29,11 +31,17 @@ section { display:flex;
 	margin-bottom:5px;
 }
 	
-
+/* 로그인 로고*/
 #loginBox h2  { 
-	margin-left:32%;
+	margin-top:3%;
 }
 
+/* 로그인 로고 이미지 사이즈 조정 */
+#loginBox h2 img {
+	width:12%;
+}
+
+/* form 간격 조정 */
 #input { 
 	display:inline-block;
 	width:100%;
@@ -54,10 +62,12 @@ section { display:flex;
 	
 }
 
+/* 버튼 */
 .btn-gradient  {
 	width:80%;
 }
 
+/* 이메일, 패스워드 입력란*/
 #emailInput, #pwInput { 
 	border:0px solid #000;
 	border-bottom:1px solid #aaa;
@@ -65,7 +75,12 @@ section { display:flex;
 	padding:10px 0;
 }
 
+/* 테두리 제거 */
+#emailInput:focus, #pwInput:focus { 
+	outline:none;
+}
 
+/* 아이디 찾기, 회원가입 */
 #joinPass ul li { display:inline-block;
 	color:#808080;
 	height:auto;
@@ -73,6 +88,7 @@ section { display:flex;
 	padding:3px 5px;
 }
 
+/* 아이디 찾기, 회원가입 글씨 */
 #joinPass ul li a { 
 	color:#808080;
 	font-size:14px;

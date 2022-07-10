@@ -2,55 +2,79 @@
 
 /* footer.css */
 
-
+/* 헤더에서 섹션 푸터 영역 전까지 감싼 박스 */
 #bodyContent {
 	height: auto;
   min-height: 100%;
-  padding-bottom: 100%;
-}
-
-footer { 
-	position : relative;
-  	/* transform : translateY(-100%); */
-  	height:100%;
-  
+  padding-bottom:10%; /* 푸터 영역값 높이에 맞게 같이 설정 */
 } 
 
-#footetBox {
-	display:flex; justify-content:center;
-	background:#eee;
-	padding:20px;
+/* 푸터 */
+footer { 
+	position : relative; 
+  	/* transform : translateY(-100%); */
+  	height:10%; /* 푸터 영역 값 높이 설정*/
+}  
+
+
+/* 전체 ul Box */
+#footerulBox{
+	display:flex; 
+	justify-content:center;
+	padding:0.94em;
 }
 
+/* 로고 */
+#footerlogoImg {
+	width:9%;
+	margin-left:34%;
+	margin-top:2%;
+	
+}
 
-#withus { margin-right:5%; }
+/* 푸터 테두리 배경 */
+#footerBox {
+	background:#eee;
+}
+
+/* 간격 조정 */
+#withus { 
+	margin-right:5%; 
+}
 
 #siteMap {
 	margin-right:5%;
 }
 
+/* 제목 아래 구성글 */
 footer ul li { color:#808080;
-	padding:5px 7px;
+	padding:0.38em 0.44em;
 	line-height:auto;
 	height:auto;
-	font-size:12px;
+	font-size:80%;
 }
 
-footer ul li a { color :#808080; 
-	font-size:12px;
+/* 구성글 하이퍼링크 */
+footer ul li a { 
+	color :#808080; 
+	font-size:100%;
+
 }
 
+/* 첫째 줄 간격 조정 */
 #withus li:first-child {
 	font-weight:bold;
-	font-size:14px;
+	font-size:100%;
 }
 
 #siteMap li:first-child {
 	font-weight:bold;
-	font-size:14px;
+	font-size:90%;
 }
 
 #contact li:first-child {
 	font-weight:bold;
-	font-size:14px;
+	font-size:90%;
 }
+
+
