@@ -47,70 +47,74 @@
 					가입 후 아이디는 변경할 수 없습니다.
 				</h4>
 				
-				<form>
+				<form method="post" id="joinFrm" name="joinFrm">
 					<div id="inputBox">
-					<ul id="input">
-						<li>
-							<div class="windowFontBox">
-								<span>이름</span>
+						<div class="windowFontBox">
+							<span>이름</span>
+							<div class="inputEvent">
 								<input type="text" id="nameInput">
-							</div> <!-- "windowFontBox" -->	
-						</li> 
-						
-						<li>
-							<div class="windowFontBox">
-								<span>닉네임</span>
+								<i></i>
+							</div><!--inputEvent  -->
+						</div> <!-- "windowFontBox" -->	
+					
+						<div class="windowFontBox">
+							<span>닉네임</span>
+							<div class="inputEvent">
 								<input type="text" id="nicknameInput">
-							</div> <!-- "windowFontBox" -->
-						</li>
-						
-						
-						<li>
-							<div class="windowFontBox">
-								<span>아이디</span>
+								<i></i>
+							</div> <!-- inputEvent -->
+						</div> <!-- "windowFontBox" -->
+					
+						<div class="windowFontBox">
+							<span>아이디</span>
+							<div class="inputEvent">
 								<input type="text" id="idInput">
-							</div> <!-- "windowFontBox" -->
-						</li>
+								<i></i>
+							</div> <!-- inputEvent -->
+						</div> <!-- "windowFontBox" -->
+					
+						<div id="emailBox">
+						<div class ="windowFontBox"> 	
+							<span>이메일</span>
+							<div class="inputEvent">
+								<input type="text" id="emailInput">
+								<i></i>
+							</div> <!-- inputEvent -->
+							&nbsp;&nbsp;
+						</div> <!-- windowFontBox -->
 						
-						<li> 
-							<div id="emailBox">
-							<div class ="windowFontBox"> 	
-								<span>이메일</span>
-								<input type="text" id="emailInput">&nbsp;&nbsp;
-							</div> <!-- windowFontBox -->
-							
-							<div id="emailSelectBox">
-								<select class="emailSelect">
-									<option value="naver" selected>@naver.com</option>
-									<option value="daum">@daum.net</option>
-									<option value="nate">@nate.com</option>
-									<option value="kakao">@kakao.com</option>
-									<option value="gmail">@gmail.com</option>
-								</select>
-								&nbsp;&nbsp;
-								<input type="button" id="emailBtn" class="btn-gradient cyan" value="확인">
-								</div> <!-- emailSelectBox -->
-							</div>	<!-- emailBox  -->
-						</li>
-						
-						<li>
-							<div class ="windowFontBox"> 
-								<span>비밀번호</span>
+						<div id="emailSelectBox">
+							<select class="emailSelect">
+								<option value="naver" selected>@naver.com</option>
+								<option value="daum">@daum.net</option>
+								<option value="nate">@nate.com</option>
+								<option value="kakao">@kakao.com</option>
+								<option value="gmail">@gmail.com</option>
+							</select>
+							&nbsp;&nbsp;
+							<input type="button" id="emailBtn" class="btn-gradient cyan" value="확인">
+							<i></i>
+							</div> <!-- emailSelectBox -->
+						</div>	<!-- emailBox  -->
+					
+						<div class ="windowFontBox"> 
+							<span>비밀번호</span>
+							<div class="inputEvent">
 								<input type="password" id="pwInput">
-								<a id="pwMent">8자~20자 이내, 영문,숫자,특수문자를 혼합하여 입력해주세요.</a> <!-- pwMent -->
-							</div> <!-- windowFontBox -->
-							
-						</li>
+								<i></i>
+							</div> <!-- inputEvent  -->	
+							<a id="pwMent">8자~20자 이내, 영문,숫자,특수문자를 혼합하여 입력해주세요.</a> <!-- pwMent -->
+						</div> <!-- windowFontBox -->
 						
-						<li>
-							<div class ="windowFontBox"> 
-								<span>비밀번호확인</span>
+						<div class ="windowFontBox"> 
+							<span>비밀번호 확인</span>
+							<div class="inputEvent">
 								<input type="password" id="pwCfmInput">
-							</div> <!-- windowFontBox -->
-						</li>
-						
-						<li><input type="button" id="joinBtn" class="btn-gradient cyan" value="가입하기"></li>
-					</ul> <!-- input -->
+								<i></i>
+							</div>	<!-- inputEvent -->
+						</div> <!-- windowFontBox -->
+							
+						<input type="submit" id="joinBtn" class="btn-gradient cyan" value="가입하기">
 					</div> <!-- inputBox -->
 				</form>
 				

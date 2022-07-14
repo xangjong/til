@@ -2,14 +2,16 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>로그인 페이지</title>
-		<script src="../js/jquery-3.6.0.min.js"></script>
+		<title>WITHUS - Mypage's tag</title>
+		<script src="jquery-3.6.0.min.js"></script>
+	</head>
+	<script src="../js/jquery-3.6.0.min.js"></script>
 		<script src="../js/MenuTab.js"></script>
-		<script src="../js/login.js"></script>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../css/common.css">
 		<link rel="stylesheet" type="text/css" href="../css/MenuTab.css">
 		<link rel="stylesheet" type="text/css" href="../css/loginSection.css">
+		<link rel="stylesheet" type="text/css" href="../css/myPage.css">
 		<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	</head>
 	<body>
@@ -29,41 +31,53 @@
 						<a href="ITNewsPage.html">IT News</a>
 					</div>
 					<div id="login">
-						<a href="#">로그인</a>
+						<a href="#">My page</a>
 						<a>|</a>
-						<a href="join.html">회원가입</a>
+						<a href="#">QnA</a>
 					</div>
 				</div>
 			</header>
 	
 		<section>
-			<div id="loginBox">
-				<h1>Login</h1>
-				<h2><a href="#"><img src="../image/logo-withus3.PNG"></a></h2>
+			<div id="myPageBox">
+				<h1>My page</h1>
+				
+				<ul class="userPage">
+					<li><a href="#"><span>activity</span></a></li>
+					<li><a href="#"><span>edit</span></a></li>
+				</ul> <!-- userPage -->
+				
+				<div id="userBox">
+					<div id="boxImage"><img src="../image/user.png"></div>
+					<div id="boxUser">
+					
+						<ul id="fontBox">
+							<li>Bean</li>
+							<li>0</li>
+							<li>POINT</li>
+						</ul>
+						
+						<ul id ="pointBox">
+							<li><img src="../image/yellowCircle.png"><span class="point">0</span></li>
+							<li><img src="../image/grayCircle.png"><span class="point">0</span></li>
+							<li><img src="../image/redCircle.png"><span class="point">0</span></li>
+						</ul> <!-- pointBox -->
+					</div>
+				</div> <!-- userBox -->
+				
+				<ul class ="tagBox">
+					<li><a href="#"><span>tag</span></a></li>
+					<li><a href="#"><span>question</span></a></li>
+					<li><a href="#"><span>answer</span></a></li>
+					<li><a href="#"><span>comment</span></a></li>
+				</ul> <!-- tagBox -->
+				
 				<form name="loginForm" method="post">
 					<div id="input">
-						<div class="inpuEventBox">
-							<input type="text" id="emailInput" autocomplete="off" required>
-							<label for="emailInput" class="eventLabel"><span>이메일 주소</span></label>
-						</div> <!-- inpuEventBox -->
-		
-						<div class="inpuEventBox">
-							<input type="password" id="pwInput" autocomplete="off" required>
-							<label for="pwInput" class="eventLabel"><span>비밀번호</span></label>
-						</div>	<!-- inpuEventBox -->
-									
-						<input type="submit" id="loginBtn" class="btn-gradient cyan" value="로그인">
+						<input type="text" id="Question" placeholder="의 개의 질문이 있습니다.">
 					</div> <!-- input -->					
 				</form>
-				
-				<div id="joinPass">
-					<ul>
-						<li><a href="#">아이디 찾기</a></li>
-						<li>|</li>
-						<li><a href="join.html" id="join">회원가입</a></li>
-					</ul>
-				</div> <!-- joinPass -->
-			</div><!--loginBox  -->
+			</div><!--myPageBox  -->
 		</section>
 		</div><!-- bodyContent -->
 		

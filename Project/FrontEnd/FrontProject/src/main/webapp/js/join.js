@@ -38,7 +38,7 @@
 		function nickname_check(nickname) {
 		
 		// 닉네임 정규식 	
-		var reg_nickname = /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]+$/; // 닉네임은 한글, 영문, 숫자만 글자 수 제한x
+		var reg_nickname =  /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]+$/  // 닉네임은 한글, 영문, 숫자만 글자 수 제한x
 		return reg_nickname.test(nickname);
 
 	  }  // 닉네임 체크 함수
@@ -141,9 +141,9 @@
 		alert("회원가입 완료");
 		window.location.href="joinComplete.html"; 
 			
-		
+		 
 	}); // joinBtn 클릭 시 
-
+	
 	// 글자 수 제한
 	$('#nameInput').on('keyup', function(){
 		$(this).attr('maxlength', '10');
@@ -168,5 +168,6 @@
 	$('#pwCfmInput').on('keyup', function(){
 		$(this).attr('maxlength', '20');
 	});
-
+	
+	
 }); // document.ready

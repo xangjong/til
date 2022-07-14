@@ -40,22 +40,25 @@
 			<div id="loginBox">
 				<h1>Login</h1>
 				<h2><a href="#"><img src="../image/logo-withus3.PNG"></a></h2>
-				<form name="loginForm" method="post">
-					<div id="input">
-						<div class="inpuEventBox">
-							<input type="text" id="emailInput" autocomplete="off" required>
-							<label for="emailInput" class="eventLabel"><span>이메일 주소</span></label>
-						</div> <!-- inpuEventBox -->
-		
-						<div class="inpuEventBox">
-							<input type="password" id="pwInput" autocomplete="off" required>
-							<label for="pwInput" class="eventLabel"><span>비밀번호</span></label>
-						</div>	<!-- inpuEventBox -->
-									
-						<input type="submit" id="loginBtn" class="btn-gradient cyan" value="로그인">
-					</div> <!-- input -->					
-				</form>
 				
+				<form name="loginForm" method="post">
+					<div class="group">      
+					<input type="text" id="emailInput" autocomplete="off" required>
+				      <span class="highlight"></span>
+				      <span class="bar"></span>
+				      <label>이메일</label>
+				    </div>
+      
+				    <div class="group">      
+				      <input type="password" id="pwInput" autocomplete="off" required>
+				      <span class="highlight"></span>
+				      <span class="bar"></span>
+				      <label>비밀번호</label>
+				    </div>
+			   <input type="submit" id="loginBtn" class="btn-gradient cyan" value="로그인">
+			  </form>
+				 
+				 
 				<div id="joinPass">
 					<ul>
 						<li><a href="#">아이디 찾기</a></li>

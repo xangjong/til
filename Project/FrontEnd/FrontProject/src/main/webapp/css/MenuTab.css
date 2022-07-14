@@ -11,15 +11,17 @@
 	background-color: rgba(0,0,0,0.5);
 	height : auto;
   	min-height: 100%;
+  	
 }
 
 /* 헤더 메뉴바 */
-
+	
 #wrapper { 
 	width: 100%; 
 	height: 100%; 
 	position: absolute; 
 	background-color: rgba(0,0,0,0.5);
+	
 }
 
 /* 헤더 메뉴바 */
@@ -29,6 +31,7 @@
 	justify-content: space-between;
 	width: 61%;
 	margin-left: 19%;
+	border-bottom: 1px solid rgb(216, 216, 216);
 }
 
 #mainMenu #menuImg{
