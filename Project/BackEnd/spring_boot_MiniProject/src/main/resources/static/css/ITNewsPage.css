@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+/*********************** 섹션 ************************/
+section {
+	position: relative;
+	top:75px;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	min-height: 100%;
+	padding-bottom:4%;
+}
+
+.bodyWrap {
+	height: 100%;
+	overflow: hidden;
+}
+
+.bodyWrap .backgroundPhoto {
+	position: fixed;
+	height: 100%;
+	z-index: -20;
+}
+
+
+/************ 뉴스 컨텐츠 **************/
+
+/******* 메인 뉴스 ********/
+
+.main_news{
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+	height: 90vh;
+	text-align: center;
+}
+
+.main_news .imgBox {
+	margin-top: 150px;
+	overflow:hidden;
+	border-radius: 30px;
+}
+
+.main_news .imgBox img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 50vh;
+	cursor:pointer;
+}
+
+.main_news .mainText {
+	width: 20vw;
+	height: 20vh;
+	font-size: 3vw;
+}
+
+.main_news .text1  {
+	margin-top: 170px;
+}
+
+.main_news .text1 .text1_1{
+	position: relative;
+	left:-550px;
+	animation: opacity 3s;
+	animation-delay:1s
+}
+
+.main_news .text2 {
+	margin: auto;
+	width:10vw;
+	overflow:hidden;
+}
+
+.main_news .text2 h1 {
+	position: relative;
+	top:150px;
+	animation: opacity 2s;
+	animation-delay:2.5s
+}
+
+.main_news .text3  {
+	margin-top: 170px;
+	
+}
+
+.main_news .text3 .text3_1 {
+	position: relative;
+	right:-650px;
+	animation: opacity 3s;
+	animation-delay:3s
+}
+
+
+/******* 서브 뉴스 ********/
+
+/**** 서브 뉴스1 *************************************/
+
+.sub_news1 {
+	display: flex;
+	background-color: rgb(218, 218, 218);
+	height: 42vh;
+}
+
+.subPhoto{
+	height: 80%;
+	width: 30%;
+	cursor: pointer;
+	border-radius: 30px;
+}
+
+.subText {
+	width:90%;
+}
+
+.gradient {
+	background: linear-gradient(to bottom, white, rgb(218, 218, 218));
+	height: 20vh;
+}
+
+.sub_news1 img {
+	margin: 30px 30px 30px 0;
+}
+
+.subTextBox{
+	margin-left: 40px;
+}
+
+.sub_news1 .subText1{
+	font-size: 2vw;
+	margin-top: 60px;
+}
+
+.sub_news1 .subText1_2 {
+	font-size: 1.5vw;
+	margin-top: 70px;
+}
+
+/**** 서브 뉴스2 *********************************/
+
+.sub_news2 {
+	display: flex;
+	height: 42vh;
+	background-image: url("../image/뉴스배경2.jpg");
+}
+
+.sub_news2 img {
+	margin: 30px;
+}
+
+.sub_news2 .subText2{
+	font-size: 2vw;
+	color: white;
+	margin-top: 60px;
+}
+
+.sub_news2 .subText2_2 {
+	font-size: 1.5vw;
+	color: white;
+	margin-top: 40px;
+}
+
+/**** 서브 뉴스3 *********************************/
+.sub_news3 {
+	display: flex;
+	height: 42vh;
+	background-image: url("../image/뉴스배경3.jpg");
+}
+
+.gradient2 {
+	background: linear-gradient(to bottom, rgb(27,28,30), transparent);
+	height: 20vh;
+}
+
+.sub_news3 img {
+	margin: 30px;
+}
+
+.sub_news3 .subText3{
+	font-size: 2vw;
+	color: white;
+	margin-top: 60px;
+}
+
+.sub_news3 .subText3_2 {
+	font-size: 1.5vw;
+	color: white;
+	margin-top: 70px;
+}
+
+/**** 서브 뉴스4 **************************************/
+.sub_news4 {
+	height: 45vh;
+}
+
+.sub4Box {
+	width:5%;
+	height: 23%;
+	margin-left: -10%;
+}
+
+.sub4Box img {
+	position:relative;
+	width: 15vw;
+	top:-100px;
+	left:-100px;
+	
+}
+
+/**** 서브 뉴스5 ***************************************/
+.sub_news5{
+	display:flex;
+	height: 42vh;
+	background-image: url("../image/뉴스배경5.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.gradient3 {
+	background: linear-gradient(to bottom, transparent, rgb(8,8,8));
+	height: 20vh;
+}
+
+
+.sub_news5 img {
+	margin: 30px;
+}
+
+.sub_news5 .subText5{
+	font-size: 2vw;
+	color: white;
+	margin-top: 60px;
+}
+
+.sub_news5 .subText5_2 {
+	font-size: 1.5vw;
+	color: white;
+	margin-top: 70px;
+}
+
+
+/**** 서브 뉴스6 *************************************/
+.sub_news6{
+	display: flex;
+	height: 42vh;
+	background-image: url("../image/뉴스배경6.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sub_news6 img {
+	margin: 30px;
+}
+
+.sub_news6 .subText6{
+	font-size: 2vw;
+	color: white;
+	margin-top: 60px;
+}
+
+.sub_news6 .subText6_2 {
+	font-size: 1.5vw;
+	color: white;
+	margin-top: 30px;
+}
+
+/******* 애니메이션 ****************************************/
+
+@keyframes opacity{
+	from{opacity:0}
+	to{opacity:1}
+}
+
+@keyframes disappear{
+	from{opacity:1}
+	to{opacity:0}
+}
+
+@keyframes move{
+	0%{
+		margin-left: 0%;
+		opacity:0;
+	}
+	35%{
+		margin-left: 30%;
+		opacity:1;
+		
+	}
+	65%{
+		margin-left: 70%;
+		opacity:1;
+	}
+	100%{
+		margin-left: 90%;
+		opacity:0;
+	}
+}

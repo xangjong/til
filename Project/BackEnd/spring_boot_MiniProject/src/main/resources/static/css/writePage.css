@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+section {
+	position: relative;
+	top:75px;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	min-height: 100%;
+	padding-bottom:15%;
+	
+}
+
+.listMainWrap {
+	padding: 0;
+	margin: auto;
+	list-style: none;
+}
+
+
+.viewSubWrap {
+	border: 2px solid  rgb(112, 190, 248);
+	margin-top: -4px;
+	padding: 10px;
+	background-color: white;
+}
+
+.viewProfle {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+}
+
+.nickNameC{
+	color: black;
+	font-size: 100%; 
+	margin-left:5px;
+	margin-right:5px;
+}
+.createdDateC{
+	font-size: 25%;
+	padding-left:5px;
+}

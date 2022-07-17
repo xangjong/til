@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+/*********************** 섹션 ************************/
+section {
+	position: relative;
+	top:75px;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	min-height: 100%;
+	padding-bottom:10%;
+	
+}
+
+.bodyWrap {
+	width:1400px;
+	height: 100%;
+	display: flex;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/********** 질문 박스 *********/
+.bodyWrap .questionBoxWrap{
+	width: 1050px;
+}
+
+.bodyWrap .questionBoxWrap .slideShow{
+	margin-top: 50px;
+	position: relative;
+}
+
+/****** 슬라이드쇼 ******/
+.questionBoxWrap .slideShow .prevNextButtonBox{
+	width: 950px;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 50px;
+	margin-top: 150px;
+}
+
+.prevNextButtonBox .prevNextButton{
+	opacity: 0.5;
+	width: 60px;
+	z-index: 10;
+}
+.prevNextButtonBox .prevNextButton:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.questionBoxWrap .slideShow .slideShowBox{
+	width: 650px;
+	height: 350px;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 20px;
+}
+
+.slideShowBox .slidePanel{
+	position: relative;
+	width: 3250px;
+	height: 350px;
+}
+
+.slideShowBox .animated{
+	transition: 0.5s ease-out;
+}
+
+.slideShowBox .slidePanel .slideImage {
+	width: 650px;
+	height: 350px;
+	float: left;
+}
+
+.questionBoxWrap .slideShow .controlPanel{
+	margin: auto;
+	width: 85px;
+}
+
+/****** 질문 게시글 *****/
+.questionBoxWrap .questionBox{
+	width: 1000px;
+	margin: auto;
+}
+
+.questionBox .arrayTitle{
+	margin: 50px 0 0 80px;
+}
+
+.btnFilter{
+	background-color: white;
+	color: rgb(128, 128, 128);
+	border: none;
+	border-radius: 5px;
+	margin-right: 20px; 
+	font-size: 15px;	
+	width: 60px;
+	height: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btnFilter:hover{
+	background-color: rgb(112, 190, 248);
+	color: white;
+}
+
+.btnFilterActive{
+	background-color: rgb(112, 190, 248);
+	color: white;
+}
+
+.questionBox .question{
+	width: 85%;
+	height: 150px;
+	border: 1px solid rgb(216, 216, 216);
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 20px;
+	display: flex;
+}
+
+.questionBox .question .questionLeftBox{
+	width: 10%;
+	text-align: center;
+}
+
+.questionLeftBox .answerCount{
+	border: 1px solid rgb(128, 128, 128);
+	width: 60%;
+	margin: 13px 0 10px 17px;
+	border-radius: 3px;
+}
+
+.questionLeftBox p{
+	font-size: 12px;
+	color: rgb(128, 128, 128);
+}
+
+.questionLeftBox .goodCount{
+	margin-bottom:10px;
+}
+
+#questionBox .question .questionMainBox{
+	width: 90%;
+}
+
+.questionMainBox .questionTitle{
+	margin: 10px 0 0 20px;
+}
+
+.questionMainBox .questionText{
+	width:95%;
+	margin: 10px 0 0 20px;
+	font-size: 13px;
+}
+
+.questionMainBox .questionOthers {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.questionMainBox .questionOthers .TagAnaTime {
+	margin: 10px 0 0 20px;
+}
+
+.TagAnaTime .questionTagBox {
+	margin-bottom: 7px ;
+}
+
+.TagAnaTime .questionTagBox .Tag {
+	background-color: rgb(112, 190, 248);
+	border-radius: 5px;
+	display: inline;
+	padding: 2px 7px;
+	color : #52a3a3;
+	font-weight: bold;
+}
+
+.TagAnaTime .questionTagBox .Tag:hover {
+	color : white;
+	cursor: pointer;
+}
+
+.questionMainBox .questionOthers .questionUser {
+	margin: 10px 20px 0 0;
+	display: flex;
+	align-items: center;
+}
+
+.questionMainBox .questionOthers .questionUser .questionUserImg img {
+	width: 30px;
+}
+
+.questionMainBox .questionOthers .questionUser .questionUserNickName {
+	margin: 0 0 5px 10px;
+}
+
+
+.bodyWrap .pageNum{
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+/*********** 사이드박스 ********/
+.bodyWrap .sideBox {
+	width: 350px;
+}
+
+.sideBox .createQuestion button {
+	background-color: rgb(112, 190, 248);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin: 50px 0 0 35px;
+	width:80%;
+	height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.sideBox .createQuestion button:hover {
+	cursor: pointer;
+}
+
+.sideBox .questionTag {
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.sideBox .questionTag .questionTagTitle {
+	border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.sideBox .questionTag .sideTagBox .Tag {
+	background-color: rgb(112, 190, 248);
+	border-radius: 5px;
+	padding: 2px 7px;
+	display : inline-block;
+	color : #52a3a3;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.sideBox .questionTag .sideTagBox .Tag:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.sideBox .hotQuestion {
+	position: sticky;
+	top: 85px;
+	margin-top: 50px;
+}
+
+.sideBox .hotQuestion table {
+	width:90%;	
+	margin: auto;
+}
+
+.sideBox .hotQuestion th {
+	border-bottom: 1px solid rgb(216, 216, 216);
+	text-align: left;
+	font-size: 20px;
+}
+
+.sideBox .hotQuestion td {
+	padding-top: 10px;
+}

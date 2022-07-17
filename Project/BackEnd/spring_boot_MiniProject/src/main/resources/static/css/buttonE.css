@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.btnE{
+	border: 2px solid black;
+	color: gray;
+	padding: 5px 20px 0px 20px;	
+	cursor: pointer;
+	background:rgba(0,0,0,0);
+	border-color: gray;
+	border-radius: 8px;
+	margin:10px;
+}
+
+.btnSearch{
+	border: 2px solid gray;
+	color: gray;
+	cursor: pointer;	
+	padding:0;
+	margin:0;
+	height:auto;
+	width:50px;
+	background-color:white;
+	border-radius: 4px;
+}
+
+.btnFilter{
+	border:none;
+	color: gray;
+	cursor: pointer;	
+	padding:0;
+	margin:5px;
+	height:auto;
+	width:50px;
+	background-color:white;
+	border-radius: 4px;
+}
+
+.btnFilterActive{
+	background: rgb(112, 190, 248);
+	color:white;
+}
+
+.btnFilter:hover{
+	background: rgb(112, 190, 248);
+	color:white;
+}
+
+.btnSearch:hover{
+	background: rgb(112, 190, 248);
+	color:white;
+}
+
+.btnLike:hover {
+	border:2px soild rgba(27,188,194,1);
+	border-color: rgba(27,188,194,1);
+}
+
+.btnDisLike:hover {
+	border:2px soild rgba(255,105,30,1);
+	border-color: rgba(255,105,30,1);
+}
