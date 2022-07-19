@@ -55,8 +55,8 @@ section {
 }
 
 .loginBtn {
-	margin-top:30px;
-	margin-bottom:30px;
+	margin-top:10%;
+	margin-bottom:5%;
 	width:100%;
 	
 }
@@ -72,11 +72,12 @@ section {
 }
 
 /* 아이디 찾기, 회원가입 */
-.joinPass ul li { display:inline-block;
+.joinPass ul li { 
+	display:inline-block;
 	color:#808080;
 	height:auto;
 	line-height:auto;
-	padding:3px 5px;
+	
 }
 
 /* 아이디 찾기, 회원가입 글씨 */

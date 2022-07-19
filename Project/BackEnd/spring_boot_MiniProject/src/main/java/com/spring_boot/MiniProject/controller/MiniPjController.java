@@ -89,4 +89,29 @@ public class MiniPjController {
 	public String viewMyPageComment() {
 		return "subPage/myPageComment";
 	}
+	
+	// 관리자 유저 관리 페이지 보기
+	@RequestMapping("/adminUser")
+	public String adiminUserView() {
+		return "subPage/adminUser";
+	}
+	
+	// 관리자 게시판 관리 페이지 보기
+	@RequestMapping("/adminPost")
+	public String adiminPostView() {
+		return "subPage/adminPost";
+	}
+	
+	// 관리자 댓글 관리 페이지 보기
+	@RequestMapping("/adminComment")
+	public String adiminUserComment() {
+		return "subPage/adminComment";
+	}
+	
+	// 관리자 유저 페이지 보기
+	@RequestMapping("/adminHashTag")
+	public String adiminHashTagView() {
+		return "subPage/adminHashTag";
+	}
+	
 }

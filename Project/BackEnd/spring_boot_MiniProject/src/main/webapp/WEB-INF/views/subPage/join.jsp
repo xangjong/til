@@ -109,8 +109,9 @@
 					</div> <!-- inputBox -->
 				</form>
 			</div><!--loginBox  -->
-			<a href="<c:url value='/myPage'/>">마이페이지</a>
-			<a href="<c:url value='/joinComplete'/>">회원가입완료</a>
+			<a href="<c:url value='/myPage'/>">마이페이지</a>&nbsp;&nbsp;
+			<a href="<c:url value='/joinComplete'/>">회원가입완료</a>&nbsp;&nbsp;
+			<a href="<c:url value='/adminUser'/>">관리자</a>
 		</section>
 		
 		<c:import url="/WEB-INF/views/layout/bottom.jsp"/>

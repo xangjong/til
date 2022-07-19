@@ -24,6 +24,9 @@
 				<div class="userProfileBox">
 					<div class="userBox">
 						<div class="boxImage"><img src="<c:url value = '/image/user.png'/>"></div>
+						<div class="box-file-input">
+							<label><input type="file" name="ev_display" class="file-input" accept="image/*">
+							</label></div>
 						<div class="boxUser">
 							<ul class="fontBox">
 								<li>hong</li>
@@ -116,6 +119,7 @@
 						<div class="btnBox">
 							<input type="submit" class="editBtn btn-gradient cyan" value="수정">
 							<input type="reset" class="resetBtn btn-gradient red" value="취소">
+							<input type="button" class="resetBtn btn-gradient" value="회원탈퇴">
 						</div>	<!-- btnBox -->
 					</div> <!-- inputBox -->
 				</form>

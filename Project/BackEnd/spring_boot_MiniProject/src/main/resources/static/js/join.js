@@ -12,7 +12,7 @@
 		function name_check(name) {
 		
 		// 이름 정규식 	
-		var reg_name = /^[가-힣]{2,10}$/ // 한글만 2~10
+		var reg_name = /^[a-zA-Zㄱ-힣][a-zA-Zㄱ-힣 ]*$/; 
  
 		return reg_name.test(name);
 
@@ -148,7 +148,7 @@
 	
 	// 글자 수 제한
 	$('.nameInput').on('keyup', function(){
-		$(this).attr('maxlength', '10');
+		$(this).attr('maxlength', '16');
 	});
 	
 	$('.nicknameInput').on('keyup', function(){

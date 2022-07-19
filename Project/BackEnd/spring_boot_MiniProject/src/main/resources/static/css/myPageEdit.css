@@ -302,6 +302,8 @@ section {
 .emailSelectBox {
 	width:100%;
 	display:flex;
+	margin-top:10%;
+	align-items:center;
 	
 }
 /* 이메일 창 크기 */
@@ -316,9 +318,7 @@ section {
 	margin-top:3%;
 	padding:0 22% 0 0;
 	color:#495057;
-	-webkit-appearance: none;
-     border:none;
-     border:0;
+	border:1px solid #aaa;
 }
 
 /* 이메일 중복 확인 버튼 */
@@ -380,4 +380,32 @@ input[type="text"]:focus + i, input[type="password"]:focus + i {
 }
 
 
+/* 파일 이미지 등록 */
+.box-file-input {
+	margin-top:10%;
+}
 
+.box-file-input label{
+  display:inline-block;
+  background:#23a3a7;
+  color:#fff;
+  padding:0px 10px;
+  line-height:35px;
+  height:35px;
+  cursor:pointer;
+  border-radius:3px;
+
+}
+
+.box-file-input label:after{
+  content:"이미지 등록";
+}
+
+.box-file-input .file-input{
+  display:none;
+}
+
+.box-file-input .filename{
+  display:inline-block;
+  padding-left:10px;
+}

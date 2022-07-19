@@ -5,6 +5,18 @@
  
  $(document).ready(function(){
 	
+	
+	$(document).on("change", ".file-input", function(){
+   
+    $filename = $(this).val();
+
+    if($filename == "")
+      $filename = "파일을 선택해주세요.";
+
+    $(".filename").text($filename);
+
+  }); // change
+	
 	$(".editBtn").on('click', function(){
 		
 		// 닉네임 유효성 검사 함수 
@@ -36,7 +48,7 @@
 		// 비밀번호 유효성 검사 함수 
 		function pw_check(password) {
   		// 최소 8 자, 20자 이하 하나 이상의 문자, 하나의 숫자 및 하나의 특수 문자 정규식
-  		var reg_pw = /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+]).{8,20}$/;
+  		var reg_pw =/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
   	
   		return reg_pw.test(password);
   	

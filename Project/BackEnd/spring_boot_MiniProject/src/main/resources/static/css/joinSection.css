@@ -149,16 +149,19 @@ section {
 	align-items:center;
 }
 
-
-.emailSelectBox {
-	width:100%;
-	display:flex;
-	
-}
 /* 이메일 창 크기 */
 .emailInput {
 	width:100%;
 }
+
+
+.emailSelectBox {
+	width:100%;
+	display:flex;
+	margin-top:10%;
+	align-items:center;
+}
+
 
 
 /* 이메일 주소  */
@@ -167,9 +170,7 @@ section {
 	margin-top:3%;
 	padding:0 22% 0 0;
 	color:#495057;
-	-webkit-appearance: none;
-     border:none;
-     border:0;
+    border:1px solid #aaa;
 }
 
 /* 이메일 중복 확인 버튼 */
