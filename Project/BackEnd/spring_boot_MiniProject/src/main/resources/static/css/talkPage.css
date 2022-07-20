@@ -22,21 +22,31 @@ section {
 	width: 1050px;
 }
 
+.searchBox {
+	margin: auto;
+	margin-top: 40px;
+}
+
+.searchBox .btnSearch {
+	margin-left: 5px;
+}
+
+.btnFilter {
+	font-family: 'Jua', sans-serif;
+}
+
 /*********** 사이드박스 ********/
 .bodyWrap .sideBox{
 	width: 350px;
 }
 
 .sideBox .createTalk button{
-	background-color: rgb(112, 190, 248);
-	color: white;
-	border: none;
-	border-radius: 5px;
 	margin: 50px 0 0 35px;
 	width:80%;
 	height: 40px;
 	font-size: 20px;
 	font-weight: bold;
+	color: white;
 }
 
 .sideBox .createTalk button:hover{

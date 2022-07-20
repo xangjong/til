@@ -6,11 +6,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>login</title>
-		<script src="<c:url value='/js/jquery-3.6.0.min.js'/>"></script>
-		<script src="<c:url value='/js/MenuTab.js'/>"></script>
-		<script src="<c:url value='/js/login.js'/>"></script>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/reset.css'/>">
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/common.css'/>">
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/MenuTab.js"></script>
+		<script src="js/login.js"></script>
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/loginSection.css'/>">
 	</head>
 	<body>
@@ -18,20 +16,18 @@
 		<section>
 			<div class="loginBox">
 				<h1>Login</h1> 
-				<h2><a href="#"><img src="<c:url value='/image/logo-withus3.PNG'/>"></a></h2>
-				<form class="loginForm" name="loginForm" method="post">
+				<h2><a href="<c:url value='/'/>"><img src="image/logo-withus3.PNG"></a></h2>
+				<form class="loginForm" name="loginForm">
 					<div class="input">
 						<div class="inpuEventBox">
 							<input type="text" class="idInput" name="id" autocomplete="off" required>
 							<label for="idInput" class="eventLabel"><span>아이디</span></label>
 						</div> <!-- inpuEventBox -->
-		
 						<div class="inpuEventBox">
 							<input type="password" class="pwInput" name="pwd" autocomplete="off" required>
 							<label for="pwInput" class="eventLabel"><span>비밀번호</span></label>
 						</div>	<!-- inpuEventBox -->
-									
-						<input type="submit" class="loginBtn btn-gradient cyan" value="로그인">
+						<input type="submit" class="loginBtn btn-gradient blue" value="로그인">
 					</div> <!-- input -->					
 				</form>
 				

@@ -3,7 +3,8 @@
  */
  
  $(document).ready(function(){
-			$('.loginForm').on('submit', function(){
+	
+ 	$('.loginForm').on('submit', function(){
  		// submit 이벤트 기본 기능 : 페이지 새로 고침
  		// 기본 기능 중단
  		event.preventDefault();
@@ -29,7 +30,9 @@
 			},
  		});
  	});
-		
+
+ 
+	
 	// 로그인 버튼 클릭 시 
 	$('.loginBtn').on('click',function() {
 		

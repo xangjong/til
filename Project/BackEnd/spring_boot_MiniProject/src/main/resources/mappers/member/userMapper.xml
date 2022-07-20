@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.spring_boot.MiniProject.dao.IUserDAO">
+	
+  	<!-- 로그인 확인 -->
+  	<select id="selectAllUser" resultType="com.spring_boot.MiniProject.model.UserVO">
+  		select * from user
+  	</select>
+  	
+  	<!-- 로그인 확인 -->
+  	<select id="selectUser" parameterType="String" resultType="com.spring_boot.MiniProject.model.UserVO">
+  		select * from user where userId = #{userId} AND userState != 2 LIMIT 1
+  	</select>
+  	
+  	<!-- 회원 가입 -->
+  	<insert id="insertUser" parameterType="com.spring_boot.MiniProject.model.UserVO">
+  		INSERT into user
+  		(userName,userNickname,userId,userEmail,userPw)
+  		VALUES(#{userName},#{userNickname},#{userId},#{userEmail},#{userPw})
+  	</insert>
+  	
+  	<!-- 닉네임 체크 -->
+  	<select id="chkNickname" parameterType="string" resultType="string">
+  		select userNickname from user where userNickname = #{userNickname}
+  	</select>
+
+  	<!-- ID 체크 -->
+  	<select id="chkId" parameterType="string" resultType="string">
+  		select userId from user where userId = #{userId}
+  	</select>
+
+  	<!-- Email 체크 -->
+  	<select id="chkEmail" parameterType="string" resultType="string">
+  		select userEmail from user where userEmail = #{userEmail}
+  	</select>
+  	
+  	<!-- 마이페이지 수정 -->
+	<update id="updateUser" parameterType="com.spring_boot.MiniProject.model.UserVO">
+		UPDATE user
+		   SET userName=#{userName}, 
+		   	   userNickname=#{userNickname},
+		   	   userEmail=#{userEmail},
+		   	   userCompany=#{userCompany},
+		   	   userImg=#{userImg},
+		   	   userPw=#{userPw}
+		 WHERE userId=#{userId} 	   
+	</update>
+	
+  	<!-- 마이페이지 회원 탈퇴 -->
+	<update id="quitUser" parameterType="string">
+		UPDATE user
+		   SET userState=2
+		 WHERE userId=#{userId} 	   
+	</update> 
+</mapper>

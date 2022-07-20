@@ -13,7 +13,7 @@
 }
 
 .listSubWrap {
-	border: 4px solid rgb(112, 190, 248);
+	border: 4px solid rgba(102,152,203,1);
 	border-left: 4px solid #b9c2c2;
 	margin-top: -4px;
 	background-color: white;
@@ -21,11 +21,11 @@
 }
 
 .card:hover{
-	border: 4px solid rgb(112, 190, 248);
+	border: 4px solid rgba(102,152,203,1);
 }
 
 .highlight {
-	border-left: 8px solid rgb(112, 190, 248);
+	border-left: 8px solid rgba(102,152,203,1);
 }
 
 .stauts {

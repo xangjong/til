@@ -9,9 +9,10 @@
 }
 
 .chat_wrap .header {
-	font-size: 14px;
+	font-size: 20px;
+	font-weight: bold;
 	padding: 15px 0;
-	background: rgb(112, 190, 248);
+	background: rgba(102,152,203,1);
 	color: white;
 	text-align: center;
 }
@@ -64,7 +65,7 @@
 	width: 100%;
 	background-color: #FFF;
 	text-align: center;
-	border-top: 1px solid rgb(112, 190, 248);
+	border-top: 1px solid rgba(102,152,203,1);
 }
  
 .chat_wrap .input-div textarea {

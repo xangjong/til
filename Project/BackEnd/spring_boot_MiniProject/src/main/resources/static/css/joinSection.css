@@ -36,6 +36,7 @@ section {
 	font-weight:bold;
 	line-height:1.4em;
 	margin-bottom:0.31em;
+	font-family: 'Jua', sans-serif;
 }
 	
 
@@ -51,12 +52,14 @@ section {
 /* 주의 사항 간격 조정*/
 .loginBox h4 {
 	margin:5% 0;
+	font-family: 'Jua', sans-serif;
 }
 
 /* 주의 사항 강조 */
 .loginBox h4 span {
 	color:#4ba0b5;
 	font-weight:bold;
+	
 	
 }
 
@@ -65,17 +68,18 @@ section {
 .inputBox {
 	width:80%;
 	padding:0 3%;
+	margin: auto;
 }
 
 /* 입력창 정렬 */
 .windowFontBox {
 	display:flex;
 	flex-direction:column;
-	margin-left:10%;
 	width:100%;
 	height:auto;
 	line-height:auto;
 	margin-top:10%;
+	font-family: 'Jua', sans-serif;
 }
 
 /* 창 정렬 설명 */
@@ -89,10 +93,11 @@ section {
 
 
 /* 가입 버튼 설정 */
-.joinBtn {
+.inputBox .joinBtn {
 	width:100%;
-	margin-left:10%;
-	margin-top:10%;
+	margin-top:5%;
+	color:white;
+	font-weight: bold;
 }
 
 /* 닉네임 중복 확인 버튼 프레임 */
@@ -110,12 +115,12 @@ section {
 }
 
 
-.nickNameBtn {
+.nickNameBtnBox .nickNameBtn {
 	line-height:80%;
 	height:80%;
-	padding:15% 28%;
-	margin-left:20%;
-	
+	padding: 8px 20px;
+	color: white;
+	font-weight: bold;
 } 
 
 /* id 중복 확인 버튼 프레임 */
@@ -133,11 +138,12 @@ section {
 }
 
 
-.idBtn {
+.idBtnBox .idBtn {
 	line-height:80%;
 	height:80%;
-	padding:15% 28%;
-	margin-left:20%;
+	padding: 8px 20px;
+	color: white;
+	font-weight: bold;
 	
 } 
 
@@ -154,35 +160,31 @@ section {
 	width:100%;
 }
 
-
 .emailSelectBox {
-	width:100%;
 	display:flex;
-	margin-top:10%;
+	margin-top:15%;
 	align-items:center;
+	margin-right: 5px;
 }
-
-
 
 /* 이메일 주소  */
 .emailSelect {
-	margin-left:12%;
-	margin-top:3%;
+	margin: 3% 10% 0 2%;
 	padding:0 22% 0 0;
 	color:#495057;
-    border:1px solid #aaa;
 }
 
-/* 이메일 중복 확인 버튼 */
-.emailBtn {
-	margin-top:5%;
+/* 이메일 확인 버튼 */
+.emailSelectBox .emailBtn {
 	line-height:70%;
 	height:70%;
-	padding:3% 5%;
-	margin-left:5%;
+	width:50%;
+	padding: 8px 20px;
+	color: white;
+	font-weight: bold;
 } 
 
-/* 비밀번호 설명 */
+
 .pwMent { 
 	margin-top:2%;
 	font-size:0.75em; 
@@ -190,6 +192,13 @@ section {
 	color:#6c757d;
 }
 
+
+
+/* select 박스 테두리 제거 */
+.emailSelect{
+	 width: 200px;
+     border:none;
+}
 
 
 /* 클릭 시 테두리 제거 */

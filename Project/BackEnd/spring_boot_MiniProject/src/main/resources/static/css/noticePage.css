@@ -26,14 +26,11 @@ section {
 }
 
 .bodyWrap .createNotice button{
-	background-color: rgb(112, 190, 248);
-	color: white;
-	border: none;
-	border-radius: 5px;
 	width:80%;
 	height: 50px;
 	font-size: 20px;
 	font-weight: bold;
+	color: white;
 }
 
 .bodyWrap .createNotice button:hover{
@@ -53,17 +50,17 @@ section {
 	font-size: 15px;	
 	width: 60px;
 	height: 25px;
-	font-weight: bold;
+	font-family: 'Jua', sans-serif;
 }
 
 .btnFilter:hover{
-	background-color: rgb(112, 190, 248);
+	background-color: rgba(102,152,203,1);
 	color: white;
 	cursor: pointer;
 }
 
 .btnFilterActive{
-	background-color: rgb(112, 190, 248);
+	background-color: rgba(102,152,203,1);
 	color: white;
 }
 
@@ -74,14 +71,17 @@ section {
 	border-radius: 20px;
 	margin: auto;
 	margin-top: 20px;
+	background-color: rgba(102,152,203,0.08);
 }
 
-.noticeBox .notice {
-	width: 85%;
+.notice .noticeTitleBox {
+	display: flex;
+	justify-content: space-between;
 }
 
-.notice .noticeTitle{
+.noticeTitleBox .noticeTitle{
 	margin: 10px 0 0 20px;
+	font-family: 'Jua', sans-serif;
 }
 
 .notice .noticeTitle a {
@@ -89,10 +89,25 @@ section {
 	color: black;
 }
 
+.noticeTitleBox .viewCount {
+	display: flex;
+	justify-content: center;
+	margin: 10px 20px;
+}
+
+.noticeTitleBox .viewCount i {
+	margin: 3px 10px 0 0;
+}
+
+.noticeTitleBox .viewCount p {
+	color: rgb(128, 128, 128);
+}
+
 .notice .noticeText{
 	width:95%;
 	margin: 10px 0 0 20px;
-	font-size: 13px;
+	font-size: 20px;
+	font-family: 'Nanum Pen Script', cursive;
 }
 
 .notice .noticeOthers {
@@ -111,17 +126,23 @@ section {
 }
 
 .TagAnaTime .noticeTagBox .Tag {
-	background-color: rgb(112, 190, 248);
+	background-color: rgb(180, 180, 180);
 	border-radius: 5px;
 	display: inline;
 	padding: 2px 7px;
-	color : #52a3a3;
+	color : white;
 	font-weight: bold;
 }
 
 .TagAnaTime .noticeTagBox .Tag:hover {
 	color : white;
 	cursor: pointer;
+}
+
+.TagAnaTime .noticeTime {
+	font-size: 15px;
+	color: rgb(128, 128, 128);
+	margin-top: 15px;
 }
 
 .notice .noticeOthers .noticeUser {

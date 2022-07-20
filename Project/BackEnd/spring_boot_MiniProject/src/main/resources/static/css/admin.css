@@ -1,59 +1,18 @@
-
-
-section { 
-	position: relative;
-	height : auto;
-  	min-height: 100%;
-  	padding-bottom:50%; 
-  	margin:0 auto;
-  
-}
-
-.tableBox {
-	margin:0 auto;
-	padding:3%;
-	width:100%;
-	height :50%;
-	line-height:50%;
-  	min-height: 100%;
-}
+*{}
  
-table {
-	
-	margin-top:10%;
-	box-shadow: 0 2px 5px rgba(0,0,0,.25);
-	table-layout:fixed;
-	word-break:break-all;
-	width:100%;
-	
-}
-
-th {
-	background:#000;
-	color:#fff;
-		font-size:14px;
-	padding:20px 0;
-}
-
-
+ .tableBox {
+ 	margin-top: 30px;
+ }
+ 
 th, tr, th, td {
 	border:1px solid #aaa;
 	padding:30px 0;
-	font-size:12px;
+	font-size:14px;
+	font-weight:bold;
 	white-space: nowrap;
-	width:100%;
 	overflow:hidden;
 	
 }
-
-
-td {
-	text-align:center;
-	vertical-align:middle;
-	border-spacing:30px;
-	padding:30px 0;
-}
-
 
 /* Table */
 .manage {
@@ -64,10 +23,13 @@ td {
     border-radius: 5px;
     overflow: hidden;
     margin-left:20%;
+    margin:auto;
+    margin-top:2%;
 }
 
 .manage tr {
     border-bottom: 1px solid #eee;
+   
 }
 .manage tr:last-child {
     border: none;
@@ -78,13 +40,15 @@ td {
 
 .manage th {
 	font-size:14px;
+	
 }
 .manage th, .manage td {
     padding: 12px;
-    text-align: center; 
+    text-align: center;
+    
 }
 .manage tr th {
-    background-color: royalblue;
+    background-color: rgba(102,152,203,1);
     color: #fff;
 }
 .manage tr th:first-child {
@@ -95,7 +59,6 @@ td {
 }
 
 
-
 select {
   /* Reset Select */
   appearance: none;
@@ -104,32 +67,32 @@ select {
   box-shadow: none;
   /* Personalize */
   flex: 1;
-  padding: 0 1em;
+  padding: 0 3em;
   color: #000;
   background-color: var(--darkgray);
   background-image: none;
   cursor: pointer;
+  font-size:12px;
+  font-weight:bold;
 }
+
 /* Remove IE arrow */
 select::-ms-expand {
   display: none;
 }
 /* Custom Select wrapper */
 .select {
-	margin-left:5%;
   position: relative;
   display: flex;
-  width: 12em;
   height:3em;
   border-radius: .25em;
   overflow: hidden;
   font-size:8px;
   color:#fff;
+	
 }
 
-select option {
-	font-size:12px;
-}
+
 /* Arrow */
 .select::after {
   content: '\25BC';
@@ -137,7 +100,7 @@ select option {
   top: 0;
   right: 0;
   padding: 1em;
-  background-color: royalblue;
+  background-color: rgba(102,152,203,1);
   transition: .25s all ease;
   pointer-events: none;
   
@@ -148,7 +111,31 @@ select option {
 }
 
 
-.blank {
-	margin-left:5%;
-	display:flex;
+
+section {
+	position: relative;
+	top:75px;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	min-height: 100%;
+	padding-bottom:15%;
+	width:100%;
+}
+
+.bodyWrap {
+	width:100%;
+	height: 100%;
+}
+
+.row {
+	margin-top:5%;
+}
+
+.searchBox {
+	margin:auto;
+}
+
+.container-fluid .pageNumBox .pageNum {
+	text-align: center;
 }

@@ -33,20 +33,21 @@
 	width:50px;
 	background-color:white;
 	border-radius: 4px;
+	font-size: 15px;
 }
 
 .btnFilterActive{
-	background: rgb(112, 190, 248);
+	background: rgba(102,152,203,1);
 	color:white;
 }
 
 .btnFilter:hover{
-	background: rgb(112, 190, 248);
+	background: rgba(102,152,203,1);
 	color:white;
 }
 
 .btnSearch:hover{
-	background: rgb(112, 190, 248);
+	background: rgba(102,152,203,1);
 	color:white;
 }
 

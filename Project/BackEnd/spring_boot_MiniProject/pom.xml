@@ -55,11 +55,21 @@
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
-		<dependency>
+		
+		<!-- spring boot auto restart(설정, 클래스가 바뀌면 auto restart) -->
+        <!-- 스프링 레거시 프로젝트에서는 자바 코드가 바뀌면 자동으로 서버가 다시 시작되는데 부트에서는
+        그런 것이 없기 때문에 서버가 재시작할 수 있도록 설정을 해주어야 함 -->
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
+
+		<!-- 암호화 위한 의존성 추가 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

@@ -32,11 +32,12 @@ header{
 .mainMenu .topMenu {
 	display: flex;
 	justify-content: center;
+	font-family: 'Jua', sans-serif;
 }
 
 .mainMenu .topMenu .underline {
 	position: absolute;
-	background-color: rgba(69, 170, 245, 0.7);
+	background-color: rgba(102,152,203,1);
 	height: 4px;
 	transition: 0.3s;
 	margin-top: 8px;
@@ -52,7 +53,7 @@ header{
 }
 
 .mainMenu .topMenu a:hover{
-	color:rgba(69, 170, 245, 0.7);
+	color:rgba(102,152,203,1);
 }
 
 .mainMenu .login {

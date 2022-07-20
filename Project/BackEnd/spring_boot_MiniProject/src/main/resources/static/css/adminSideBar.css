@@ -22,11 +22,6 @@ Sidebar
 
 -------------------------------- */
 
-.cd-main-content {
-	position:relative;
-	
-	
-}
 .cd-side-nav {
   position: absolute;
   margin-top:5%;
@@ -125,7 +120,7 @@ Sidebar
   display: block;
   margin: 0 5%;
   padding: 1em 0;
-  background-color: rgba(27,188,194,1);
+  background-color: rgba(102,152,203,1);
   border-radius: .25em;
   border: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -135,12 +130,12 @@ Sidebar
 }
 
 .action-btn a:active {
-	background:#169499;
+	background: rgba(102,152,203,1);
 }
 
 .action-btn a:hover{
 		opacity:0.7;
-    box-shadow: 0 0 2px 0 rgba(27,188,194,1) inset, 0 0 2px 2px rgba(27,188,194,1);
+    box-shadow: 0 0 2px 0 rgba(102,152,203,1) inset, 0 0 2px 2px rgba(102,152,203,1);
 }
 
 .cd-side-nav .action-btn a::before {

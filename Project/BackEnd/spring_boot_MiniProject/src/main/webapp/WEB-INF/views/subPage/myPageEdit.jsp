@@ -14,19 +14,22 @@
 	<script src="<c:url value='/js/join.js'/>"></script>
 	<script src="<c:url value='/js/myPageEdit.js'/>"></script>
 	
-	
 	<body>
 		<div class="wrapper">
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<section>
 			<div class="myPageBox">
-					<h1>마이 페이지</h1>
+					<h1>회원 정보 수정</h1>
 				<div class="userProfileBox">
 					<div class="userBox">
-						<div class="boxImage"><img src="<c:url value = '/image/user.png'/>"></div>
+						<div class="boxImage">
+							<img src="<c:url value = '/image/user.png'/>">
+						</div>
 						<div class="box-file-input">
-							<label><input type="file" name="ev_display" class="file-input" accept="image/*">
-							</label></div>
+							<label>
+								<input type="file" name="ev_display" class="file-input" accept="image/*">
+							</label>
+						</div>
 						<div class="boxUser">
 							<ul class="fontBox">
 								<li>hong</li>
@@ -41,7 +44,6 @@
 						</div> <!-- boxUser -->
 					</div> <!-- userBox -->
 				</div> <!-- userProfileBox -->
-				
 				<form method="post" class="EditFrm" name="EditFrm">
 					<div class="inputBox">
 						<div class="windowFontBox">
@@ -61,7 +63,7 @@
 							</div> <!-- inputEvent -->
 						</div> <!-- "windowFontBox" -->
 						<div class= nickNameBtnBox>
-								<input type="button" class="nickNameBtn btn-gradient cyan" value="확인">
+								<input type="button" class="nickNameBtn btn-gradient blue" value="중복 확인">
 						</div>
 					</div> <!-- nickNameInputBox -->	
 						
@@ -94,7 +96,7 @@
 									<option value="gmail">@gmail.com</option>
 								</select>
 								&nbsp;&nbsp;
-								<input type="button" class="emailBtn btn-gradient cyan" value="확인">
+								<input type="button" class="emailBtn btn-gradient blue" value="중복 확인">
 								
 							</div> <!-- emailSelectBox -->
 						</div>	<!-- emailBox  -->
@@ -117,7 +119,7 @@
 						</div> <!-- windowFontBox -->
 						
 						<div class="btnBox">
-							<input type="submit" class="editBtn btn-gradient cyan" value="수정">
+							<input type="submit" class="editBtn btn-gradient blue" value="수정">
 							<input type="reset" class="resetBtn btn-gradient red" value="취소">
 							<input type="button" class="resetBtn btn-gradient" value="회원탈퇴">
 						</div>	<!-- btnBox -->

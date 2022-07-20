@@ -41,6 +41,7 @@ a {
 
 .btn-gradient.blue {
   background: rgba(102,152,203,1);
+  color:#fff;
 }
 
 .btn-gradient.purple { 

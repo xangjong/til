@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring_boot.MiniProject.dao.INoteDAO">
+
+	
+  	<!-- 해시태그 조회 -->
+  	<select id="selectHashtag" resultType="String">
+  		select * from hashtag
+  	</select>
+  	
+  	<!-- 카테고리 유저 조회 -->
+  	<select id="selectUserCategory" resultType="com.spring_boot.MiniProject.model.CategoryVO">
+  		select * from category where roll = 0
+  	</select>
+  	
+  	<!-- 카테고리 전체 조회 -->
+  	<select id="selectAllCategory" resultType="com.spring_boot.MiniProject.model.CategoryVO">
+  		select * from category
+  	</select>
+
+	<insert id="InsertNote"
+		parameterType="com.spring_boot.MiniProject.model.NoteVO">
+		INSERT into note
+		(userId,categoryId,noteTitle,note,hashName1,hashName2,hashName3,hashName4,hashName5,hashName6,hashName7,hashName8,hashName9,hashName10)
+		VALUES(#{userId},#{categoryId},#{noteTitle},#{note},#{hashName1},#{hashName2},#{hashName3},#{hashName4},#{hashName5},#{hashName6},#{hashName7},#{hashName8},#{hashName9},#{hashName10})
+	</insert>
+
+
+</mapper>
+  

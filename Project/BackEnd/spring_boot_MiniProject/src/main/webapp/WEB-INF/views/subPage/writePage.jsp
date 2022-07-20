@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>게시글</title>
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="js/jquery-3.6.0.min.js"></script>
 		<link href="image/logo.png" rel="shortcut icon" type="image/x-icon">
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -71,7 +71,7 @@
 										<i class="fa-solid fa-lg fa-pen-to-square" style="margin-right:10px"></i>게시물 작성</div>
 									<div class="col-auto">
 										<button class="btn btn-gradient red"  onClick="history.go(-1)">취소</button>
-										<button class="btn btn-gradient cyan"  onClick="history.go(-1)">저장</button>
+										<button class="btn btn-gradient blue"  onClick="history.go(-1)">저장</button>
 									</div>
 								</div>
 							</div>

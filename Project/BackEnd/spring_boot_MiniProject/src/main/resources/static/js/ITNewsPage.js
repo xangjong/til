@@ -23,7 +23,7 @@
 		underLine.style.width = firstMenu.offsetWidth + "px";
 		underLine.style.top =
 			firstMenu.offsetTop + firstMenu.offsetHeight + "px";
-		firstMenu.style.color = "rgba(69, 170, 245, 0.7)";
+		firstMenu.style.color = "rgba(102,152,203,1)";
 	}));
 });
 
@@ -35,7 +35,7 @@
 	underLine.style.width = firstMenu.offsetWidth + "px";
 	underLine.style.top =
 		firstMenu.offsetTop + firstMenu.offsetHeight + "px";
-	firstMenu.style.color = "rgba(69, 170, 245, 0.7)";	
+	firstMenu.style.color = "rgba(102,152,203,1)";	
 });
 
 $(document).ready(function(){

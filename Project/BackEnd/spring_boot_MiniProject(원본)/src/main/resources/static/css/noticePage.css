@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/*********************** 섹션 ************************/
+
+section {
+	position: relative;
+	top:75px;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	min-height: 100%;
+	padding-bottom:10%;
+
+}
+
+.bodyWrap {
+	width:1400px;
+	height: 100%;
+	
+}
+
+.bodyWrap .createNotice{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.bodyWrap .createNotice button{
+	background-color: rgb(112, 190, 248);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	width:80%;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.bodyWrap .createNotice button:hover{
+	cursor: pointer;
+}
+
+.noticeBox .arrayTitle{
+	margin: 50px 0 0 120px; 
+}
+
+.btnFilter{
+	background-color: white;
+	color: rgb(128, 128, 128);
+	border: none;
+	border-radius: 5px;
+	margin-right: 20px; 
+	font-size: 15px;	
+	width: 60px;
+	height: 25px;
+	font-weight: bold;
+}
+
+.btnFilter:hover{
+	background-color: rgb(112, 190, 248);
+	color: white;
+	cursor: pointer;
+}
+
+.btnFilterActive{
+	background-color: rgb(112, 190, 248);
+	color: white;
+}
+
+.noticeBox .notice{
+	width: 85%;
+	height: 200px;
+	border: 1px solid rgb(216, 216, 216);
+	border-radius: 20px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.noticeBox .notice {
+	width: 85%;
+}
+
+.notice .noticeTitle{
+	margin: 10px 0 0 20px;
+}
+
+.notice .noticeTitle a {
+	text-decoration: none;
+	color: black;
+}
+
+.notice .noticeText{
+	width:95%;
+	margin: 10px 0 0 20px;
+	font-size: 13px;
+}
+
+.notice .noticeOthers {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px; 
+}
+
+.notice .noticeOthers .TagAnaTime {
+	margin: 10px 0 0 20px;
+}
+
+.TagAnaTime .noticeTagBox {
+	margin-bottom: 7px ;
+}
+
+.TagAnaTime .noticeTagBox .Tag {
+	background-color: rgb(112, 190, 248);
+	border-radius: 5px;
+	display: inline;
+	padding: 2px 7px;
+	color : #52a3a3;
+	font-weight: bold;
+}
+
+.TagAnaTime .noticeTagBox .Tag:hover {
+	color : white;
+	cursor: pointer;
+}
+
+.notice .noticeOthers .noticeUser {
+	margin: 10px 20px 0 0;
+	display: flex;
+	align-items: center;
+}
+
+.notice .noticeOthers .noticeUser .noticeUserImg img {
+	width: 30px;
+}
+
+.notice .noticeOthers .noticeUser .noticeUserNickName {
+	margin: 0 0 5px 10px;
+}
+
+
+.bodyWrap .pageNum{
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+

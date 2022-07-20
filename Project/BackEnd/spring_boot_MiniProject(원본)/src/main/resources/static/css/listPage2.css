@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+.listTitle1 {
+	font-size: 1em;
+	color: #23527C;
+}
+
+.listMainWrap {
+	padding: 0;
+	margin: auto;
+	list-style: none;
+}
+
+.listSubWrap {
+	border: 4px solid rgb(112, 190, 248);
+	border-left: 4px solid #b9c2c2;
+	margin-top: -4px;
+	background-color: white;
+	border-left-width:8px;
+}
+
+.card:hover{
+	border: 4px solid rgb(112, 190, 248);
+}
+
+.highlight {
+	border-left: 8px solid rgb(112, 190, 248);
+}
+
+.stauts {
+	text-align: left;
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+}
+
+.listProfle {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+}
+
+.nickNameA{
+	color: black;
+	font-size: 75%; 
+	margin-left:5px;
+	margin-right:5px;
+}
+.createdDateA{
+	font-size: 25%;
+	padding-left:5px;
+}

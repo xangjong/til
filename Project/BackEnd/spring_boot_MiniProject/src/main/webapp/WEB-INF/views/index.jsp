@@ -6,7 +6,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>MainPage</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/index.js"></script>
 	</head>

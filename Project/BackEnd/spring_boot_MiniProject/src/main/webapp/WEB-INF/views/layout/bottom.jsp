@@ -1,18 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>bottom</title>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/footer.css'/>">
-		<script src="<c:url value='/js/jquery-3.6.0.min.js'/>"></script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
 	</head>
 	<body>
 		<footer>
 			<div class="footerBox">
-				<a href="/"><img src="<c:url value='/image/logo-withus2.png'/>" class="footerlogoImg"></a>
+				<a href="/"><img src="image/logo-withus2.png" class="footerlogoImg"></a>
 			<div class="footerulBox">
 				<ul class="withus">
 					<li>위더스</li>
@@ -24,17 +22,16 @@
 				</ul>
 				<ul class="siteMap">
 					<li>SITEMAP</li>
-					<li><a href="<c:url value='/'/>">HOME</a></li>
-					<li><a href="<c:url value='/noticePage'/>">NOTICE</a></li>
-					<li><a href="<c:url value='/questionPage'/>">QUESTION</a></li>
-					<li><a href="<c:url value='/talkPage'/>">TALK</a></li>
-					<li><a href="<c:url value='/ITNewsPage'/>">IT NEWS</a></li>
+					<li><a href="/">HOME</a></li>
+					<li><a href="noticePage.html">NOTICE</a></li>
+					<li><a href="questionPage.html">QUESTION</a></li>
+					<li><a href="talkPage.html">TALK</a></li>
+					<li><a href="ITNewsPage.html">IT NEWS</a></li>
 				</ul>
-
 				<ul class="contact">
 					<li>CONTACT US</li>
-					<li><a href="<c:url value='/'/>">with:us</a></li>
-					<li><a href="<c:url value='https://github.com/'/>" target="_blank">GIT</a></li>
+					<li><a href="/">with:us</a></li>
+					<li><a href="https://github.com/" target="_blank">GIT</a></li>
 				</ul>
 				</div> <!-- footerulBox -->	
 			</div><!--footerBox  -->

@@ -4,20 +4,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta charset="UTF-8">
-		<title>댓글 관리 페이지</title>
-		<script src="<c:url value='/js/jquery-3.6.0.min.js'/>"></script>
-		<script src="<c:url value='/js/MenuTab.js'/>"></script>
-		<script src="<c:url value='/js/admin.js'/>"></script>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/reset.css'/>">
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/common.css'/>">
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/admin.css'/>">
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/adminSideBar.css'/>">
+		<meta charset="UTF-8">
+		<title>관리자</title>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/talkPage.js"></script>
+		<script src="js/tabMenu.js"></script>
+		<script src="https://kit.fontawesome.com/51724f5bf4.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/buttonE.css">
+		<link rel="stylesheet" type="text/css" href="css/adminSideBar.css">
+		<link rel="stylesheet" type="text/css" href="css/admin.css">
+		
 	</head>
 	<body>
-			<c:import url="/WEB-INF/views/layout/top.jsp"/>
-	<section>
-		<main class="cd-main-content">
+		<c:import url="/WEB-INF/views/layout/top.jsp"/>
+		<section>
 			<nav class="cd-side-nav">
 				<ul>
 					<li class="cd-label">Management</li>
@@ -52,56 +55,72 @@
 					<li class="action-btn"><a href="#0">+ Button</a></li>
 				</ul>
 			</nav>
-			
-			<div class="searchBtn">
-				 <input type="text" autofocus class="inputBtn" placeholder="검색어 입력">
-			</div>
-
-				<div class="tableBox">
-					<form>
-						<table class="manage">
-							<thead>
-								<tr>
-									<th>commentId</th>
-									<th>userId</th>
-									<th>noteId</th>
-									<th>comment</th>
-									<th>commentCrdDate</th>
-									<th>commentUtdDate</th>
-									<th>commentLike</th>
-									<th>pageViewState</th>
-								</tr>
-							</thead>
-							
-							<tbody>
-								<tr>
-									<td>댓글아이디</td>
-									<td>유저아이디</td>
-									<td>게시판아이디</td>
-									<td>댓글내용</td>
-									<td>작성일</td>
-									<td>수정일</td>
-									<td>좋아요 수</td>
-									<td>
-										<div class="select pageView">
-										<div class="blank"></div>
-										  <select>
-										    <option value="1">예</option>
-										    <option value="2">아니오</option>
-										  </select>
-										</div>
-									</td>
-								</tr>
-							</tbody>	
-							
-							
-						</table>						
-					</form>		
-					
-				</div> <!--tableBox  -->
-	
-		</main> <!-- .cd-main-content -->
-	</section>	
+			<div class="bodyWrap">
+					<div class="container-fluid" >
+						<div class="row">
+							<br>
+							<div class="container" ">
+								<div class="row">
+									<div class="searchBox col-lg-6 col-12">
+										<form class="d-flex">
+											<input class="form-control" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
+											<button class="btnSearch">
+												<i class="fa-solid fa-magnifying-glass"></i>
+											</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="tableBox">
+								<table class="manage">
+									<thead>
+										<tr>
+											<th>commentId</th>
+											<th>userId</th>
+											<th>noteId</th>
+											<th>comment</th>
+											<th>commentCrdDate</th>
+											<th>commentUtdDate</th>
+											<th>commentLike</th>
+											<th>pageViewState</th>
+										</tr>
+									</thead>
+									
+									<tbody>
+										<tr>
+											<td>댓글아이디</td>
+											<td>유저아이디</td>
+											<td>게시판아이디</td>
+											<td>댓글내용</td>
+											<td>작성일</td>
+											<td>수정일</td>
+											<td>좋아요 수</td>
+											<td>
+												<div class="select pageView">
+												<div class="blank"></div>
+												  <select>
+												    <option value="1">예</option>
+												    <option value="2">아니오</option>
+												  </select>
+												</div>
+											</td>
+										</tr>
+									</tbody>	
+								</table>		
+							</div> <!--tableBox  -->		
+						</div>	
+						<div class="pageNumBox row">
+							<div class="pageNum col">
+								<button class="btnFilter"><<</button>
+								<button class="btnFilter btnFilterActive">1</button>
+								<button class="btnFilter">2</button>
+								<button class="btnFilter">3</button>
+								<button class="btnFilter">>></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
 		<c:import url="/WEB-INF/views/layout/bottom.jsp"/>
 	</body>
 </html>

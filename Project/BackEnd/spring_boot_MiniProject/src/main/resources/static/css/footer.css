@@ -2,7 +2,6 @@
 
 /* footer.css */
 ul { list-style-type:none; } 
-ul li a { text-decoration:none;}
 /* 헤더에서 섹션 푸터 영역 전까지 감싼 박스 */
 .bodyContent {
 	height: auto;
@@ -15,6 +14,7 @@ footer {
 	position : relative; 
   	/* transform : translateY(-100%); */
   	height:10%; /* 푸터 영역 값 높이 설정*/
+
 }  
 
 

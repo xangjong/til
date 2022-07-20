@@ -6,15 +6,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Top 메뉴</title>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/headerMenu.css'/>">
-		<script src="<c:url value='/js/jquery-3.6.0.min.js'/>"></script>
+		<link rel="stylesheet" type="text/css" href="css/headerMenu.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<script src="https://kit.fontawesome.com/51724f5bf4.js"></script>
 	</head>
 	<body>
 		<header>
 			<div class="mainMenu">
 				<div class="menuImg">
-					<a href="<c:url value='/'/>"><img src="<c:url value='/image/logo-withus2.png'/>"></a>
-				</div> 
+					<a href="<c:url value='/'/>"><img src="image/logo-withus2.png"></a>
+				</div>
 				<div class="topMenu">
 					<div class="underline"></div>
 					<a href="<c:url value='/'/>">Home</a>
@@ -34,6 +35,8 @@
 						<a href="<c:url value='/logout'/>">로그아웃</a> 
 						<a>|</a>
 						<a href="<c:url value='/myPage'/>">마이페이지</a>
+						<a>|</a>
+						<a href="<c:url value='/adminPage'/>">관리자</a>
 					</c:if>
 				</div>
 			</div>
