@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+/*********************** 섹션 ************************/
+section {
+	position: relative;
+	top:75px;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	min-height: 100%;
+	padding-bottom:10%;
+	
+}
+
+.bodyWrap {
+	width:1400px;
+	height: 100%;
+	display: flex;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/********** 질문 박스 *********/
+.bodyWrap .questionBoxWrap{
+	width: 1050px;
+}
+
+.questionBoxWrap .searchBox {
+	margin-top: 50px;
+}
+
+.questionBoxWrap .searchBox .d-flex {
+	width: 520px;
+	margin: auto;
+}
+
+.searchBox .form-control {
+	width: 460px;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid rgb(216, 216, 216);
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+.searchBox .btnSearch {
+	width: 50px;
+	height: 40px;
+	border: 2px solid rgb(128, 128, 128);
+	border-radius: 5px;
+	background-color: white;
+}
+
+.searchBox .btnSearch:hover {
+	background-color: rgba(102,152,203,1);
+	cursor: pointer;
+}
+
+.searchBox .btnSearch:hover i{
+	color:white;
+}
+
+.btnSearch i {
+	color: rgb(128, 128, 128);
+	font-size: 15px;
+}
+
+.bodyWrap .questionBoxWrap .slideShow{
+	margin-top: 50px;
+	position: relative;
+}
+
+/****** 슬라이드쇼 ******/
+.questionBoxWrap .slideShow .prevNextButtonBox{
+	width: 880px;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 85px;
+	margin-top: 150px;
+}
+
+.prevNextButtonBox .prevNextButton{
+	opacity: 0.5;
+	width: 60px;
+	z-index: 10;
+}
+.prevNextButtonBox .prevNextButton:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.questionBoxWrap .slideShow .slideShowBox{
+	width: 650px;
+	height: 350px;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 20px;
+}
+
+.slideShowBox .slidePanel{
+	position: relative;
+	width: 3250px;
+	height: 350px;
+}
+
+.slideShowBox .animated{
+	transition: 0.5s ease-out;
+}
+
+.slideShowBox .slidePanel .slideImage {
+	width: 650px;
+	height: 350px;
+	float: left;
+}
+
+.questionBoxWrap .slideShow .controlPanel{
+	margin: auto;
+	width: 85px;
+}
+
+/****** 질문 게시글 *****/
+.questionBoxWrap .questionBox{
+	width: 1000px;
+	margin: auto;
+}
+
+.questionBox .arrayTitle{
+	margin: 50px 0 0 80px;
+}
+
+.btnFilter{
+	background-color: white;
+	color: rgb(128, 128, 128);
+	border: none;
+	border-radius: 5px;
+	margin-right: 20px; 
+	font-size: 15px;	
+	width: 60px;
+	height: 25px;
+	cursor: pointer;
+	font-family: 'Jua', sans-serif;
+}
+
+.btnFilter:hover{
+	background-color: rgba(102,152,203,1);
+	color: white;
+}
+
+.btnFilterActive{
+	background-color: rgba(102,152,203,1);
+	color: white;
+}
+
+.questionBox .question{
+	width: 85%;
+	height: 150px;
+	border: 1px solid rgb(216, 216, 216);
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 20px;
+	display: flex;
+	background-color: rgba(102,152,203,0.08);
+}
+
+.questionBox .question .questionLeftBox{
+	width: 100px;
+	text-align: center;
+}
+
+.questionLeftBox .answerCount{
+	border: 1px solid rgb(128, 128, 128);
+	width: 60%;
+	margin: 13px 0 10px 17px;
+	border-radius: 3px;
+}
+
+.questionLeftBox p{
+	font-size: 12px;
+	color: rgb(128, 128, 128);
+}
+
+.questionLeftBox .goodCount{
+	margin-bottom:10px;
+}
+
+.questionLeftBox .viewCount {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.questionLeftBox .viewCount p {
+	margin-left: 7px;
+}
+
+.questionBox .question .questionMainBox{
+	width: 800px;
+}
+
+.questionMainBox .questionTitle{
+	margin: 10px 0 0 15px;
+	font-family: 'Jua', sans-serif;
+	height: 30px;
+	overflow: hidden;
+	width:95%;
+}
+
+.questionMainBox .questionText{
+	width:95%;
+	height: 40px;
+	margin: 10px 0 0 20px;
+	font-size: 18px;
+	font-family: 'Nanum Pen Script', cursive;
+	overflow: hidden;
+}
+
+.questionMainBox .questionOthers {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 750px;
+	margin-top: 5px;
+}
+
+.questionMainBox .questionOthers .TagAnaTime {
+	margin-left:20px;
+}
+
+.TagAnaTime .questionTagBox {
+	margin-bottom: 7px ;
+}
+
+.TagAnaTime .questionTagBox .Tag {
+	background-color: rgb(180, 180, 180);
+	border-radius: 5px;
+	display: inline;
+	padding: 2px 7px;
+	color : white;
+	font-weight: bold;
+}
+
+.TagAnaTime .questionTagBox .Tag:hover {
+	color : white;
+	background-color: rgba(102,152,203,1);
+	cursor: pointer;
+}
+
+.TagAnaTime .questionTime {
+	font-size: 12px;
+	color: rgb(128, 128, 128);
+}
+
+.questionMainBox .questionOthers .questionUser {
+	margin: 10px 20px 0 0;
+	display: flex;
+	align-items: center;
+}
+
+.questionUser .questionUserImg img {
+	width: 30px;
+}
+
+.questionUser .questionUserNickName {
+	margin: 0 0 5px 10px;
+}
+
+
+.bodyWrap .pageNum{
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+/*********** 사이드박스 ********/
+.bodyWrap .sideBox {
+	width: 350px;
+}
+
+.sideBox .createQuestion button {
+	margin: 50px 0 0 35px;
+	width:80%;
+	height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.sideBox .createQuestion button:hover {
+	cursor: pointer;
+}
+
+.sideBox .questionTag {
+	width: 90%;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.sideBox .questionTag .questionTagTitle {
+	border-bottom: 1px solid rgb(216, 216, 216);
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Cute Font', cursive;
+}
+
+.sideBox .questionTag .questionTagTitle i {
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+.sideBox .questionTag .sideTagBox .Tag {
+	background-color: rgb(180, 180, 180);
+	border-radius: 5px;
+	padding: 2px 7px;
+	display: inline-block;
+	color : white;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.sideBox .questionTag .sideTagBox .Tag:hover {
+	color: white;
+	background-color: rgba(102,152,203,1);
+	cursor: pointer;
+}
+
+.sideBox .hotQuestion {
+	position: sticky;
+	top: 85px;
+	margin-top: 50px;
+}
+
+.sideBox .hotQuestion table {
+	width:90%;	
+	margin: auto;
+	border-bottom: 1px solid rgb(216, 216, 216);
+	padding-bottom: 10px;
+}
+
+.sideBox .hotQuestion th {
+	border-bottom: 1px solid rgb(216, 216, 216);
+	text-align: left;
+	font-size: 35px;
+	font-family: 'Cute Font', cursive;
+}
+
+.sideBox .hotQuestion th i {
+	font-size: 20px;
+}
+
+.sideBox .hotQuestion td {
+	padding-top: 10px;
+	font-size: 18px;
+	font-family: 'Nanum Pen Script', cursive;
+}
+
+.sideBox .hotQuestion td i {
+	margin-right: 5px;
+}
+
+.sideBox .hotQuestion td span {
+	display: inline-block;
+	width: 15px;
+}

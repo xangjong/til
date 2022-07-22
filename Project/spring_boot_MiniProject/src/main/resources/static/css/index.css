@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+* {margin:0; padding:0; /* border: 1px solid; */}
+
+.wrap { 
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	background-color: rgba(0,0,0,0.5);
+}
+
+/* 헤더 메뉴바 */
+
+.mainMenu {
+	display: flex;
+	justify-content: space-between;
+	width: 1150px;
+	margin-left: 19%;
+}
+
+.mainMenu .menuImg{
+	margin-top: 15px;
+}
+
+.mainMenu .menuImg img {
+	width: 150px;
+	height:50px;
+	cursor: pointer;
+}
+
+.mainMenu .topMenu {
+	display: flex;
+	justify-content: center;
+	font-family: 'Jua', sans-serif;
+}
+
+.mainMenu .topMenu .underline {
+	position: absolute;
+	background-color: rgba(102,152,203,1);
+	height: 4px;
+	margin-top: 8px;
+	transition: 0.3s;
+	border-radius: 3px;
+}
+
+.mainMenu .topMenu a{
+	text-decoration: none;
+	color: white;
+	margin: 30px 0 10px 0;
+	font-weight: bold;
+	padding: 0 20px 5px 20px;
+}
+
+.mainMenu .topMenu a:hover{
+	color: rgba(102,152,203,1);
+}
+
+.mainMenu .login {
+	margin-top: 30px;
+	color: white;
+}
+
+.mainMenu .login a {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+}
+
+/* 본문 내용 */
+
+section {
+	font-family: 'Jua', sans-serif;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.sectionWrap {
+	width:60%;
+}
+
+.sectionWrap .mainTitle{
+	text-align: center;
+	margin-top: 120px;
+}
+
+.sectionWrap .mainTitle h1 {
+	color: white;
+	font-size: 70px;
+	
+}
+
+.bodyMenuWrap{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+.bodyMenuWrap .bodyMenu {
+	text-align: center;
+	width: 300px;
+}
+
+.bodyMenuWrap .bodyMenu .boardPhoto {
+	width: 200px;
+	height: 200px;
+	transition: 0.3s;
+}
+
+.bodyMenuWrap .bodyMenu .boardPhoto:hover {
+	width: 300px;
+	height: 300px;
+	transition: 0.3s;
+	cursor: pointer;
+
+}
+
+.bodyMenuWrap .bodyMenu .boardTitle {
+	color: white;
+}
+
+.bodyMenuWrap .bodyMenu .boardText {
+	color: white;
+	font-size: 15px;
+}

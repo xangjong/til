@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring_boot.MiniProject.dao.INoteDAO">
+
+	
+  	<!-- 해시태그 조회 -->
+  	<select id="selectHashtag" resultType="String">
+  		select * from hashtag
+  	</select>
+  	
+  	<!-- 카테고리 유저 조회 -->
+  	<select id="selectUserCategory" resultType="com.spring_boot.MiniProject.model.CategoryVO">
+  		select * from category where roll = 0
+  	</select>
+  	
+  	<!-- 카테고리 전체 조회 -->
+  	<select id="selectAllCategory" resultType="com.spring_boot.MiniProject.model.CategoryVO">
+  		select * from category
+  	</select>
+
+	<insert id="InsertNote"
+		parameterType="com.spring_boot.MiniProject.model.NoteVO">
+		INSERT into note
+		(userId,categoryId,noteTitle,note,hashName1,hashName2,hashName3,hashName4,hashName5,hashName6,hashName7,hashName8,hashName9,hashName10)
+		VALUES(#{userId},#{categoryId},#{noteTitle},#{note},#{hashName1},#{hashName2},#{hashName3},#{hashName4},#{hashName5},#{hashName6},#{hashName7},#{hashName8},#{hashName9},#{hashName10})
+	</insert>
+	
+	<select id="selectAllNoteList" resultType="com.spring_boot.MiniProject.model.NoteVO">
+  		select * from note
+  	</select>
+  	
+  	<select id="selectNoteList" parameterType="int" resultType="com.spring_boot.MiniProject.model.NoteVO">
+  		select * from note where categoryId = 1 AND pageViewState = 0 ORDER BY noteId DESC LIMIT 10 OFFSET #{page}
+  	</select> 
+  	
+  	<select id="selectNoteListTitle" parameterType="hashmap" resultType="com.spring_boot.MiniProject.model.NoteVO">
+  		select * from note where categoryId = #{category} AND pageViewState = 0 AND noteTitle like CONCAT('%',#{title},'%') ORDER BY ${filter} DESC LIMIT 12 OFFSET #{page}
+  	</select> 
+  	
+  	<select id="selectNoteListTitleCount" parameterType="hashmap" resultType="int">
+  		select count(*) from note where categoryId = #{category} AND pageViewState = 0 AND noteTitle like CONCAT('%',#{title},'%')
+  	</select> 
+  	
+  	<select id="selectNoteUserList" parameterType="hashmap" resultType="com.spring_boot.MiniProject.model.NoteVO">
+  		select * from note where categoryId = #{category} AND userId = #{userId} AND pageViewState = 0 AND noteTitle like CONCAT('%',#{title},'%') ORDER BY ${filter} DESC LIMIT 6 OFFSET #{page}
+  	</select> 
+  	
+  	<select id="selectNoteUserListCount" parameterType="hashmap" resultType="int">
+  		select count(*) from note where categoryId = #{category} AND userId = #{userId} AND pageViewState = 0 AND noteTitle like CONCAT('%',#{title},'%')
+  	</select> 
+  	
+  	
+  	<select id="selectNoteListHashtag" parameterType="hashmap" resultType="com.spring_boot.MiniProject.model.NoteVO">
+  		select * from note where categoryId = #{category} AND pageViewState = 0 AND noteTitle like CONCAT('%',#{title},'%') AND (hashName1 = #{tag} OR hashName2 = #{tag} OR hashName3 = #{tag} OR hashName4 = #{tag} OR hashName5 = #{tag} OR hashName6 = #{tag} OR hashName7 = #{tag} OR hashName8 = #{tag} OR hashName9 = #{tag} OR hashName10 = #{tag}) ORDER BY ${filter} DESC LIMIT 12 OFFSET #{page}
+  	</select> 
+  	
+  	<select id="selectNoteListHashtagCount" parameterType="hashmap" resultType="int">
+  		select count(*) from note where categoryId = #{category} AND pageViewState = 0 AND noteTitle like CONCAT('%',#{title},'%') AND (hashName1 = #{tag} OR hashName2 = #{tag} OR hashName3 = #{tag} OR hashName4 = #{tag} OR hashName5 = #{tag} OR hashName6 = #{tag} OR hashName7 = #{tag} OR hashName8 = #{tag} OR hashName9 = #{tag} OR hashName10 = #{tag})
+  	</select> 
+  	
+  	<select id="selectUserWriteQuestionNoteList" parameterType="String" resultType="com.spring_boot.MiniProject.model.NoteVO">
+  		select * from note where categoryId = 1 AND pageViewState = 0 AND userId=#{userId} ORDER BY noteId
+  	</select>
+
+	<select id="selectNote" parameterType="int" resultType="com.spring_boot.MiniProject.model.NoteVO">
+  		select * from note where noteId = #{noteId}
+  	</select>
+  	
+  	<select id="selectNoteHashtag" parameterType="int" resultType="com.spring_boot.MiniProject.model.NoteVO">
+  		select hashName1,hashName2,hashName3,hashName4,hashName5,hashName6,hashName7,hashName8,hashName9,hashName10 from note where noteId = #{noteId}
+  	</select>
+  	
+  	<update id="updateNote"
+		parameterType="com.spring_boot.MiniProject.model.NoteVO">
+		UPDATE note SET categoryId = #{categoryId}, noteTitle =
+		#{noteTitle}, note = #{note}, noteUpdatedDate =NOW(), 
+		hashName1 = #{hashName1}, hashName2 = #{hashName2}, hashName3 = #{hashName3}, hashName4 = #{hashName4}, hashName5 = #{hashName5}, hashName6 = #{hashName6}, hashName7 = #{hashName7}, hashName8 = #{hashName8}, hashName9 = #{hashName9}, hashName10 = #{hashName10}
+		WHERE noteId = #{noteId}
+	</update>
+
+	<update id="updateNoteView" parameterType="int">
+		UPDATE note SET noteView = noteView + 1 WHERE noteId = #{noteId}
+	</update>
+	
+	<update id="deleteNote"
+		parameterType="int">
+		UPDATE note SET pageViewState = 1 WHERE noteId = #{noteId}
+	</update>
+	
+	<select id="selectNoteLike" parameterType="hashmap" resultType="int">
+  		select count(*) from note_like where noteId = #{noteId} AND userId = #{userId}
+  	</select>
+  	
+  	<insert id="insertNoteLike" parameterType="hashmap">
+  		 insert into note_like (noteId,userId) VALUES (#{noteId},#{userId})
+  	</insert>
+  	
+  	<delete id="deleteNoteLike" parameterType="hashmap">
+  		delete from note_like where noteId = #{noteId} AND userId = #{userId}
+  	</delete>
+  	
+  	<update id="updateNoteLikePlus" parameterType="int">
+		UPDATE note SET noteLike = noteLike + 1 WHERE noteId = #{noteId}
+	</update>
+	
+	<update id="updateNoteLikeMinus" parameterType="int">
+		UPDATE note SET noteLike = noteLike - 1 WHERE noteId = #{noteId}
+	</update>
+	
+	<update id="updateNoteCommentPlus" parameterType="int">
+		UPDATE note SET noteCommentNum = noteCommentNum + 1 WHERE noteId = #{noteId}
+	</update>
+	
+	<update id="updateNoteCommentMinus" parameterType="int">
+		UPDATE note SET noteCommentNum = noteCommentNum - 1 WHERE noteId = #{noteId}
+	</update>
+	
+	<insert id="insertComment"
+		parameterType="com.spring_boot.MiniProject.model.CommentVO">
+		INSERT into comment
+		(userId,noteId,comment)
+		VALUES(#{userId},#{noteId},#{comment})
+	</insert>
+	
+	<select id="selectAllComment" parameterType="int" resultType="com.spring_boot.MiniProject.model.CommentVO">
+  		select c.commentId,c.userId,c.noteId,c.pageViewState,c.comment,c.commentCreatedDate,c.commentUpdatedDate,c.commentLike, u.userNickName, u.userImg from comment c, user u where c.userId = u.userId AND c.noteId = #{noteId} AND pageViewState=0
+  	</select>
+  	
+  	<update id="updateComment" parameterType="com.spring_boot.MiniProject.model.CommentVO">
+		UPDATE comment SET comment = #{comment} WHERE commentId = #{commentId} AND userId = #{userId}
+	</update>
+	
+	<update id="deleteComment" parameterType="com.spring_boot.MiniProject.model.CommentVO">
+		UPDATE comment SET pageViewState = 1 WHERE commentId = #{commentId} AND userId = #{userId}
+	</update>
+	
+	<select id="selectNoteId" parameterType="int" resultType="int">
+  		select noteId from comment where commentId = #{commentId}
+  	</select>
+  	
+</mapper>
+  

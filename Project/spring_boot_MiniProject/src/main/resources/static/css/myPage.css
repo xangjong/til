@@ -1,0 +1,466 @@
+@charset "UTF-8";
+
+/* myPage.css */
+
+.wrapper { /* background:#f8f9fa; */
+	background:#fff;
+}
+
+section { 
+	position: relative;
+	top:75px;
+	display:flex; 
+	justify-content:center; 
+	height : auto;
+  	min-height: 100%;
+  	padding-bottom:10%; 
+}
+
+.myPageBox {
+	text-align:left;
+	background:#fff;
+	border-radius:10px;
+	padding:3%;
+	width:33%;
+	height:auto;
+	line-height:auto;
+}
+
+
+.myPageBox h1 { 
+	font-size:2em; 
+	font-weight:bold;
+	line-height:1.4em;
+	font-family: 'Jua', sans-serif;
+}
+
+.userPage { 
+	display:flex;
+}
+
+.userPage li {
+	height:100%;
+	line-height:100%;
+	margin:5% 0 4%;
+}
+
+.userPage li:last-child {
+	margin-left:2%;
+}
+
+.userBox {
+	border:0 solid #aaa;
+	box-shadow: 1px 1px 1px 4px #eee; 
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:30%;
+	height:55%;
+	line-height:55%;
+	justify-content:space-between;
+	font-family: 'Jua', sans-serif;
+}
+
+.profileImg {
+	margin-top:10%;
+	display: flex;
+	width: 80%;
+    height: 80%;
+}
+
+.boxUser {
+	margin-bottom:20%;
+	text-align:center;
+	width:60%;
+}
+
+/*  이름 포인트 */
+.fontBox {
+	display:block;
+}
+
+.fontBox li {
+	margin-bottom:20%;
+}
+
+.fontBox li:first-child {
+	margin-top:20%;
+	font-size:24px;
+}
+
+.fontBox li:nth-child(2) {
+	font-size:20px;
+}
+
+
+.fontBox li:last-child {
+	color:#aaa;
+	font-weight:bold;
+	font-size:14px;
+}
+
+/* 포인트 이미지 */
+.pointBox {
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+}
+
+
+.pointBox li {
+	display:flex;
+	align-items:center;
+	height:20px;
+	line-height:20px;
+}
+
+.pointBox li:nth-child(2), .pointBox li:nth-child(3){
+	margin-left:10%;
+}
+
+
+.point {
+	margin-top:15%;
+	margin-left:10%;
+}
+
+/* tag, question, answer, comment */
+.tagBox {
+	display:flex;
+	margin-top:7%;
+}
+
+.tagBox li {
+	margin-left:2%;
+}
+
+.tagBox li:first-child {
+	margin-left:0%;
+}
+
+.tagBox li a span, .userPage li a span{
+	background-color: #aaa;
+	 border-radius:10px;
+	 padding : 6px 15px;
+	 color: #fff;
+	font-weight:bold;
+	font-size:14px;
+}
+
+/* 클릭시 */
+.userPage li:first-child a span, .tagBox li:first-child a span{
+	background:rgba(102,152,203,1);
+}
+
+
+.tagBox li a:hover span, .userPage li a:hover span  {
+	background:rgba(102,152,203,1);
+}
+
+.login a {
+	font-weight:bold;
+
+}
+ 
+.userProfileBox {
+ 	display:flex;
+	flex-direction:center;
+}
+ 
+/* 닉네임 소속 이메일 주소 */
+.userInfo {
+	display:flex;
+ 	margin:5% 0 0 5%;
+ 	width:50%;
+}
+ 
+.userInfo li {
+ 	padding:10% 0;
+}
+ 
+.userInfo li h2 {
+ 	font-size:24px;
+}
+ 
+.userinfoBox {
+	display:flex;
+	flex-direction:column;
+	width:60%;
+}
+
+.userinfoBox li {
+	display:flex;
+	align-items:center;
+}
+
+.nameInfo {
+	margin-top:2%;
+	margin-left:8%;
+}
+
+
+/* 태그 활동 */
+.tagActBox, .tagChtBox {
+	border:0px solid #aaa;
+	box-shadow: 1px 1px 1px 4px #eee;
+	width:100%;
+	padding:6px 10px; 
+}
+
+.tagAct:focus, .tagCht:focus {
+	outline:none;
+	box-shadow: 1px 1px 1px 4px #00a8be;
+	color:#aaa;
+	font-size:20px;
+}
+
+.tagActBox {
+	margin-top:3%;
+	display:flex;
+	flex-direction:column;
+}
+
+.tagActBox h2 {
+	font-size:17px;
+	margin-top:2%;
+	margin-bottom:3%;
+}
+
+.tagAct {
+	display:flex;
+	margin-bottom:3%;
+	
+}
+
+.interest, .question, .answer, .comment {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	box-shadow: 1px 1px 1px 3px #eee;
+	padding:1% 3%;
+	font-size:14px;
+	margin-left:2%;
+}
+
+.interest a:first-child {
+	color:#00a8be;
+	font-size:15px;
+	margin:5% 0 10% 0;
+}
+
+.interest a:last-child {
+	background:#abe9f8;
+	padding:15% 20%;
+	border-radius:30%;
+	
+}
+
+.interest a:last-child span{
+	color:#007895;
+	font-size:14px;
+	
+}
+
+.interest a:last-child span:hover{
+	color:#fff;
+	
+}
+
+.tagChtBox {
+	margin-top:5%;
+}
+
+.question a:first-child, .answer a:first-child, .comment a:first-child {
+	color:#aaa;
+	margin:5% 0 10% 0;
+}
+
+.tagChtBox h2 {
+	font-size:17px;
+	margin-top:3%;
+	
+}
+
+/* 막대 그래프 키프레임 */
+@keyframes p-5{from{width:0}to{width:5%}}
+@keyframes p-10{from{width:0}to{width:10%}}
+@keyframes p-15{from{width:0}to{width:15%}}
+@keyframes p-20{from{width:0}to{width:20%}}
+@keyframes p-25{from{width:0}to{width:25%}}
+@keyframes p-30{from{width:0}to{width:30%}}
+@keyframes p-35{from{width:0}to{width:35%}}
+@keyframes p-40{from{width:0}to{width:40%}}
+@keyframes p-45{from{width:0}to{width:45%}}
+@keyframes p-50{from{width:0}to{width:50%}}
+@keyframes p-55{from{width:0}to{width:55%}}
+@keyframes p-60{from{width:0}to{width:60%}}
+@keyframes p-65{from{width:0}to{width:65%}}
+@keyframes p-70{from{width:0}to{width:70%}}
+@keyframes p-75{from{width:0}to{width:75%}}
+@keyframes p-80{from{width:0}to{width:80%}}
+@keyframes p-85{from{width:0}to{width:85%}}
+@keyframes p-90{from{width:0}to{width:90%}}
+@keyframes p-95{from{width:0}to{width:95%}}
+@keyframes p-100{from{width:0}to{width:100%}}
+
+/* 그래프 애니메이션 */
+.graph li.p-5{width:5%;animation:p-5 .1s}
+.graph li.p-10{width:5%;animation:p-10 .2s}
+.graph li.p-15{width:15%;animation:p-15 .3s}
+.graph li.p-20{width:20%;animation:p-20 .4s}
+.graph li.p-25{width:25%;animation:p-25 .5s}
+.graph li.p-30{width:30%;animation:p-30 .6s}
+.graph li.p-35{width:35%;animation:p-35 .7s}
+.graph li.p-40{width:40%;animation:p-40 .8s}
+.graph li.p-45{width:45%;animation:p-45 .9s}
+.graph li.p-50{width:50%;animation:p-50 1s}
+.graph li.p-55{width:55%;animation:p-55 1.1s}
+.graph li.p-60{width:60%;animation:p-60 1.2s}
+.graph li.p-65{width:65%;animation:p-65 1.3s}
+.graph li.p-70{width:70%;animation:p-70 1.4s}
+.graph li.p-75{width:75%;animation:p-75 1.5s}
+.graph li.p-80{width:80%;animation:p-80 1.6s}
+.graph li.p-85{width:85%;animation:p-85 1.7s}
+.graph li.p-90{width:90%;animation:p-90 1.8s}
+.graph li.p-95{width:95%;animation:p-95 1.9s}
+.graph li.p-100{width:100%;animation:p-100 2s}
+
+.graph li.p-5::before{content:"5%"}
+.graph li.p-10::before{content:"10%"}
+.graph li.p-15::before{content:"15%"}
+.graph li.p-20::before{content:"20%"}
+.graph li.p-25::before{content:"25%"}
+.graph li.p-30::before{content:"30%"}
+.graph li.p-35::before{content:"35%"}
+.graph li.p-40::before{content:"40%"}
+.graph li.p-45::before{content:"45%"}
+.graph li.p-50::before{content:"50%"}
+.graph li.p-55::before{content:"55%"}
+.graph li.p-60::before{content:"60%"}
+.graph li.p-65::before{content:"65%"}
+.graph li.p-70::before{content:"70%"}
+.graph li.p-75::before{content:"75%"}
+.graph li.p-80::before{content:"80%"}
+.graph li.p-85::before{content:"85%"}
+.graph li.p-90::before{content:"90%"}
+.graph li.p-95::before{content:"95%"}
+.graph li.p-100::before{content:"100%"}
+
+.percent-indicator .per-0::before{content:'0%'}
+.percent-indicator .per-20::before{content:'20%'}
+.percent-indicator .per-40::before{content:'40%'}
+.percent-indicator .per-60::before{content:'60%'}
+.percent-indicator .per-80::before{content:'80%'}
+.percent-indicator .per-100::before{content:'100%'}
+
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
+.graph-wrapper {
+  position: relative;
+  padding:25px;
+  max-width:800px;
+  margin:auto
+}
+
+.graph-wrapper h1 {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top:-15px;
+  margin:0;
+  margin-bottom:15px;
+  padding:0 10px;
+  font-size:30px;
+  background:#fff;
+  line-height:30px
+}
+
+.percent-indicator {
+  position:absolute;
+  top:0;
+  right:25px;
+  left:25px;
+  bottom:0;
+  display:flex;
+  justify-content: space-between;
+  width:calc(100% - 50px);
+  padding:50px 20px
+}
+
+.percent-indicator div {
+  position:relative;
+  width:0;
+  margin-left:-1px;
+  border-left:1px dashed #aaa;
+}
+
+.percent-indicator .per-0 {
+  transform: translateX(1px)
+}
+
+.percent-indicator div::before, .percent-indicator div::after {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  padding-bottom:5px;
+  font-size:16px;
+  line-height:16px;
+  background:#fff
+}
+
+.percent-indicator div::after {
+  top:21px
+}
+
+
+.graph {
+  position: relative;
+  margin:100px auto;
+  padding:0 20px;
+  list-style:none;
+  z-index:0;
+}
+
+.graph li {
+  margin-bottom:5px;
+  padding:10px 5px;
+  background: linear-gradient(90deg,#429ea8,#3cd3ad);
+  color:#fff;
+  text-align: left
+}
+
+.graph li::before, .graph li:hover::after {
+  display:none
+}
+
+.graph li::after, .graph li:hover::before {
+  display:block
+}
+
+.graph li.item1::after {
+  content:"Java"
+}
+
+.graph li.item2::after {
+  content:"Python"
+}
+
+.graph li.item3::after {
+  content:"JavaScript"
+}
+
+.graph li.item4::after {
+  content:"C++"
+}
+
+.graph li.item5::after {
+  content:"React"
+}
+
+@media screen and (max-width:640px) {
+  .percent-indicator div::after {
+    display:none
+  }
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.spring_boot.MiniProject.dao.IAdminDAO">
+	<resultMap id="userResult" type="com.spring_boot.MiniProject.model.UserVO">
+		<result property="userId" column="userId" />
+		<result property="userPw" column="userPw" />
+		<result property="userEmail" column="userEmail" />
+		<result property="userImg" column="userImg" />
+		<result property="userActivateDate" column="userActivateDate" />
+		<result property="userCreatedDate" column="userCreatedDate" />
+		<result property="userNickname" column="userNickname" />
+		<result property="userCompany" column="userCompany" />
+		<result property="roll" column="roll" />
+		<result property="userState" column="userState" />
+	</resultMap>
+	
+	<resultMap id="postResult" type="com.spring_boot.MiniProject.model.NoteVO">
+		<result property="noteId" column="noteId" />
+		<result property="userId" column="userId" />
+		<result property="pageViewState" column="pageViewState" />
+		<result property="categoryId" column="categoryId" />
+		<result property="noteTitle" column="noteTitle" />
+		<result property="note" column="note" />
+		<result property="noteView" column="noteView" />
+		<result property="noteLike" column="noteLike" />
+		<result property="noteCommentNum" column="noteCommentNum" />
+		<result property="noteCreatedDate" column="noteCreatedDate" />
+		<result property="noteUpdatedDate" column="noteUpdatedDate" />
+		<result property="pageViewState" column="pageViewState" />
+	</resultMap>
+	
+	<resultMap id="commentResult" type="com.spring_boot.MiniProject.model.CommentVO">
+		<result property="commentId" column="commentId" />
+		<result property="userId" column="userId" />
+		<result property="noteId" column="noteId" />
+		<result property="pageViewState" column="pageViewState" />
+		<result property="comment" column="comment" />
+		<result property="commentCreatedDate" column="commentCreatedDate" />
+		<result property="commentUpdatedDate" column="commentUpdatedDate" />
+		<result property="commentLike" column="commentLike" />
+	</resultMap>
+		
+  	<!-- 사용자 확인 -->
+  	<select id="adminSelectUser" parameterType="hashmap" resultMap="userResult">
+  		SELECT * FROM user
+  		 WHERE userId LIKE #{userId}
+  		   AND userName LIKE #{userName}
+  		   AND roll LIKE #{roll}
+  		   AND userState LIKE #{userState}
+  	</select>
+  	
+  	<!-- 사용자 세부 확인 -->
+  	<select id="adminDetailUser" parameterType="string" resultType="com.spring_boot.MiniProject.model.UserVO">
+  		SELECT * FROM user WHERE userId = #{userId}
+  	</select>
+  	
+  	<!-- 사용자 세부 수정 -->
+	<update id="adminUpdateDetailUser" parameterType="hashmap">
+		UPDATE user
+		   SET userName=#{userName}, 
+		   	   userNickname=#{userNickname},
+		   	   userEmail=#{userEmail},
+		   	   userCompany=#{userCompany},
+		   	   roll=#{roll},
+		   	   userState=#{userState},
+		   	   userPw=#{userPw}
+		 WHERE userId=#{userId} 	   
+	</update>
+	
+  	<!-- 사용자 작성한 게시판 확인 -->
+  	<select id="adminPostSearch" parameterType="hashmap" resultMap="postResult">
+  	    SELECT note.*, user.userName
+  	      FROM note
+  	      JOIN user ON note.userId = user.userId
+  	     WHERE note.userId LIKE #{userId}
+  	       AND user.userName LIKE #{userName}
+  	       AND note.noteTitle LIKE CONCAT('%',#{noteTitle},'%')
+  	       AND note.categoryId LIKE #{categoryId}
+  	       AND DATE_FORMAT(note.noteCreatedDate, '%Y/%m/%d') LIKE IF('%'=#{noteCreatedDate}, '%', DATE_FORMAT(#{noteCreatedDate}, '%Y/%m/%d')) 
+  		   AND DATE_FORMAT(note.noteUpdatedDate, '%Y/%m/%d') LIKE IF('%'=#{noteUpdatedDate}, '%', DATE_FORMAT(#{noteUpdatedDate}, '%Y/%m/%d'))
+  		 ORDER BY note.noteId  DESC
+  	</select>
+  	
+  	<!-- 사용자 작성한 게시판 세부 확인 -->
+  	<select id="adminDetailNote" parameterType="string" resultType="com.spring_boot.MiniProject.model.NoteVO">
+  		SELECT note.*, user.userName, user.userNickname 
+  		  FROM note
+  		  JOIN user ON note.userId = user.userId
+  		 WHERE note.noteId = #{noteId}
+  	</select>
+  	
+  	<!-- 게시판 세부 수정 -->
+	<update id="adminUpdateDetailNote" parameterType="hashmap">
+		UPDATE note
+		   SET categoryId=#{categoryId},
+		   	   pageViewState=#{pageViewState}
+		 WHERE noteId=#{noteId} 	   
+	</update>
+	
+  	<!-- 사용자 작성한 댓글 게시판 확인 -->
+  	<select id="adminCommentSearch" parameterType="hashmap" resultMap="commentResult">
+  	    SELECT c.*, user.userName, note.noteId, note.noteTitle
+		  FROM comment AS c
+		  JOIN note ON c.noteId = note.noteId
+		  JOIN user ON note.userId = user.userId
+  	     WHERE note.userId LIKE #{userId}
+  	       AND user.userName LIKE #{userName}
+  	       AND DATE_FORMAT(c.commentCreatedDate, '%Y/%m/%d') LIKE IF('%'=#{commentCreatedDate}, '%', DATE_FORMAT(#{commentCreatedDate}, '%Y/%m/%d')) 
+  		   AND DATE_FORMAT(c.commentUpdatedDate, '%Y/%m/%d') LIKE IF('%'=#{commentUpdatedDate}, '%', DATE_FORMAT(#{commentUpdatedDate}, '%Y/%m/%d'))
+  		 ORDER BY c.commentId  DESC
+  	</select>
+  	
+  	<!-- 사용자 작성한 댓글 게시판 세부 확인 -->
+  	<select id="adminDetailCmtView" parameterType="string" resultType="com.spring_boot.MiniProject.model.CommentVO">
+  		SELECT c.*, user.userName, user.userNickName, note.noteTitle
+  		  FROM comment AS c
+  		  JOIN note ON c.noteId = note.noteId
+		  JOIN user ON note.userId = user.userId
+  		 WHERE c.commentId LIKE #{commentId}
+  	</select>
+  	
+  	<!-- 댓글 게시판 세부 수정 -->
+	<update id="adminUpdateDetailCmt" parameterType="hashmap">
+		UPDATE comment
+		   SET pageViewState=#{pageViewState}
+		 WHERE commentId=#{commentId} 	   
+	</update>
+</mapper>

@@ -1,0 +1,160 @@
+
+
+section {
+	position: relative;
+	top:75px;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	min-height: 100%;
+	padding-bottom:15%;
+	width:100%;
+}
+
+.bodyWrap {
+	width:100%;
+	height: 100%;
+}
+
+.row {
+	margin-top:5%;
+}
+/* 해시 태그 메뉴 검색어 입력 가운데 정렬*/
+.searchBox {
+	margin:auto;
+}
+
+.container-fluid .pageNumBox .pageNum {
+	text-align: center;
+}
+
+
+/* 검색조건 */
+.searchIf {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:2%;
+}
+
+
+.searchIf li {
+	margin-left:1%;
+}
+
+.searchIf li:first-child{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.searchIf li.space {
+	margin-left:0;
+}
+
+
+/* 테이블 */
+
+th, tr, th, td {
+	font-size:14px;
+	font-weight:bold;
+	white-space: nowrap;
+	overflow:hidden;
+	
+}
+
+.manage {
+    width:80%;
+    background-color: #fff;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left:20%;
+    margin:auto;
+}
+
+.manage tr {
+    border-bottom: 1px solid #eee;
+   
+}
+.manage tr:last-child {
+    border: none;
+}
+.manage tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.manage th {
+	font-size:14px;
+	
+}
+.manage th, .manage td {
+    padding: 12px;
+    text-align: center;
+    
+}
+.manage tr th {
+    background-color: rgba(102,152,203,1);
+    color: #fff;
+}
+
+.manage tr th:first-child {
+    border-radius: 5px 0 0 0;
+}
+.manage tr th:last-child {
+    border-radius: 0 5px 0 0;
+}
+
+/* select 버튼 초기화*/
+select {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 3em;
+  color: #000;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+  font-size:12px;
+  font-weight:bold;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  height:3em;
+  border-radius: .25em;
+  overflow: hidden;
+  font-size:8px;
+  color:#fff;
+	
+}
+
+
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: rgba(102,152,203,1);
+  transition: .25s all ease;
+  pointer-events: none;
+  
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+
+
