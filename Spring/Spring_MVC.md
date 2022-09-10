@@ -260,8 +260,6 @@ return mv; // ModelAndView 객체 반환
 
 
 
-
-
 ### View 페이지에서 컨트롤러로 데이터 전달 
 
 - (1) form을 통한 데이터 전달
@@ -274,7 +272,7 @@ return mv; // ModelAndView 객체 반환
 - 스프링에서 HTTP 요청 파라미터 가져오는 방법 3가지
   - (1) getParameter() 메소드 사용
     - ``request.getParameter(“no”);``
-  - (2) @RequestParam 어노테이션 사용
+  - (2)`` @RequestParam`` 어노테이션 사용
   - (3) Command 객체 사용
 
 
@@ -291,7 +289,7 @@ return mv; // ModelAndView 객체 반환
 - 기준 경로에 따라 페이지를 못 찾을 수 있음
 - 따라서 2가지 방법으로 사용
   - (1) ContextPath부터 적음
-  - (2) <c:url value=”/”> 사용 (/ :  ContextPath)
+  - (2) ``<c:url value=”/”>`` 사용 (/ :  ContextPath)
 
 
 
@@ -364,5 +362,4 @@ public String studentDetailView(@PathVariable String stdNo) {... }
 - DB에서 검색 결과 받아 왔다고 가정
 - ArrayList에 담아서 Model 설정
 - View 페이지에서 테이블 형태로 출력
-
 

@@ -1,4 +1,4 @@
-# [Spring]  REST
+# [Spring]  REST & Ajax
 
 
 
@@ -104,7 +104,37 @@
 
 
 
+#### ajax 예시 코드
 
+```js
+$(document).ready(function () {
+    $('#like').on('click', function () {
+        $.ajax({
+            type: "post",
+            url: "/note/noteLike",
+            data: {
+                "noteId": $('#noteId').val()
+            },
+            success: function (result) {
+                if (result == "TRUE") {
+                    $('#like').css('color', 'red');
+                    var likeNum = $('#likeNum').text();
+                    likeNum *= 1;
+                    $('#likeNum').text(++likeNum);
+                } else {
+                    $('#like').css('color', 'black');
+                    var likeNum = $('#likeNum').text();
+                    likeNum *= 1;
+                    $('#likeNum').text(--likeNum);
+                }
+            },
+            error: function () {
+                alert('오류!')
+            },
+        });
+    });
+});
+```
 
 
 
@@ -117,9 +147,9 @@
 - Ajax에서 자바스크립트로 출력 
 
 ```javascript
-success:function(resul){
-// result가 ArrayList를 받음 : 배열
-배열 처리 (복잡)
+success:function(result){
+	// result가 ArrayList를 받음 : 배열
+	// 배열 처리 (복잡)
 }
 ```
 
@@ -148,7 +178,7 @@ $(‘#searchResultBox’).html(result);
 
 소스코드
 
-```jsp
+```xml
 <dependency>
 	<groupId>com.fasterxml.jackson.core</groupId>
 	<artifactId>jackson-databind</artifactId>
