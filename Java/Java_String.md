@@ -118,5 +118,5 @@ StringBuilder가 StringBuffer보다 속도는 더 빠르지만, 언제 멀티스
 
 
 
-출처 : [https://ifuwanna.tistory.com/221](https://ifuwanna.tistory.com/221),  [https://coding-factory.tistory.com/546](https://coding-factory.tistory.com/546)
+[출처] : [https://ifuwanna.tistory.com/221](https://ifuwanna.tistory.com/221),  [https://coding-factory.tistory.com/546](https://coding-factory.tistory.com/546)
 
