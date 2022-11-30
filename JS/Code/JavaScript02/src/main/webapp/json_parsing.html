@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Json - parsing</title>
+		<script type="text/javascript">
+		// 객체 생성
+		let car = {
+				no : '11가1111',
+				name : '소나타',
+				maker : '현대',
+				cc : 2000,
+				year:2020,
+				accident:null
+				
+			};
+		// JSON.stringify() 자바스크립트 객체를 JSON data로 변환
+			var json = JSON.stringify(car);
+				console.log(json);
+		
+		// JSON.parse() JSON  data를 자바스크립트 객체로 변환
+			var obj_json = JSON.parse(json);
+			console.log(obj_json);
+			console.log(obj_json.name);
+			console.log(obj_json.no);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

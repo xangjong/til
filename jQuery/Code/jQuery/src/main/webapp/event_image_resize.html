@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>윈도우 이벤트 - 이미지 리사이즈</title>
+		<script src="jquery-3.6.0.min.js"></script>
+		<style type="text/css">
+			* {margin : 0; padding :0; }
+			img { width:100%; }
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).resize(function(){
+					var winWidth = $(window).width();
+					var imgHeight = winWidth * 600 / 1920;
+					
+					$('#topImg').css({'width':winWidth, 'height':imgHeight});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="topImageBox"><img src="image/topImg.jpg" id ="topImg">/</div>
+	</body>
+</html>

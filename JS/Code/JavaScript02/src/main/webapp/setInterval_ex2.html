@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>setInterval_ex2 예제</title>
+		<script type="text/javascript">
+			var countUp =1;
+			var countDown =10;
+			
+			function startCount(){
+				timerID=setInterval('showCount()', 500);
+			}
+			
+			function showCount(){
+				
+				countH1.innerHTML = countDown;
+				bomlmg.src = `images/bomb${countUp}.jpg`;
+				
+				
+				countUp++;
+				countDown--;
+			
+				if(countUp ==12){
+					clearInterval(timerID);
+					countUp =1;
+					countDown =10;
+				}
+				
+				
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1 id="countH1">10</h1>
+			<img id="bomlmg" src="images/bomb1.jpg"><br><br>
+			<button onClick="startCount()">카운트 다운 시작</button>
+		</center>
+	</body>
+</html>

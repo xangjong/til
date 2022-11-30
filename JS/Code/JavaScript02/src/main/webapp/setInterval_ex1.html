@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>setInterval_ex1 예제</title>
+		<script type="text/javascript">
+		let count =0;	
+		function start(){
+				alert("이미지 10개 출력");
+				timerID = setInterval('showImg()',1000);
+			}
+			
+			function showImg(){
+				count++;
+					if(count % 2!=0) document.body.innerHTML += "<img src='images/apple.png'/>";
+					else document.body.innerHTML += "<img src='images/bomb.png'/>";
+					
+					if(count ==10) clearInterval(timerID);
+			
+				
+				
+				
+				
+			}
+		</script>
+	</head>
+	<body onLoad="start()">
+		
+	</body>
+</html>

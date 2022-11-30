@@ -1,4 +1,4 @@
-# [STS] Git
+# [Spring] Git
 
 
 

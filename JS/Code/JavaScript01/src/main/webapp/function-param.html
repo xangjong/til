@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수의 매개변수</title>
+		<script type="text/javascript">
+			// 2개의 매개변수가 있는 함수
+			// 예금액과 이자율을 전달받아서 이자액을 구해서 출력하는 함수
+			function calInerest(deposit, rate){
+				var interest = (deposit * rate) / 100;
+				document.write("예금이자 : " + interest + "원");
+			}
+			
+			// 예금액과 이자율을 입력받아서
+			// calInterest() 함수에게 전달
+			function input(){
+				var deposit = parseInt(prompt("예금액 입력:")); // 계산용: 정수로 형변환 (정수 : parseInt())
+				var rate = Number(prompt("이자율 입력 : ")); // 계산용 : 숫자로 형변환 (실수 : Number())
+				calInerest(deposit, rate); // 함수에게 값 전달 : 함수의 매개변수가 받음
+			}
+			
+		</script>
+	</head>
+	<body onLoad ="input()">
+		
+	</body>
+</html>

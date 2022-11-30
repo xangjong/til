@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>position 속성</title>
+		<style type="text/css">
+			* { margin:0; }
+			#parent { 
+				position:relative;
+				width:200px;
+				height:300px;
+				border : solid 5px #000;
+				/* margin : 50px 0 0 50px; */
+			
+			}
+				#boxA, #boxB, #boxC { 
+					width :80px;
+					height:80px;
+				}
+				#boxA { background : #f00; }
+				#boxB { background : #0f0; }
+				#boxC { background : #ff0; }
+				
+				#boxB { 
+					position:absolute;
+					top:20px;
+					left:30px;
+				}
+				
+				/* (1) boxB에 relative 위치 지정 */
+			/* 디폴트인 static을 기준으로 배치 */
+			
+			/* (2) boxB에 absolute 위치 지정  */
+			/* 상위 요소 parent에 위치를 지정하지 않았기 때문에
+			     브라우저 화면(body)을 기준으로 배치  */
+			     
+			/* (3) 상위 요소 parent 안으로 배치 
+				 parent의 postion을 relative로 설정
+				 boxB를 absolute으로 설정
+			*/    
+				
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="boxA">A</div>
+			<div id="boxB">B</div>
+			<div id="boxC">C</div>
+		</div>
+	</body>
+</html>

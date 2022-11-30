@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>플렉서블 박스</title>
+		<style>
+			* { margin:0; padding:0;}
+			.container {
+				display:flex; /* 부모 박스 자신의 배치 형태. flex/inline */  
+				/* display:flex; block과 동일 */
+				width:500px;
+				height:300px;
+				border:solid 1px black;
+				margin:5px;
+				
+				/* flex item 배치 방향 */
+				 flex-direction:row;  /* 디폴트 : -> */
+				/* flex-direction:row-reverse;  */ /*  <-  */
+				
+				/* flex-direction:column;  */
+				/* flex-direction:column-reverse;  */
+				
+				/* item 정렬 */
+				/* justify-content:space-between;  */
+				/* justify-content:space-around;  */
+				 justify-content:center;  
+				 justify-content:space-evenly;				 
+			}
+			
+			/* 배치 방향이 row/row-reverse 인 경우 */
+			.container div {
+				width:20%;
+			} 
+			
+			/* 배치 방향이 column/column-reverse 인 경우 */
+			/* .container div {
+				width:100%;
+				height:20%;
+			} */
+			  
+			.container div:first-child {
+				background-color:red;
+			}
+			
+			.container div:nth-child(2) {
+				background-color:blue;
+			}
+			
+			.container div:nth-child(3) {
+				background-color:yellow;
+			}
+		  
+		</style>
+	</head>
+	<body>
+			<div class="container">
+				<div></div><div></div><div></div>
+			</div>
+			<div class="container">
+				<div></div><div></div><div></div>
+			</div>
+	</body>
+</html>

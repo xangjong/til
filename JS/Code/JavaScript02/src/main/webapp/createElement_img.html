@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>createElement() - img생성</title>
+		<script type="text/javascript">
+		window.onload =function(){
+			// 1단계 요소 노드 생성
+			// 요소 노드(<img> 태그) 생성하고 (참조) 변수에 지정
+			var img = document.createElement('img'); 
+			// 출력할 테스트 요소 노드 생성하고 변수에 지정
+			var text = document.createTextNode("출력할 텍스트 : 홍길동");
+			
+			/// 속성 설정
+			img.src="images/bird.jpg";
+			img.width =250;
+			img.height=180;
+			img.title="예쁜 새";
+			
+						
+			// img를 문서 body에 연결
+			document.body.appendChild(img);
+		
+		}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

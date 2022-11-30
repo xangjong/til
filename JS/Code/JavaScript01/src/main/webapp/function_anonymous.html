@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>익명 함수</title>
+		<script type="text/javascript">
+		// 익명함수는 호이스팅 불가 
+		// sum(10, 20);
+		
+		// 익명함수 : 변수명에 함수 코드 저장
+		var sum = function(a,b){
+				document.write(a+b + "<br>");
+			}; //세미콜론 적음
+			
+		// 호출 시 변수명을 함수 형식으로 호출
+		sum(10, 20);
+			
+		// 다른 변수명에 익명 함수를 대입해서 다른 익명 함수 생성 가능
+		var add = sum;
+		
+		add(100, 200);
+		sum(1,3);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

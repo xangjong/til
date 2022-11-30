@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>지역변수</title>
+		<script type="text/javascript">
+			function f1(){
+				var localVar1 = 100; // 함수 내에서 var 붙인 변수 : 지역변수(함수 f1()내에서만 사용 가능)
+			}
+			
+			f1();
+			
+			// document.write(localVar1);
+			
+				function f2(){
+				localVar2 = 100; // 함수 내에서 var 붙인 변수 : 지역변수(함수 f1()내에서만 사용 가능)
+			}
+			
+			f2();
+			document.write(localVar2);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

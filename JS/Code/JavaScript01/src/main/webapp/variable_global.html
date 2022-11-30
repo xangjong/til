@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>전역변수</title>
+		<script type="text/javascript">
+			// 여기에 선언된 변수는 var 붙이든지 안 붙이든지 모두 전역변수 : 모든 곳에서 사용 가능
+			var x=5, y=10; // 명시적 선언 : 전역변수
+			total = 0; // var 없이 사용 : 전역변수
+			
+			function f1(){
+				x = x +y; // x, y는 전역변수이므로 함수 f1() 내에서 사용 가능
+				document.write(x + "<br>");
+			}
+		
+			function f2(){
+				total = x +y; // total은 전역변수이므로 함수 f2() 내에서 사용 가능
+				document.write(total +"<br>");
+			}
+			
+			f1();
+			f2();
+			document.write(total);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

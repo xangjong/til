@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>콜백 함수</title>
+		<script type="text/javascript">
+			// 콜백 함수에서 지역변수를 매개변수로 전달
+			let globalVar =100; // 전역변수
+			
+			// 콜백 함수
+			function show(localVar){
+				console.log(`전역변수 : ${globalVar} / 지역변수 : ${localVar}`);
+				
+			}
+			
+			//콜백함수를 전달 받아서 사용할 함수
+			function call(callback){
+				let localVar =1; // 지역변수
+				// 콜백함수 호출하면 지역변수를 매개변수로 전달
+				callback(localVar);
+			}
+			
+			// call() 함수 호출하면 show() 함수 전달 : show() 함수 : 콜백함수
+			call(show);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

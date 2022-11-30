@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>for in문</title>
+		<script type="text/javascript">
+			var fruits = ["사과", "포도", "복숭아"];
+			
+			for(var i in fruits){
+				document.write("fruits[" + i + "] = " + fruits[i] + "<br>");
+			}
+			
+			// 첫 번째 : 항목, 두 번째 : index, 세 번째 : 배열 자체
+			fruits.forEach(function(item, index, arr){
+				document.write(item, index,arr[index] + "<br>");
+			});
+			
+			fruits.forEach(function(item, index, arr){
+				console.log(item, index, arr);				
+			});
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

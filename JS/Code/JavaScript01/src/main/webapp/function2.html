@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수 예제2</title>
+		<script type="text/javascript">
+		// 함수 내에서 다른 함수 호출
+		// 함수1 : changeColor() 함수 호출
+			function start(){
+			var answer = confirm("배경색을 변경하시겠습니까?");
+			if(answer){
+				changeColor();
+			} else {
+				alert("취소하였습니다.");
+			}
+		}
+		
+		// 함수2 : 문서 배경색을 변경하는 함수
+			function changeColor(){
+			var color = prompt("색상 입력 : red/blue/green");
+			document.write(color);
+			document.bgColor =color;
+		}
+		
+		// 시작하는 함수 호출
+		start();
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

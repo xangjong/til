@@ -74,10 +74,10 @@
 -	(1) 상품 등록 폼 생성 : productNewForm.jsp
 -	컨트롤러
   -	상품 등록 폼 열기 요청 처리
-    -	컨 -> 뷰 페이지
+    -	컨트롤러 -> 뷰 페이지
 
   -	입력된 내용 insert 처리
-    -	컨 -> 서비스 -> DAO -> Mapper -> 서비스 -> 컨 -> 뷰
+    -	컨트롤러 -> 서비스 -> DAO -> Mapper -> 서비스 -> 컨트롤러-> 뷰
 
 
 #### (3) 상품 상세 정보 조회
@@ -85,7 +85,7 @@
 -	상품번호 클릭하면 상품 상세 정보 조회 화면으로 이동
 -	상품번호에 링크 설정
 -	``<a href="<c:url value='/product/productDetailView/${prd.prdNo}'/>"> ${prd.prdNo }</a>``
--	컨트롤러에서 @PathVariable로 전달 받음
+-	컨트롤러에서 ``@PathVariable``로 전달 받음
 -	서비스 : ``detailViewProduct()``
 -	dao -> Mapper : detailViewProduct
 -	결과 : productDetailView.jsp  
@@ -149,7 +149,7 @@
 -	(2) servlet-conext.xml의 ``<resources>``에 location 지정
 
 ```
-<resources mapping="/images/**"  location="file:///C:/springWorkspace/product_images/" />
+<resources mapping="/images/**"  location="file:///Library:/springWorkspace/product_images/" />
 ```
 
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>로그인창</title>
+		<script src = "jquery-3.6.0.min.js"></script>
+		<script type="text/javascript">
+		/* jQuery 사용 */
+			$(document).ready(function(){
+				$('#loginBtn').on('click',function(){
+					var id = $('#user_id').val();
+					var pw = $('#user_pw').val();
+					
+					if( id == "" || pw == ""){
+						alert("아이디와 비밀번호는 필수입니다.3");
+						return false;
+					} else {
+						$('#frmLogin').attr({
+							method:"post",
+							action:"loginJs"
+						}).submit();
+						
+						/* $('#frmLogin').attr('method', "post").attr('action', "loginJs").submit(); */
+					}
+				});
+				
+			});			
+		</script>
+	</head>
+	<body>
+	   <form name="frmLogin" id="frmLogin"> 
+	  <!-- <form name="frmLogin" method="get" action="login"  -->
+		   아이디  :<input type="text" name="user_id" id="user_id"><br>
+	     비밀번호:<input type="password" name="user_pw" id="user_pw"><br>
+	    <input type="button" id="loginBtn" value="로그인">  <input type="reset" value="다시입력">
+	  </form>
+	</body>
+</html>

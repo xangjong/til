@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>if문 연습문제3</title>
+		<script type="text/javascript">
+		
+		var id = "abcd";
+		var pw = "1234";
+		var idConfirm = prompt("아이디 입력 :")
+		var pwConfirm = prompt("비밀번호 입력 :")
+		
+		if(idConfirm==id && pwConfirm==pw){
+			alert(id + "님 반갑습니다.")
+			var capital = prompt("대한민국의 수도는?");
+			if(capital=="서울"){
+				document.write("정답입니다.");
+			} else {
+				document.write("틀렸습니다. 대한민국의 수도는 서울입니다.");
+			}
+			
+			} else {
+				alert("아이디 또는 비밀번호가 일치하지 않습니다.");
+				document.write("종료합니다.");
+			}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

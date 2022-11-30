@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>콜백 함수 비동기적 사용</title>
+		<script type="text/javascript">
+			// 비동기적으로 콜백 함수 사용 : 동시에 2개 작업 수행
+			
+			// 콜백 함수로 사용할 함수
+			function callback(){
+				console.log('콜백 함수 호출됨');	
+			};
+			
+			console.log('콜백 함수 전');
+			
+			setTimeout(callback, 3000); // 3초 후에 callback 함수 호출
+			
+			console.log('콜백 함수 후');
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수 매개변수 연습문제</title>
+		<script type="text/javascript">
+		var col; 
+		var row;
+			function input(){
+				cols = prompt("테이블의 행 수 입력 : ");
+				rows = prompt("테이블의 열 수 입력 : ");
+				makeTable(cols,rows);
+			}
+			
+			function makeTable(cols,rows){
+				document.write("<table border=1>")
+				for(var i=0; i<rows; i++){
+					document.write("<tr>");
+					for(var j=0; j<cols; j++){
+						document.write("<td>★</td>")
+						
+					}
+					document.write("</tr>");
+
+				}
+					
+				document.write("</table>")
+			}
+		</script>
+	</head>
+	<body>
+		<button onClick = "input()">테이블 만들기</button>
+	</body>
+</html>

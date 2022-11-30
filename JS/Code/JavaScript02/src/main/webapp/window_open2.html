@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>window 객체의 open() 메소드 - 새로 만들어서 열기</title>
+		<script type="text/javascript">
+			// 1. 기존 문서 열기
+			function openWindow(){
+				window.open("bigImage.html", "bigWin", 
+						"width=700, height=800, top=50, status=yes, scrollbars=yes, resizeable=yes");
+			}
+			// 2. 새로운 창 만들어서 열기	
+			// 새로운 창에 문자열과 버튼 출력. 버튼 클릭 시 닫기
+		 	function openNewWinodw() {
+				createWin = window.open("", "newWin", "width=400, height=150");
+				createWin.document.write("newWin 이름으로 새로 만든 창입니다.");
+				createWin.document.write("<p><button onClick=\"window.close()\">닫기</button>");
+			}
+		
+			
+		</script>
+	</head>
+	<body>
+		<button onClick="openWindow()">Big Image 창 열기</button> 
+		<button onClick="openNewWinodw()">새창 열기</button>
+	</body>
+</html>

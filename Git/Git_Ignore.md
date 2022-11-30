@@ -1,5 +1,3 @@
-------
-
 ## [1] .gitignore
 
 > 특정 파일 혹은 폴더에 대해 Git이 버전 관리를 하지 못하도록 지정하는 것
@@ -38,13 +36,9 @@
 
 [gitignore.io](https://gitignore.io/)
 
-1. **gitignore 저장소**
+2. **gitignore 저장소**
 
 https://github.com/github/gitignore
-
-1. **Python에 대한 .gitignore 예시**
-
-   https://gitignore.io/
 
 ## [2] 심화
 

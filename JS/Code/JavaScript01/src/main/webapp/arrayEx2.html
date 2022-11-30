@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>배열 연습문제2</title>
+		<style>
+			td { width:100px; text-align :center; }
+		</style>
+		<script type="text/javascript">
+	
+			var std = new Array(4);
+			for (var i=0; i<std.length; i++){
+				std[i] = prompt("학생 " + (i+1) + "입력 : ");
+			}
+				document.write("<table border=1>");
+				for (let i in std ){
+					document.write(`<tr><td> ${(parseInt(i)+1)}</td><td> ${std[i]} </td></tr>`);
+				} document.write("</table>");
+ 
+				
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

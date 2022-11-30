@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수의 반환 값</title>
+		<script type="text/javascript">
+		// 숫자 2개를 입력 받아서 두 수의 합을 구하여 반환하는 함수	
+			
+		function input(){
+			// 입력받은 변수를 숫자로 변환하여 변수에 저장
+			var num1 = Number(prompt("숫자1 입력"));
+			var num2 = Number(prompt("숫자2 입력"));
+			
+			// 두 수의 합 반환
+			return num1 + num2;
+		}
+		
+		
+		
+		// 함수 호출해서 반환된 값 출력
+		// 값이 반환되는 위치 : 함수 호출한 곳(즉, 함수명이 있는 곳)
+		
+		document.write("합계 : " + input());
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

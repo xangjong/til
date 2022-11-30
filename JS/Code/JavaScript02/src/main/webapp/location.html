@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> location 객체</title>
+		<script type="text/javascript">
+			function hrefMove(){
+				// 크롬에서는 href 속성 사용
+				location.href = "http://www.google.com"; 
+				// href() : 크롬에서 지원이 안됨
+				//window.location.href("http://www.daum.net"); 
+			}
+			
+			function assignMove() {
+				window.location.assign("http://www.daum.net"); 
+			}
+			
+			function replaceMove() {
+				// replace() : 뒤로 가기 버튼 적용 안 됨
+				window.location.replace("http://www.youtube.com"); 
+			}
+		</script>
+	</head>
+	<body>
+		<a href="http://www.naver.com">네이버</a><br><br>
+		
+		<button onClick="hrefMove()">구글</button>
+		<button onClick="assignMove()">다음</button> 
+		<button onClick="replaceMove()">유튜브</button>
+	</body>
+</html>

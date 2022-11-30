@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>setTeimeout() 메소드</title>
+		<script type="text/javascript">
+			function openInfo(){
+				widnow.open("msgWindow.html", "timeoutWin", "width=300, height=200");
+			}
+			
+			// msgWindow.html 창이 닫히고
+			// 부모창인 현재 setTimeout.html이 포커스를 받았을 때 
+			
+			function showMsg() {
+				document.write("로드하자마자 열린 공지사항 창이 <br>3초 후에 자동으로 닫혔습니다. 부모창에서 출력했습니다.");
+			}
+		</script>
+	</head>
+	<body onLoad = "openInfo()" onFocus="showMsg()">
+		부모창입니다.
+	</body>
+</html>

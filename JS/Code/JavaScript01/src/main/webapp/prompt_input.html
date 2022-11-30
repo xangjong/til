@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>var와 let : scope차이</title>
+		<script type="text/javascript">
+			function test(){
+				var x =10;
+				if(x==10){
+					var a = 100; // scope : 함수 단위
+				}
+				console.log(a); // a : if문에서 선언되었지만 같은 함수 내에서 사용 가능
+			}
+			
+			test();
+			
+		/* 	function test2(){
+				let x =10;
+				if(x==10){
+					let a = 100; // scope : 함수 단위
+				}
+				console.log(a); // 오류 : a : if문에서 선언된 let 변수는 같은 함수 내에서 사용 가능
+			}
+			
+			test2(); */
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

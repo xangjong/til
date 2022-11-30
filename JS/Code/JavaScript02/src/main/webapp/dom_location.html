@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dom 사용 시기 - 위치 주의</title>
+		<script type="text/javascript">
+		// HTML 문서 요소가 다 로드된 후에 메소드 사용
+		window.onload = function(){
+			var box = document.getElementById("box");
+			box.innerHTML="변경2";
+		}
+		/* 	1. Dom 형성되지 않은 시점에서 메소드 잘못 사용
+			var box = document.getElementById("box");
+			box.innerHTML ="변경; */
+		</script>
+	</head>
+	<body>
+		<div id="box">box</div>
+		<!-- 자바스크립트를 이 위치에서 실행은 되지만 일반적으로 body문에서 사용하지 않음 
+		<script type="text/javascript">
+		 	2. Dom 형성된 후 메소드 잘못 사용
+			var box = document.getElementById("box");
+			box.innerHTML ="변경"; 
+		</script> --> 
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자동 형 변환</title>
+		<script type="text/javascript">
+			var result =10 + "10";
+			document.write(result); // 1010 (문자열 연산이 우선)
+			
+			document.write("<br>");
+			
+			var result = "10" * 10;// 100 (숫자 연산이 우선)
+			document.write(result); // 100 문자열 보다는 숫자로 곱하기 연산을 수행하므로 숫자로 형변환
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

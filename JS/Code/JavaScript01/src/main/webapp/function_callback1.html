@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>콜백 함수</title>
+		<script type="text/javascript">
+			// 익명 함수를 콜백 함수로 전달
+			
+			// 익명 함수
+			
+			var callback = function(){
+				alert("익명 함수 입니다.");	
+			};
+			
+			// 함수로 매개변수로 받을 함수 : 콜백 함수 받아서 사용
+			
+			function show(callback){	// 매개변수 다른 값으로 받아도 가능 : 호출할 때도 같은 값 사용 
+				// 매개 변수로 받은 콜백 함수 사용(호출)
+				callback();
+			}
+			
+			show(callback); // show() 함수 호출하면서 함수를 인자로 전달(전달되는 함수 : 콜백 함수)
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

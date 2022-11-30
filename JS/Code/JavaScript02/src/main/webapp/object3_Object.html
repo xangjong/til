@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>사용자 정의 객체 - new Object() 사용</title>
+		<script type="text/javascript">
+			
+		// 객체 생성
+		
+		var person = new Object(); // 빈 객체 생성
+		
+		// 프로퍼티 추가
+		person.name ="성춘향";
+		person.age =22;
+		
+		// 멤버 메소드 추가
+		person.getName = function(){
+			return this.name;
+		}
+		
+		console.log(person.getName());
+		console.log(person.age);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

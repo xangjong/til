@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>charAt()예제</title>
+		<script type="text/javascript">
+			let num = prompt("숫자 입력 ");
+			
+			for(var i=0; i<num.length; i++){
+				if(num.charAt(i) > '9' || num.charAt(i)<'0') {
+					// if(!(num.charAt(i) > 9 || num.charAt(i)<0))
+					alert("숫자 형식이 아닙니다.");
+					break;
+				} 
+			}
+			document.write(num);
+
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

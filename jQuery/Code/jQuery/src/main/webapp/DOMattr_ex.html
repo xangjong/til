@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM : attr() : 속성 변경</title>
+		<style type="text/css">
+			* {margin:0;padding:0;}
+			div {margin:0 auto; width:800px;}
+			img {width:200px; height:100px;}			
+		</style>
+		<script src="jquery-3.6.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				var $img = $('img');
+				
+				// 각 이미지에 대해 하나씩 처리 : each()
+				$img.each(function(index){
+					$(this).hover(
+							function(){
+								$(this).attr('src', 'image/img2-' + (index+1) + '.jpg');
+							},
+							function(){
+								$(this).attr('src', 'image/img1-' + (index+1) + '.jpg');
+							}
+					);
+				});
+				
+			});
+		</script>
+	</head>
+	<body >
+		<div>
+			<img src="image/img1-1.jpg">
+			<img src="image/img1-2.jpg" >
+			<img src="image/img1-3.jpg">
+			<img src="image/img1-4.jpg">
+		</div>
+	</body>
+</html>

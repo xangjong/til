@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+#wrap{
+	margin:0 auto;
+	width:800px;
+	text-align:center;
+}
+
+#mainMenuBox {
+	height:35px;
+	line-height:35px;   /* 수직 가운데 정렬 효과 */
+	background-color:#555555;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+#mainMenuBox ul{
+	padding-left:0;
+	margin:0;
+	list-style:none;
+}
+
+#mainMenuBox ul li{
+	float:left;
+	width:25%;
+	text-align:center;
+	
+}
+
+#mainMenuBox ul li a{
+ 	color:#ffffff;	
+ 	text-decoration:none;  /* <a> 태그 밑줄 없애기 */
+ 	display:block; 
+ 	font-size:14px;
+ 	font-weight:bold;
+ 	/* background-color:blue; */
+}
+	
+#mainMenuBox ul li a:hover{
+		color:red;	
+		text-decoration:underline;
+		background-color:black;
+}
+
+#productBox {
+	margin-bottom:30px;
+}
+
+#productBox div {
+	display:inline-block;
+	margin:20px;
+}
+
+#productBox div >h3.prdTitle {
+	margin-bottom:5px;
+	color:#5c5cff;
+	font-weight:bold;
+}
+
+#productBox div >p.prdPrice {
+	color:#ff7800;
+}
+
+#infoBox div.box {
+	display:inline-block;
+	border:1px solid #9e9e9e;
+	width:44%;
+	height:150px;
+	border-radius:10px;
+	margin:10px;
+	padding:5px;
+	text-align:left;
+}
+
+#infoBox div.box hr {
+	margin:10px;
+}
+
+
+
+
+
+
+
+
+

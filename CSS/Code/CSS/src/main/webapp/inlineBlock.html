@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inline-block 속성</title>
+		<style type="text/css">
+			/*  display 속성이 없으면 block이 디폴트 : 행으로 배치 (여백 있음)*/
+			.greenBox { 
+				/* display:block; :디폴트 값 있으나 없으나 blcok*/
+				/* display:inline;  옆으로 나란히 배치, 여백 없음*/
+				display:inline-block; /* 옆으로 나란히, 여백 존재 */
+				width:150px;
+				height:75px;
+				margin:10px;
+				border:solid 3px #73AD21;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>display 속성 :blcok / inline / inline-block</h2>
+		<div class="greenBox">박스1</div>
+		<div class="greenBox">박스2</div>
+		<div class="greenBox">박스3</div>
+		<div class="greenBox">박스4</div>
+	</body>
+</html>
